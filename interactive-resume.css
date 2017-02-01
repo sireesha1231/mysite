@@ -1,0 +1,169 @@
+body {
+    background-color: #000000;
+    background-position: center; 
+}
+
+body,
+html {
+    width: 100%;
+    height: 100%;
+    font-family: "Lato";
+    color: white;
+    padding: 15px;
+}
+
+table{
+  border-collapse: collapse;
+  margin: 0;
+  width: 100%;
+  padding: 0;
+}
+
+td, td{
+  border-collapse: collapse;
+  margin: 0;
+  padding-left: 15px;
+  width: 50%; 
+}
+
+th p{
+  margin-left: 30px;
+}
+
+.btn{
+    padding: 21px;
+    margin-bottom: 7px;
+    background-color: #008080;
+}
+
+.btn:active{
+    padding: 21px;
+    margin-bottom: 7px;
+    background-color: #003434;
+    border-color: #003434;
+}
+
+.btn-default{
+  padding: 5px;
+}
+
+.btn-default:active{
+  padding: 5px;
+}
+
+.btn-group{
+  float: left;
+  width: 50%;
+  height: 10%;
+  margin-left: 25%;
+}
+
+h1 {
+  font-weight: 400;
+  margin-left: 15px;
+  margin-top: 15px;
+  font-size: 30px;
+  font-family: 'Roboto Slab', serif;
+}
+
+h2{
+  font-weight: 400;
+  font-size: 20px;
+  text-align: center;
+  font-family: 'Roboto Slab', serif;
+}
+
+.container{
+  height: 100%;
+  float: left;
+  width: 100%;
+}
+
+.container1{
+    background: #008080;
+    background-size: cover;
+    background-position: center;
+    float: left;
+    width: 100%;
+    height: 100%;
+    border: 1px solid #008080;
+}
+
+#container2{
+    background: #D7CEC7;
+    float: left;
+    color: black;
+    width: 100%;
+    height: 100%;
+    border: 1px solid #E8E8E8;
+    overflow: scroll;
+}
+
+span{
+  color: #008080;
+  font-weight: 800;
+}
+
+.img-circle {
+    display: block;
+    margin: 25 auto;
+    float: none;
+    width: 200px;
+    height: 200px;
+    border-style: solid;
+    border-width: 10px;
+    border-color: gray;
+}
+
+hr {
+    width: 75%;
+    border-top: 1px solid #f8f8f8;
+    border-bottom: 1px solid rgba(0,0,0,0.2);
+}
+
+#constant{
+  font-size: 15px;
+  margin: 10px;
+  color: white;
+  text-align: justify;
+  font-family: 'Roboto Slab', serif;
+}
+
+p{
+  font-size: 20px;
+  margin: 10px;
+  color: black;
+  text-align: justify;
+  font-family: 'Roboto Slab', serif;
+}
+
+ol li{
+  color: black;
+  font-family: 'Roboto Slab', serif;
+  text-align: justify;
+}
+
+ul li{
+  color: black;
+  font-family: 'Roboto Slab', serif;
+  text-align: justify;
+  margin-right: 10px;
+}
+
+ol li{
+  color: black;
+  font-family: 'Roboto Slab', serif;
+  text-align: justify;
+  margin-right: 10px;
+}
+
+.progress{
+  width: 90%;
+  background-color: gray;
+  font-family: 'Roboto Slab', serif;
+}
+
+.progress > .progress-bar {
+  background-color: #008080;
+  font-family: 'Roboto Slab', serif;
+}

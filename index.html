@@ -1,0 +1,113 @@
+<html>
+<head>
+	<title>My Resume</title>
+	<meta charset="utf-8">
+  	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="interactive-resume.css">
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+</head>
+<body>
+
+<div class="container">
+	<div class="row">
+	  <div class="col-sm-2 col-md-2 col-lg-2">
+		<button type="button" class="btn btn-lg btn-block" onclick="myFunction_personal()"><i class="fa fa-user-circle fa-2x" aria-hidden="true"></i></button>
+		<script>
+		function myFunction_personal() {
+		    var node = document.getElementById("container2");
+		    node.innerHTML = "<h1>+ Resume - Personal Info</h1> <hr> <p><strong>Address</strong> - 2247, West Taylor Street, Apartment 1F, Chicago, Illinois - 60612, United States of America</p> <p><strong>Phone Number</strong> - 1.469.571.7991</p> <p><strong>Email Address</strong> - sbasam2@uic.edu</p> <p><strong>University</strong> - University of Illinois at Chicago</p> <p><strong>Languages Spoken</strong> - English, Hindi, Telugu</p>";
+		}
+		</script>
+
+
+		<button type="button" class="btn btn-lg btn-block" onclick="myFunction_education()"><i class="fa fa-graduation-cap fa-2x" aria-hidden="true"></i></button>
+		<script>
+		function myFunction_education() {
+		    var node = document.getElementById("container2");
+		    node.innerHTML = "<h1>+ Resume - Education</h1> <hr> <p><strong>MS in Computer Science &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp&nbsp&nbsp&nbsp&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <span>(2015-2017)</span></strong></p> <p><span>University of Illinois at Chicago</span></p> <p><span>Courses at UIC:</span></p> <ol><li>Computer Algorithms 1</li><li>Object Oriented Languages and Environments</li><li>Building Secure Systems</li><li>Introduction to Data Science</li><li>Software Engineering</li><li>Applied Artificial Intelligence</li><li>Formal methods in Distributed and Concurrent Systems</li><li>Human Computer Interaction</li><li>Database Management Systems</li></ol> <hr> <p><strong>B.Tech in Computer Engineering &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<span>(2011-2015)</span></strong></p> <p><span>Mukesh Patel School of Technology Management and Engineering, Mumbai</span></p> <p><span>Courses at MPSTME:</span></p> <ol><li>Computer Algorithms</li><li>Fundamentals of Web Technologies</li><li>Mobile Application Development</li><li>Image Processing</li><li>Digital Signal Processing</li><li>Software Engineering</li><li>Theory of Computer Science</li></ol> <hr> <p><strong>High School &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<span>(2009-2011)</span></strong></p><p><span>R N Podar School, Mumbai</span></p><p><ol><li>Physics</li><li>Chemistry</li><li>Mathematics</li></ol></p>";
+		}
+		</script>
+
+		<button type="button" class="btn btn-lg btn-block" onclick="myFunction_skills()"><i class="fa fa-server fa-2x" aria-hidden="true"></i></button>
+		<script>
+		function myFunction_skills() {
+		    var node = document.getElementById("container2");
+		    node.innerHTML = "<h1>+ Resume - Technical Skills</h1><hr><table><tr><th><p>Web Technologies</p></th><th><p>Softwares</p></th></tr><tr><td><div class='col-sm-12'> <div class='progress'><div class='progress-bar' role='progressbar' aria-valuenow='90' aria valuemin='0' aria-valuemax='100' style='width:90%''> HTML - 90% </div> </div> <div class='progress'><div class='progress-bar' role='progressbar' aria-valuenow='90' aria valuemin='0' aria-valuemax='100' style='width:90%''> CSS - 85%</div> </div> <div class='progress'><div class='progress-bar' role='progressbar' aria-valuenow='90' aria valuemin='0' aria-valuemax='100' style='width:85%''> JavaScript - 90%</div> </div> <div class='progress'><div class='progress-bar' role='progressbar' aria-valuenow='95' aria valuemin='0' aria-valuemax='100' style='width:95%''> Bootstrap - 95%</div> </div> <div class='progress'><div class='progress-bar' role='progressbar' aria-valuenow='80' aria valuemin='0' aria-valuemax='100' style='width:80%''> jQuery - 80%</div> </div> <div class='progress'><div class='progress-bar' role='progressbar' aria-valuenow='80' aria valuemin='0' aria-valuemax='100' style='width:80%''> DOM - 80%</div> </div> <div class='progress'><div class='progress-bar' role='progressbar' aria-valuenow='60' aria valuemin='0' aria-valuemax='100' style='width:60%''> PHP - 60%</div> </div><div class='progress'><div class='progress-bar' role='progressbar' aria-valuenow='70' aria valuemin='0' aria-valuemax='100' style='width:70%''> ASP.NET - 70%</div> </div> </div></td><td><div class='col-sm-12'> <div class='progress'><div class='progress-bar' role='progressbar' aria-valuenow='85' aria valuemin='0' aria-valuemax='100' style='width:85%''> IDLE - 85% </div> </div> <div class='progress'><div class='progress-bar' role='progressbar' aria-valuenow='70' aria valuemin='0' aria-valuemax='100' style='width:70%''> Visual Studio - 70%</div> </div> <div class='progress'><div class='progress-bar' role='progressbar' aria-valuenow='80' aria valuemin='0' aria-valuemax='100' style='width:80%''> Eclipse - 80%</div> </div> <div class='progress'><div class='progress-bar' role='progressbar' aria-valuenow='80' aria valuemin='0' aria-valuemax='100' style='width:80%''> MATLAB - 80%</div> </div> <div class='progress'><div class='progress-bar' role='progressbar' aria-valuenow='70' aria valuemin='0' aria-valuemax='100' style='width:70%''> Android Studio - 70%</div> </div> <div class='progress'><div class='progress-bar' role='progressbar' aria-valuenow='95' aria valuemin='0' aria-valuemax='100' style='width:95%''> MS Office - 95%</div> </div><div class='progress'><div class='progress-bar' role='progressbar' aria-valuenow='60' aria valuemin='0' aria-valuemax='100' style='width:60%''> Wordpress - 60%</div></div><div class='progress'><div class='progress-bar' role='progressbar' aria-valuenow='55' aria valuemin='0' aria-valuemax='100' style='width:55%''> SQL Server- 55%</div> </div></div></td></tr></table><table><tr><th><p>Programming Languages</p></th><th><p>Operating Systems</p></th></tr><tr><td><div class='col-sm-12'> <div class='progress'><div class='progress-bar' role='progressbar' aria-valuenow='85' aria valuemin='0' aria-valuemax='100' style='width:85%''> SQL - 85% </div> </div><div class='progress'><div class='progress-bar' role='progressbar' aria-valuenow='70' aria valuemin='0' aria-valuemax='100' style='width:70%''> Python - 70% </div> </div><div class='progress'><div class='progress-bar' role='progressbar' aria-valuenow='60' aria valuemin='0' aria-valuemax='100' style='width:60%''> Java - 60% </div> </div><div class='progress'><div class='progress-bar' role='progressbar' aria-valuenow='75' aria valuemin='0' aria-valuemax='100' style='width:75%''> C++ - 75% </div> </div></div></td><td><div class='col-sm-12'> <div class='progress'><div class='progress-bar' role='progressbar' aria-valuenow='95' aria valuemin='0' aria-valuemax='100' style='width:95%''> Windows - 95% </div> </div><div class='progress'><div class='progress-bar' role='progressbar' aria-valuenow='90' aria valuemin='0' aria-valuemax='100' style='width:90%''> OS-X - 90% </div> </div><div class='progress'><div class='progress-bar' role='progressbar' aria-valuenow='60' aria valuemin='0' aria-valuemax='100' style='width:60%''> Linux - 60% </div></div></div></td></tr></table><table><tr><th><p>Big Data Technologies</p></th><th><p>Machine Learning</p></th></tr><tr><td><div class='col-sm-12'> <div class='progress'><div class='progress-bar' role='progressbar' aria-valuenow='60' aria valuemin='0' aria-valuemax='100' style='width:60%''> Apache Spark - 60% </div></div></div></td><td><div class='col-sm-12'> <div class='progress'><div class='progress-bar' role='progressbar' aria-valuenow='80' aria valuemin='0' aria-valuemax='100' style='width:80%''> Classification</div> </div><div class='progress'><div class='progress-bar' role='progressbar' aria-valuenow='80' aria valuemin='0' aria-valuemax='100' style='width:80%''> Regression</div> </div><div class='progress'><div class='progress-bar' role='progressbar' aria-valuenow='80' aria valuemin='0' aria-valuemax='100' style='width:80%''> Decision Tree</div></div></div></td></tr></table>";
+		}
+		</script>
+
+		<button type="button" class="btn btn-lg btn-block" onclick="myFunction_projects()"><i class="fa fa-database fa-2x" aria-hidden="true"></i></button>
+		<script type="text/javascript">
+		function myFunction_projects() {
+			var node = document.getElementById("container2");
+			node.innerHTML = "<h1>+ Resume - Projects</h1> <hr>"	
+		}
+		</script>
+
+		<button type="button" class="btn btn-lg btn-block" onclick="myFunction_experience()"><i class="fa fa-building fa-2x" aria-hidden="true"></i></button>
+		<script>
+		function myFunction_experience() {
+		    var node = document.getElementById("container2");
+		    node.innerHTML = "<h1>+ Resume - Work Experience</h1> <hr> <p><strong>Android Application Developer &nbsp&nbsp<span>(May 2014 - July 2014)</span></strong></p><p><span>Air India Pvt. Ltd</span></p><ul><li>Android Application Developer in the technical department of Air India.</li><li>The applications developed were Worldwide office information, Emergency contact information, Cargo tracker and Flight schedule.</li><li>The company had a website maintaining all the data which had to be converted into a mobile application for ease of use. The website had search bugs, real-time tracking issues and ease of access. All these issues were taken care of in the mobile application.</li><li>Final application was very well received and distributed among the employees at Air India to use internally.</li></ul> <hr> <p><strong>Web Development &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<span>(August 2011 - December 2016)</span></strong></p><ul><li>Started learning web development in my first year of Engineering.</li><li>Since then, learned HTML, CSS, JavaScript, Bootstrap, jQuery and DOM.</li><li>Created many dummy websites for course work in undergrad and grad colleges.</li></ul>";
+		}
+		</script>
+
+		<button type="button" class="btn btn-lg btn-block" onclick="myFunction_achievements()"><i class="fa fa-trophy fa-2x" aria-hidden="true"></i></button>
+		<script>
+		function myFunction_achievements() {
+		    var node = document.getElementById("container2");
+		    node.innerHTML = "<h1>+ Resume - Achievements</h1> <hr><ol><li>Received certification for the Android application development competition conducted by IIT Bombay.</li><li>Association for Computing Machinery (ACM) – Member.</li><li>Full Stack Web Development Certification(Udemy).</li><li>Distinction in levels 1, 2, 3 and 4 of the Piano Examinations conducted by the London College of Music (LCM Examinations), West London, UK.</li></ol>";
+		}
+		</script>
+
+		<button type="button" class="btn btn-lg btn-block" onclick="myFunction_print()"><i class="fa fa-print fa-2x" aria-hidden="true"></i></button>
+		<script type="text/javascript">
+		function myFunction_print() {
+			window.print()
+		}
+		</script>
+
+	  </div>
+
+	  <div class="col-sm-6 col-md-6 col-lg-6">
+	  	<div id = "container2">
+	    	<h1>+ Resume - Personal Info</h1>
+	    	<hr>
+	    </div>
+	  </div>
+
+	  <div class="col-sm-4 col-md-4 col-lg-4">
+	    <div class="container1">
+	    	<img class="img-circle" src="https://media.licdn.com/mpr/mpr/shrinknp_200_200/AAEAAQAAAAAAAAYbAAAAJGQwN2EzYzY5LTA0ZGMtNDk0OS1hODExLWY1ZjZlZTEwYjBlMw.jpg" border="5">
+	    	<h2>Sireesha Basamsetty</h2>
+	    	<h2>Web Developer</h2>
+	    	<h2>Chicago, Illinois</h2>
+	    	<hr>
+	    	<p id = "constant">Software developer with nine months experience in Android Application Development and certification in Web development. Intent to graduate in May 2017.</p>
+	    	<hr>
+	    	<div class="btn-group btn-group-justified btn-group-sm" role="group" aria-label="...">
+		    	<div class="btn-group">
+				  <button onclick="location.href='https://www.linkedin.com/in/sireesha-basamsetty-47120890'" type="button" class="btn btn-default"><i class="fa fa-linkedin-square fa-3x" aria-hidden="true"></i>
+				  </button>
+				</div>
+				<div class="btn-group">
+				  <button onclick="location.href='https://www.facebook.com/sireesha.basamsetty'" type="button" class="btn btn-default"><i class="fa fa-facebook-square fa-3x" aria-hidden="true"></i>
+				  </button>
+				</div>
+				<div class="btn-group">
+				  <button onclick="location.href='https://twitter.com/sireesha1231'" type="button" class="btn btn-default"><i class="fa fa-twitter-square fa-3x" aria-hidden="true"></i>
+				  </button>
+				</div>
+			</div>
+	  	</div>
+	  </div>
+</div>
+
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
+<script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+	
+</body>
+</html>
