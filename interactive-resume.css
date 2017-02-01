@@ -33,7 +33,7 @@ th p{
 .btn{
     padding: 21px;
     margin-bottom: 7px;
-    background-color: #D7CEC7;
+    background-color: #ABB2B9;
 }
 
 .btn:active{
@@ -80,13 +80,13 @@ h2{
 }
 
 .container1{
-    background: #D7CEC7;
+    background: #ABB2B9;
     background-size: cover;
     background-position: center;
     float: left;
     width: 100%;
     height: 100%;
-    border: 1px solid #D7CEC7;
+    border: 1px solid #ABB2B9;
 }
 
 #container2{
