@@ -33,14 +33,14 @@ th p{
 .btn{
     padding: 21px;
     margin-bottom: 7px;
-    background-color: #008080;
+    background-color: #D7CEC7;
 }
 
 .btn:active{
     padding: 21px;
     margin-bottom: 7px;
-    background-color: #003434;
-    border-color: #003434;
+    background-color: #000000;
+    border-color: #000000;
 }
 
 .btn-default{
@@ -80,13 +80,13 @@ h2{
 }
 
 .container1{
-    background: #008080;
+    background: #D7CEC7;
     background-size: cover;
     background-position: center;
     float: left;
     width: 100%;
     height: 100%;
-    border: 1px solid #008080;
+    border: 1px solid #D7CEC7;
 }
 
 #container2{
