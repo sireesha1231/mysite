@@ -102,7 +102,12 @@ h2{
 span{
   color: #008080;
   font-weight: 800;
-  font-size: 20px;
+}
+
+li span{
+  color: #008080;
+  font-weight: 800;
+  font-size: 30px;
 }
 
 .img-circle {
