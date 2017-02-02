@@ -156,6 +156,13 @@ ul li{
   margin-right: 10px;
 }
 
+ul li a{
+  color: black;
+  font-family: 'Roboto Slab', serif;
+  text-align: justify;
+  margin-right: 15px;
+}
+
 ol li{
   color: black;
   font-family: 'Roboto Slab', serif;
