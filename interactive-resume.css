@@ -158,6 +158,14 @@ ol li{
   margin-right: 10px;
 }
 
+ol li a{
+  color: black;
+  font-family: 'Roboto Slab', serif;
+  text-align: justify;
+  margin-right: 10px;
+  text-decoration: none;
+}
+
 .progress{
   width: 90%;
   background-color: gray;
