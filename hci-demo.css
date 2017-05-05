@@ -1,0 +1,357 @@
+body {
+  background: #F5F5F5;
+  margin: 0;
+}
+
+.container  {
+  max-width: 1000px;
+  font-size: 18px;
+  font-family: 'Roboto Slab', sans-serif;
+}
+
+#requirements, #f_eval, #s_eval {
+  background-color: #1ca9c9;
+}
+
+#requirements, #f_eval, #s_eval, #concept, #sketch, #implementation {
+  font-family: 'Roboto Slab', sans-serif;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+h1, h2, h3, h4, h5, h6  {
+  font-family: 'Roboto Slab', sans-serif;
+  font-weight: 700;
+}
+
+p {
+  font-size: 18px;
+  font-family: 'Roboto Slab', sans-serif;
+  font-weight: 300;
+}
+
+a  {
+  text-decoration: none;
+  color: #000000;
+  font-family: 'Roboto Slab', sans-serif;
+}
+
+a:hover {
+  color: #000000;
+  cursor: pointer;
+}
+
+.hero  {
+  height: 100vh;
+  background-color:gray;
+  color: black;
+  text-align: center;
+  z-index: 9999;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+ 
+
+.hero h1, h2  {
+  font-family: 'Roboto Slab', sans-serif;
+  font-weight: 700;
+}
+
+.hero-content {
+  -webkit-animation: fadeInUp .75s ease forwards;
+          animation: fadeInUp .75s ease forwards;
+  -webkit-animation-delay: .15s;
+          animation-delay: .15s;
+}
+
+.hero h2  {
+  font-size: 26px;
+  font-family: 'Roboto Slab', sans-serif;
+}
+
+@-webkit-keyframes fadeInRight {
+  0% {
+    opacity: 0;
+    left: 20%;
+  }
+  100% {
+    opacity: 1;
+    left: 0;
+  }
+}
+
+#sketch1{
+  width:300px;
+  height:300px;
+}
+.intro  {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  font-family: 'Roboto Slab', sans-serif;
+}
+
+.contact  {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background-color: #111111;
+  color: white;
+  text-align: center;
+  font-family: 'Roboto Slab', sans-serif;
+}
+
+.progress{
+  width: 100%;
+  background-color: gray;
+  font-family: 'Roboto Slab', serif;
+  border-radius: 10px;
+}
+
+.progress > .progress-bar {
+  background-color: #FFCE00;
+  font-family: 'Roboto Slab', serif;
+  border-radius: 10px;
+}
+
+table{
+  border: 1px solid white;
+  margin: 0;
+  width: 100%;
+  padding: 0;
+}
+
+tr, td{
+    border: 1px solid white;
+}
+
+tr p, td p{
+
+  margin: 0;
+  margin-top: 10px;
+  width: 50%; 
+}
+
+th p{
+  text-align: center;
+  width: 100%;
+  margin-top: 10px;
+}
+  
+h4  {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin: 0px;
+  font-family: 'Roboto Slab', sans-serif;
+}
+
+h5  {
+  margin-bottom:: 10px;
+  margin-top: 10px;
+  font-family: 'Roboto Slab', sans-serif;
+}
+
+#prototype{
+  width:200px;
+  height:200px;
+}
+
+.button_container {
+  position: fixed;
+  top: 5%;
+  right: 2%;
+  height: 27px;
+  width: 35px;
+  cursor: pointer;
+  z-index: 100;
+  -webkit-transition: opacity .25s ease;
+  transition: opacity .25s ease;
+}
+.button_container:hover {
+  opacity: .7;
+}
+.button_container.active .top {
+  -webkit-transform: translateY(11px) translateX(0) rotate(45deg);
+          transform: translateY(11px) translateX(0) rotate(45deg);
+  background: #FFF;
+}
+.button_container.active .middle {
+  opacity: 0;
+  background: #FFF;
+}
+.button_container.active .bottom {
+  -webkit-transform: translateY(-11px) translateX(0) rotate(-45deg);
+          transform: translateY(-11px) translateX(0) rotate(-45deg);
+  background: #FFF;
+}
+.button_container span {
+  background: white;
+  border: none;
+  height: 5px;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  -webkit-transition: all .35s ease;
+  transition: all .35s ease;
+  cursor: pointer;
+}
+.button_container span:nth-of-type(2) {
+  top: 11px;
+}
+.button_container span:nth-of-type(3) {
+  top: 22px;
+}
+
+.overlay {
+  position: fixed;
+  background: black;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 0%;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: opacity .35s, visibility .35s, height .35s;
+  transition: opacity .35s, visibility .35s, height .35s;
+  overflow: hidden;
+  z-index: 1;
+}
+.overlay.open {
+  opacity: .9;
+  visibility: visible;
+  height: 100%;
+}
+.overlay.open li {
+  -webkit-animation: fadeInUp .5s ease forwards;
+          animation: fadeInUp .5s ease forwards;
+  -webkit-animation-delay: .35s;
+          animation-delay: .35s;
+}
+.overlay.open li:nth-of-type(2) {
+  -webkit-animation-delay: .4s;
+          animation-delay: .4s;
+}
+.overlay.open li:nth-of-type(3) {
+  -webkit-animation-delay: .45s;
+          animation-delay: .45s;
+}
+.overlay.open li:nth-of-type(4) {
+  -webkit-animation-delay: .50s;
+          animation-delay: .50s;
+}
+.overlay nav {
+  position: relative;
+  height: 70%;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  font-size: 30px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
+  text-align: center;
+}
+
+span.top,span.middle,span.bottom  {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.overlay ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 auto;
+  display: inline-block;
+  position: relative;
+  height: 100%;
+  font-family: 'Roboto Slab', sans-serif;
+}
+
+.overlay ul li {
+  display: block;
+  height: 25%;
+  height: calc(100% / 8);
+  min-height: 50px;
+  position: relative;
+  opacity: 0;
+  font-family: 'Roboto Slab', sans-serif;
+}
+
+.overlay ul li a {
+  display: block;
+  position: relative;
+  color: #FFF;
+  text-decoration: none;
+  overflow: hidden;
+  font-family: 'Roboto Slab', sans-serif;
+}
+
+.overlay ul li a:hover:after, .overlay ul li a:focus:after, .overlay ul li a:active:after {
+  width: 100%;
+  font-family: 'Roboto Slab', sans-serif;
+}
+
+.overlay ul li a:after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 0%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  height: 3px;
+  background: #FFF;
+  -webkit-transition: .35s;
+  transition: .35s;
+}
+
+@keyframes fadeInRight {
+  0% {
+    opacity: 0;
+    left: 20%;
+  }
+  100% {
+    opacity: 1;
+    left: 0;
+  }
+}
+
+.work  {
+    display: block;
+    position: relative;
+    padding-bottom: 50px;
+    font-family: 'Roboto Slab', sans-serif;
+}
+
+.footer-icons a  {
+  color: white;
+  font-size: 26px;
+  font-family: 'Roboto Slab', sans-serif;
+  padding: 0px 10px;
+  transition: ease-in-out .3s;
+}
+
+.footer-icons a:hover  {
+  opacity: .6;
+  font-family: 'Roboto Slab', sans-serif;
+  transition: ease-in-out .3s;
+}
+
+.img-responsive  {
+  height: auto;
+  width: 100%;
+}
+
+.button  {
+  color: black;
+  transition: ease-in-out .3s;
+}
+
+.button:hover  {
+  background-color: white;
+  font-weight: 700;
+  color: #000;
+}
+
+img {
+  width: 100px;
+  height: 100px;
+}
