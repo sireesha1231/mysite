@@ -9,7 +9,7 @@ body {
   font-family: 'Roboto Slab', sans-serif;
 }
 
-#requirements, #f_eval, #s_eval {
+#requirements, #f_eval, #s_eval, #future {
   background-color: #1ca9c9;
 }
 
@@ -79,6 +79,11 @@ a:hover {
     opacity: 1;
     left: 0;
   }
+}
+
+#start{
+  width:300px;
+  height:300px;
 }
 
 #sketch1{
