@@ -273,7 +273,7 @@ span.top,span.middle,span.bottom  {
 .overlay ul li {
   display: block;
   height: 25%;
-  height: calc(100% / 8);
+  height: calc(100% / 9);
   min-height: 50px;
   position: relative;
   opacity: 0;
