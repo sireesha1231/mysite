@@ -4,9 +4,16 @@ body {
 }
 
 .container  {
-  max-width: 600px;
+  max-width: 700px;
   font-size: 18px;
   font-family: 'Roboto Slab', sans-serif;
+}
+
+.container-project {
+  max-width: 900px;
+  font-size: 18px;
+  font-family: 'Roboto Slab', sans-serif;
+  padding-left: 15%;
 }
 
 #education, #projects, #achievements {
@@ -28,6 +35,91 @@ p {
   font-size: 18px;
   font-family: 'Roboto Slab', sans-serif;
   font-weight: 300;
+}
+
+.info{
+  float: right;
+  font-size: 18px;
+  font-family: 'Roboto Slab', sans-serif;
+  font-weight: 300;
+}
+
+.user {
+  display: inline-block;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 2px solid white;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
+.pro {
+  display: inline-block;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 2px solid white;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  margin: 10px;
+}
+
+.pic-one {
+  background-image: url('dp.png');
+}
+
+.ai-two {
+  background-image: url('fuzzy-jess.png');
+}
+
+.ai-three {
+  background-image: url('bayes.png');
+}
+
+.ai-four {
+  background-image: url('decision.png');
+}
+
+.ai-one {
+  background-image: url('jess.png');
+  float: left;
+}
+
+.ai-five {
+  background-image: url('ML.png');
+}
+
+.se-one {
+  background-image: url('gap-design.png');
+}
+
+.se-two {
+  background-image: url('gap-testing.png');
+}
+
+.airindia {
+  background-image: url('airindia.png');
+}
+
+.staff {
+  background-image: url('staff.png');
+}
+
+.bachao {
+  background-image: url('bachao.png');
+}
+
+.rideshare {
+  background-image: url('rideshare.png'); 
+}
+
+
+.image-processing {
+  background-image: url('image-processing.png');
+
 }
 
 a  {
