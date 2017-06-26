@@ -68,7 +68,7 @@ p {
 }
 
 .pic-one {
-  background-image: url('https://media.licdn.com/mpr/mpr/shrinknp_200_200/AAEAAQAAAAAAAAYbAAAAJGQwN2EzYzY5LTA0ZGMtNDk0OS1hODExLWY1ZjZlZTEwYjBlMw.jpg');
+  background-image: url('user_pic.jpg');
 }
 
 .ai-two {
@@ -135,7 +135,7 @@ a:hover {
 
 .hero  {
   height: 100vh;
-  background-color:gray;
+  background-color: rgba(0, 0, 0, 0.7);
   color: white;
   text-align: center;
   z-index: 9999;
@@ -220,14 +220,15 @@ th p{
 }
   
 h4  {
-  padding-top: 30px;
-  padding-bottom: 30px;
+  padding-top: 20px;
+  padding-bottom: 20px;
   margin: 0px;
   font-family: 'Roboto Slab', sans-serif;
+  text-decoration: underline;
 }
 
 h5  {
-  margin-bottom:: 10px;
+  margin-bottom: 10px;
   margin-top: 10px;
   font-family: 'Roboto Slab', sans-serif;
 }
@@ -337,6 +338,7 @@ span.top,span.middle,span.bottom  {
   padding: 0;
   margin: 0 auto;
   display: inline-block;
+  text-align: justify;
   position: relative;
   height: 100%;
   font-family: 'Roboto Slab', sans-serif;
@@ -346,6 +348,7 @@ span.top,span.middle,span.bottom  {
   display: block;
   height: 25%;
   height: calc(100% / 8);
+  text-align: justify;
   min-height: 50px;
   position: relative;
   opacity: 0;
