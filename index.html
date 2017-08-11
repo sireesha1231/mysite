@@ -1,14 +1,28 @@
 <!DOCTYPE html>
-<html >
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <title>Sireesha Basamsetty | Front-End Developer</title>
-  
+	<meta name="description" content="">  
+	<meta name="author" content="">
+
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css">
   <link rel='stylesheet prefetch' href='http://daneden.github.io/animate.css/animate.min.css'>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
-  <link rel="stylesheet" href="interactive-resume.css"> 
+	<link rel="stylesheet" href="interactive-resume.css"> 
+	<link rel="stylesheet" href="base-css.css"> 
+	<link rel="stylesheet" href="vendor.css"> 
+
+	<!-- script
+   ================================================== -->   
+	<script src="modernizr.js"></script>
+	<script src="pace.min.js"></script>
+	<!-- Contact form JavaScript -->
+		    <script language="JavaScript" type="text/javascript" src="js/contact_me.js"></script>
+		    <script language="JavaScript" type="text/javascript" src="js/jqBootstrapValidation.js"></script>
+   <!-- favicons
+	================================================== -->
+	<link rel="icon" type="image/png" href="favicon.ico">
 </head>
 
 <body>
@@ -21,294 +35,269 @@
 <div class="overlay" id="overlay">
   <nav class="overlay-menu">
     <ul>
-      <li><a data-scroll href="#page-top">Home</a></li>
+      <li><a data-scroll href="#intro">Home</a></li>
       <li><a data-scroll href="#about">About</a></li>
-      <li><a data-scroll href="#education">Education</a></li>
-      <li><a data-scroll href="#tech-skills">Technical Skills</a></li>
-      <li><a data-scroll href="#work">Projects</a></li>
-      <li><a data-scroll href="#intern">Work Experience</a></li>
-      <li><a data-scroll href="#achievements">Achievements</a></li>
-      <li><a data-scroll href="#contact">Contact</a></li>
+      <li><a data-scroll href="#resume">Work Experience & Education</a></li>
+			<li><a data-scroll href="#work">Projects</a></li>
     </ul>
   </nav>
 </div>
 
-<div class="hero" id="page-top" style="background-image:url('home-office.jpg'); background-size:cover">
-  <div class="container">
-    <div class="hero-content">
-      <h1>Hi! I am Sireesha</h1>
-      <div class="user pic-one">
-      </div>
-      <h2>HTML, CSS, and JavaScript master. Interested in Front-End Web Development and Software Development.</h2>
-      <a data-scroll class="button" href="#about">Learn More</a>
-    </div>
-  </div>
-</div>
+<!-- intro section
+   ================================================== -->
+   <section id="intro" style="background-image:url('home-office.jpg'); background-size:cover">   
 
-<div class="intro" id="about">
-  <div class="container">
-    <h4>About Me</h4>
-    <p align="justify">I am a designer, Front-End Developer, and love working on interface-based challenges.</p>
-    <p align="justify">I'm proficient in HTML5 and CSS3, I am learning more Javascript, jQuery, Bootstrap, PHP and ASP.NET every day.</p>
-    <p align="justify">I completed my Bachelors in Technology from Mukesh Patel School of Technology Management and Engineering in May 2015 and Master in Science in Computer Science from The University of Illinois at Chicago in May 2017.</p>
-    <p align="justify">When I'm not working on my projects, I love to sketch, paint and explore new locations with family and friends.</p>
-  </div>
-</div> 
+   	<div class="intro-overlay"></div>	
 
-<div class="content education" id="education">
-  <div class="container">
-    <h4>Education</h4>
-    <p>
-    <strong>Master in Science in Computer Science 
-    <span> - Graduated May 2017</span>
-	</strong>
-	<img src = "https://www.math.uic.edu/graduate/grad_people/graphics/UIC_logo.png">
-    </p>
-	<p>
-	<span><strong>The University of Illinois at Chicago - Chicago, IL</strong></span>
-	</p>
+   	<div class="intro-content">
+   		<div class="row">
 
-	<p><span><strong>Courses at UIC:</strong></span>
-	</p> 
-	<ol>
-		<li>Computer Algorithms</li>
-		<li>Object Oriented Languages and Environments</li>
-		<li>Building Secure Systems</li>
-		<li>Introduction to Data Science</li>
-		<li>Software Engineering</li>
-		<li>Applied Artificial Intelligence</li>
-		<li>Formal methods in Distributed and Concurrent Systems</li>
-		<li>Human Computer Interaction</li>
-		<li>Database Management Systems</li>
-		<li>Advanced Database Management Systems</li>
-	</ol> 
-	<hr> 
-	<p><strong>Bachelors in Technology in Computer Engineering<span> - Graduated May 2015</span></strong>
-	<img src = "http://www.vobium.com/biz-images/226/logo/nmims-logo.png"></p>
-	<p>
-	<span><strong>Mukesh Patel School of Technology Management and Engineering, NMIMS University - Mumbai, India</strong></span></p>
+   			<div class="col-twelve">
 
-	<p><span><strong>Courses at MPSTME:</strong></span></p> 
-	<ol>
-		<li>Computer Algorithms</li>
-		<li>Fundamentals of Web Technologies</li>
-		<li>Mobile Application Development</li>
-		<li>Image Processing</li>
-		<li>Digital Signal Processing</li>
-		<li>Software Engineering</li>
-		<li>Theory of Computer Science</li>
-	</ol> 
-  </div>
-</div>
+					 <p style="color:white; font-size: 1.5em;">Hi,</p>
+								
+	   			<p style="color:white; font-size: 1.5em;">I'm Sireesha!</p>
+		<br></br>
+	   			<p class="intro-position">
+	   				HTML/CSS/JS master. 1 yr exp. developing Android apps using Java, XML. Interested in Front-End /Android development.
+	   			</p>
+		<br></br>
+	   			<a class="button stroke smoothscroll" href="#about" title="">Learn More</a>
 
-<div class="content tech-skills" id="tech-skills">
-  <div class="container">
-    <h4>Technical Skills</h4>
-    <table>
-    	<tr>
-    		<th>
-    			<p>Web Technologies</p>
-    		</th>
-    		<th>
-    			<p>Softwares</p>
-    		</th>
-    	</tr>
-    	<tr>
-    		<td>
-    			
-    				<div class="progress">
-    					<div class='progress-bar' role='progressbar' aria-valuenow='90' aria valuemin='0' aria-valuemax='100' style='width:90%'> HTML5 - 90% 
-    					</div> 
-    				</div> 
-    				<br>
-    				<div class='progress'>
-    					<div class='progress-bar' role='progressbar' aria-valuenow='90' aria valuemin='0' aria-valuemax='100' style='width:90%'> CSS3 - 85%
-    					</div> 
-    				</div> 
-    				<br>
-    				<div class='progress'>
-    					<div class='progress-bar' role='progressbar' aria-valuenow='90' aria valuemin='0' aria-valuemax='100' style='width:85%'> JavaScript - 90%
-    					</div> 
-    				</div> 
-    				<br>
-    				<div class='progress'>
-    					<div class='progress-bar' role='progressbar' aria-valuenow='70' aria valuemin='0' aria-valuemax='100' style='width:70%'> TypeScript - 70%
-    					</div> 
-    				</div> 
-    				<br>
-    				<div class='progress'>
-    					<div class='progress-bar' role='progressbar' aria-valuenow='80' aria valuemin='0' aria-valuemax='100' style='width:80%'> jQuery - 80%
-    					</div> 
-    				</div> 
-    				<br>
-    				<div class='progress'>
-    					<div class='progress-bar' role='progressbar' aria-valuenow='60' aria valuemin='0' aria-valuemax='100' style='width:60%'> PHP - 60%
-    					</div> 
-    				</div>
-    				<br>
-    				<div class='progress'>
-    					<div class='progress-bar' role='progressbar' aria-valuenow='70' aria valuemin='0' aria-valuemax='100' style='width:70%'> ASP.NET - 70%
-    					</div> 
-    				</div> 
-    			
-    		</td>
-    		<td>
-    			
-    				<div class='progress'>
-    					<div class='progress-bar' role='progressbar' aria-valuenow='85' aria valuemin='0' aria-valuemax='100' style='width:85%'> IDLE - 85% 
-    					</div> 
-    				</div> 
-    				<br>
-    				<div class='progress'>
-    					<div class='progress-bar' role='progressbar' aria-valuenow='70' aria valuemin='0' aria-valuemax='100' style='width:70%'> Visual Studio - 70%
-    					</div> 
-    				</div> 
-    				<br>
-    				<div class='progress'>
-    					<div class='progress-bar' role='progressbar' aria-valuenow='80' aria valuemin='0' aria-valuemax='100' style='width:80%'> Eclipse - 80%
-    					</div> 
-    				</div> 
-    				<br>
-    				<div class='progress'>
-    					<div class='progress-bar' role='progressbar' aria-valuenow='80' aria valuemin='0' aria-valuemax='100' style='width:80%'> MATLAB - 80%
-    					</div> 
-    				</div> 
-    				<br>
-    				<div class='progress'>
-    					<div class='progress-bar' role='progressbar' aria-valuenow='70' aria valuemin='0' aria-valuemax='100' style='width:70%'> Android Studio - 70%
-    					</div> 
-    				</div>
-    				<br> 
-    				<div class='progress'>
-    					<div class='progress-bar' role='progressbar' aria-valuenow='95' aria valuemin='0' aria-valuemax='100' style='width:95%'> MS Office - 95%
-    					</div> 
-    				</div>
-    				<br>
-    				<div class='progress'>
-    					<div class='progress-bar' role='progressbar' aria-valuenow='95' aria valuemin='0' aria-valuemax='100' style='width:95%'> Sublime Text - 95%
-    					</div>
-    				</div>
-    				<br>
-    			
-    		</td>
-    	</tr>
-    </table>
-    <table>
-    	<tr>
-    		<th>
-    			<p>Prog. Languages</p>
-    		</th>
-    		<th>
-    			<p>OS</p>
-    		</th>
-    	</tr>
-    	<tr>
-    		<td>
-    			
-    				<div class='progress'>
-    					<div class='progress-bar' role='progressbar' aria-valuenow='85' aria valuemin='0' aria-valuemax='100' style='width:85%'> SQL - 85% 
-    					</div> 
-    				</div>
-    				<br>
-    				<div class='progress'>
-    					<div class='progress-bar' role='progressbar' aria-valuenow='70' aria valuemin='0' aria-valuemax='100' style='width:70%'> Python - 70% 
-    					</div> 
-    				</div>
-    				<br>
-    				<div class='progress'>
-    					<div class='progress-bar' role='progressbar' aria-valuenow='60' aria valuemin='0' aria-valuemax='100' style='width:60%'> Java - 60% 
-    					</div> 
-    				</div>
-    				<br>
-    				<div class='progress'>
-    					<div class='progress-bar' role='progressbar' aria-valuenow='75' aria valuemin='0' aria-valuemax='100' style='width:75%'> C++ - 75% 
-    					</div> 
-    				</div>
-    				
-    			
-    		</td>
-    		<td>
-    			
-    				<div class='progress'>
-    					<div class='progress-bar' role='progressbar' aria-valuenow='95' aria valuemin='0' aria-valuemax='100' style='width:95%'> Windows - 95% 
-    					</div> 
-    				</div>
-    				<br>
-    				<div class='progress'>
-    					<div class='progress-bar' role='progressbar' aria-valuenow='90' aria valuemin='0' aria-valuemax='100' style='width:90%'> OS-X - 90% 
-    					</div> 
-    				</div>
-    				<br>
-    				<div class='progress'>
-    					<div class='progress-bar' role='progressbar' aria-valuenow='60' aria valuemin='0' aria-valuemax='100' style='width:60%'> Linux - 60% 
-    					</div>
-    				</div>
-    				
-    			
-    		</td>
-    	</tr>
-    </table>
-    <table>
-    	<tr>
-    		<th>
-    			<p>Frameworks</p>
-    		</th>
-    		<th>
-    			<p>Developer Toolchains</p>
-    		</th>
-    	</tr>
-    	<tr>
-    		<td>
-    			
-    				<div class='progress'>
-    					<div class='progress-bar' role='progressbar' aria-valuenow='80' aria valuemin='0' aria-valuemax='100' style='width:80%'> Boostrap.js - 80% 
-    					</div>
-    				</div>
-						<br>
-    				<div class='progress'>
-    					<div class='progress-bar' role='progressbar' aria-valuenow='80' aria valuemin='0' aria-valuemax='100' style='width:80%'> React.js - 80%
-    					</div> 
-    				</div>
-    				<br>
-    				<div class='progress'>
-    					<div class='progress-bar' role='progressbar' aria-valuenow='80' aria valuemin='0' aria-valuemax='100' style='width:80%'> Jasmine
-    					</div>
-    				</div>
-    				
-    		</td>
-    		<td>
-    			
-    				<div class='progress'>
-    					<div class='progress-bar' role='progressbar' aria-valuenow='80' aria valuemin='0' aria-valuemax='100' style='width:80%'> node - 80%
-    					</div> 
-    				</div>
-    				<br>
-    				<div class='progress'>
-    					<div class='progress-bar' role='progressbar' aria-valuenow='80' aria valuemin='0' aria-valuemax='100' style='width:80%'> npm - 80%
-    					</div> 
-    				</div>
-    				<br>
-    				<div class='progress'>
-    					<div class='progress-bar' role='progressbar' aria-valuenow='60' aria valuemin='0' aria-valuemax='100' style='width:60%'> Webpack - 60%
-    					</div>
-    				</div>
-						<br>
-    			
-    		</td>
-    	</tr>
-    </table>
-  </div>
-</div>
+	   		</div>  
+   			
+   		</div>   		 		
+   	</div> <!-- /intro-content --> 
+	
+				<ul class="intro-social">
+
+         <li><a href="https://www.linkedin.com/in/sireeshab/"><i class="fa fa-linkedin"></i></a></li>        
+         <li><a href="https://www.facebook.com/sireesha.basamsetty"><i class="fa fa-facebook"></i></a></li>
+         <li><a href="https://www.github.com/sireesha1231/"><i class="fa fa-github"></i></a></li>
+
+      </ul> <!-- /intro-social -->    
+	</section> <!-- /intro -->
+
+<section id="about">  
+
+   	<div class="row section-intro">
+   		<div class="col-twelve">
+				<h5>About Me</h5>
+				<h3>Let me introduce myself.</h3>
+				<div class="user pic-one">
+      	</div>
+				<p style="text-align:justify;text-justify:inter-word;">Designer, Front-End Developer who loves working on interface-based challenges, willing to learn always and team oriented.
+				I'm proficient in HTML5, CSS3, and Javascript for front-end development. I possess 1 year experience as an Android application developer wherein I used Android Studio, SDK, Java and XML for developing the Android applications. I am learning jQuery, Bootstrap, React.js, Angular, Java Spring, PHP and ASP.NET in my free time.
+				When I'm not working on my projects, I love to sketch, paint and explore new locations with family and friends.
+				</p>
+			</div>   			
+   	</div>   		
+ <!-- /section-intro -->
+
+   	<div class="row about-content">
+
+   		<div class="col-six tab-full">
+			<h5>Profile</h5>
+
+			<ul class="info-list">
+   				<li>
+   					<strong>Fullname:</strong>
+   					<span>Sireesha Basamsetty</span>
+   				</li>
+   				<li>
+   					<strong>Birth Date:</strong>
+   					<span>April 18, 1994</span>
+   				</li>
+   				<li>
+   					<strong>Job:</strong>
+   					<span>Front-End developer, Android developer</span>
+   				</li>
+   				<li>
+   					<strong>Website:</strong>
+   					<span>www.sireesha.me</span>
+   				</li>
+   				<li>
+   					<strong>Email:</strong>
+   					<span>sireesha.uic@gmail.com</span>
+   				</li>
+   				<li>
+   					<strong>Linkedin:</strong>
+   					<span><a target="_blank" href="https://www.linkedin.com/in/sireeshab/">linkedin.com/in/sireeshab</a></span>
+   				</li>
+   				<li>
+   					<strong>Github:</strong>
+   					<span><a target="_blank" href="https://www.github.com/sireesha1231">github.com/sireesha1231</a></span>
+   				</li>
+
+   			</ul> <!-- /info-list -->
+	</div>
+
+   		<div class="col-six tab-full">
+				 <h5>Skills</h5>
+		<p style="text-align: justify;text-justify: inter-word;">I possess the below mentioned skills with their corresponding level of proficiency.</p>
+
+		<ul class="skill-bars">
+				   <li>
+				   	<div class="progress percent90"><span>90%</span></div>
+				   	<strong>HTML, CSS, JavaScript, Bootstrap</strong>
+				   </li>
+				   <li>
+				   	<div class="progress percent90"><span>90%</span></div>
+				   	<strong>SQL, MySQL,SQLite</strong>
+				   </li>
+				   <li>
+				   	<div class="progress percent70"><span>70%</span></div>
+				   	<strong>React.js, Angular</strong>
+				   </li>
+				   <li>
+				   	<div class="progress percent80"><span>80%</span></div>
+				   	<strong>node, npm, Webpack, Babel</strong>
+					 </li>
+					<li>
+				   	<div class="progress percent75"><span>75%</span></div>
+				   	<strong>Java</strong>
+				   </li>
+				   <li>
+				   	<div class="progress percent90"><span>90%</span></div>
+				   	<strong>GitHub, Git</strong>
+				   </li>
+      
+				</ul>	
+    	</div>
+
+		 </div>
+		</section>
+
+<section id="resume" class="grey-section">
+<div class="row section-intro">
+	<div class="col-twelve">
+		<div class="row resume-timeline">
+   		<div class="col-twelve resume-header">
+
+   			<h2>Work Experience</h2>
+
+   		</div> <!-- /resume-header -->
+
+   		<div class="col-twelve">
+
+   			<div class="timeline-wrap">
+
+   				<div class="timeline-block">
+
+	   				<div class="timeline-ico">
+	   					<i class="fa fa-briefcase"></i>
+	   				</div>
+
+	   				<div class="timeline-header">
+	   					<h3>Android Developer</h3>
+	   					<p>May 2014 - July 2014</p>
+	   				</div>
+
+	   				<div class="timeline-content">
+	   					<h3><strong>Air India</strong></h3>
+	   					<p >
+	   						<ul style="text-align: justify;text-justify: inter-word;">
+									<li></li>
+									<li style="text-align: justify;text-justify: inter-word; color:black;">Lead of the first Android development team in the Engineering department at Air India.</li>
+	   							<li style="text-align: justify;text-justify: inter-word; color:black;">Developed applications - Worldwide office information, Emergency contact information, Cargo tracker and Flight schedule.</li>
+	   							<li style="text-align: justify;text-justify: inter-word; color:black;">Designed the Android activity layouts and the database using Java, XML and SQLite3 database.</li>
+									<li style="text-align: justify;text-justify: inter-word; color:black;">Utilized SOAP web service to read and parse data in JSON/XML and display webserver messages in activity.</li>
+									<li style="text-align: justify;text-justify: inter-word; color:black;">Integrated all four applications into a single running application.</li>
+	   						</ul>
+	   					</p>
+	   				</div>
+
+	   			</div> <!-- /timeline-block -->
+
+   			</div> <!-- /timeline-wrap -->   			
+
+   		</div> <!-- /col-twelve -->
+   		
+   	</div> <!-- /resume-timeline -->
+   	
+   	<div class="row resume-timeline">
+
+   		<div class="col-twelve resume-header">
+
+   			<h2>Education</h2>
+
+   		</div> <!-- /resume-header -->
+
+   		<div class="col-twelve">
+
+   			<div class="timeline-wrap">
+
+   				<div class="timeline-block">
+
+	   				<div class="timeline-ico">
+	   					<i class="fa fa-graduation-cap"></i>
+	   				</div>
+
+	   				<div class="timeline-header">
+	   					<h3>MS Degree</h3>
+	   					<p>August 2015 - May 2017</p>
+	   				</div>
+
+	   				<div class="timeline-content">
+	   					<h4><strong>University of Illinois at Chicago</strong></h4>
+								<p style="text-align: justify;text-justify: inter-word; color:black;"><strong>Courses completed:</strong></p>
+								<li style="text-align: justify;text-justify: inter-word;color:black;">Algorithms</li>
+								<li style="text-align: justify;text-justify: inter-word;color:black;">Building Secure Systems</li>
+								<li style="text-align: justify;text-justify: inter-word;color:black;">Object Oriented Languages and Environments</li>
+								<li style="text-align: justify;text-justify: inter-word;color:black;">Introduction to Data Science</li>
+								<li style="text-align: justify;text-justify: inter-word;color:black;">Software Engineering</li>
+								<li style="text-align: justify;text-justify: inter-word;color:black;">Formal Methods in Distributed and Concurrent Systems</li>
+								<li style="text-align: justify;text-justify: inter-word;color:black;">Applied Artificial Intelligence</li>
+								<li style="text-align: justify;text-justify: inter-word;color:black;">Human Computer Interaction</li>
+								<li style="text-align: justify;text-justify: inter-word;color:black;">Database Management Systems</li>
+								<li style="text-align: justify;text-justify: inter-word;color:black;">Advanced Database Management Systems</li>
+	   				</div>
+
+	   			</div> <!-- /timeline-block -->
+
+	   			<div class="timeline-block">
+
+	   				<div class="timeline-ico">
+	   					<i class="fa fa-graduation-cap"></i>
+	   				</div>
+
+	   				<div class="timeline-header">
+	   					<h3>B.Tech Degree</h3>
+	   					<p>August 2011 - May 2015</p>
+	   				</div>
+
+	   				<div class="timeline-content">
+	   					<h4><strong>MPSTME, NMIMS University</strong></h4>
+	   				<p style="text-align: justify;text-justify: inter-word;color:black;"><strong>Courses completed:</strong></p>
+								<li style="text-align: justify;text-justify: inter-word;color:black;">Algorithms</li>
+								<li style="text-align: justify;text-justify: inter-word;color:black;">Computer Programming</li>
+								<li style="text-align: justify;text-justify: inter-word;color:black;">Data Structures</li>
+								<li style="text-align: justify;text-justify: inter-word;color:black;">Fundamentals of Web Technologies</li>
+								<li style="text-align: justify;text-justify: inter-word;color:black;">Software Engineering</li>
+								<li style="text-align: justify;text-justify: inter-word;color:black;">Mobile Application Development</li>
+								<li style="text-align: justify;text-justify: inter-word;color:black;">Artificial Intelligence</li>
+								<li style="text-align: justify;text-justify: inter-word;color:black;">Image Processing</li>
+								<li style="text-align: justify;text-justify: inter-word;color:black;">Database Management Systems</li>
+								<li style="text-align: justify;text-justify: inter-word;color:black;">Theory of Computer Science</li>
+	   				</div>
+
+	   			</div> <!-- /timeline-block -->
+
+   			</div> <!-- /timeline-wrap -->   			
+   		</div> <!-- /col-twelve -->
+   		
+   	</div> <!-- /resume-timeline -->
+		
+	</section> <!-- /features -->
 
 
-
-
-
-
-<div id="work">
-        <div class="container">
-          <h4>Projects</h4>
-
+<section id="work">
+  <div class="row section-intro">
+   	<div class="col-twelve">
+      <h5>Projects</h5>
+			<h3>Check out some of my projects.</h3>
+		</div>
+	</div>
 					<section class="project-showcase">
             <div class="row">
               <div class="six columns u-pull-right">
@@ -430,74 +419,48 @@
             </div>
           </section>
           
-        </div>
-      </div>
+</section>
 
+<!-- footer
+   ================================================== -->
 
-<div class="content work" id="intern">
-  <div class="container">
-    <h4>Work Experience</h4>
-    <p>
-    	<strong>
-    		Android Developer Intern
-    		<span>
-    			(May 2014 - July 2014)
-    		</span>
-    	</strong>
-    </p>
-    <p>
-    	<span>
-			<strong>
-    		Air India Pvt. Ltd
-			</strong>
-    	</span>
-    </p>
-	<p align="justify">Lead of the first Android development team in the Engineering department at Air India.</p>
-	<p align="justify">Developed applications - Worldwide office information, Emergency contact information, Cargo tracker and Flight schedule.
-	</p>
-	<p align="justify">Designed the Android activity layouts and the database using Java, XML and SQLite3 database.
-	</p>
-	<p align="justify">Utilized SOAP web service to read and parse data in JSON/XML and display webserver messages in activity.
-	</p>
-	<p align="justify">Integrated all four applications into a single running application.
-	</p>
+   <footer>
+     	<div class="row">
 
-  </div>
-</div>
+     		<div class="col-six tab-full pull-right social">
 
-<div class="content achievements" id="achievements">
-  <div class="container">
-    <h4>Achievements</h4>
-    <ul>
-    	<li>Received certification for the Android application development competition conducted by IIT Bombay.
-    	</li>
-    	<li>Association for Computing Machinery (ACM) – Member.
-    	</li>
-    	<li>Full Stack Web Development Certification(Udemy).
-    	</li>
-    	<li>Distinction in levels 1, 2, 3 and 4 of the Piano Examinations conducted by the London College of Music (LCM Examinations), West London, UK.
-    	</li>
-    </ul>
-  </div>
-</div>
+     			<ul class="footer-social">        
+			     <li><a href="https://www.linkedin.com/in/sireeshab/"><i class="fa fa-linkedin"></i></a></li>        
+		         <li><a href="https://www.facebook.com/sireesha.basamsetty"><i class="fa fa-facebook"></i></a></li>
+		         <li><a href="https://www.github.com/sireesha1231/"><i class="fa fa-github"></i></a></li>
+			   </ul> 
+	      		
+	      </div>
 
-<footer class="contact" id="contact">
-  <div class="container">
-    <h5>Check out my public profiles</h5>
-    <div class="footer-icons">
-      <a href="https://www.facebook.com/sireesha.basamsetty"><i class="fa fa-facebook"></i></a>
-      <a href="https://github.com/sireesha1231"><i class="fa fa-github"></i></a>
-      <a href="https://www.linkedin.com/in/sireesha-basamsetty-47120890"><i class="fa fa-linkedin"></i></a>
-    </div>
-  </div>
-</footer>
+      	<div class="col-six tab-full">
+	      	<div class="copyright">
+		        	<span>© Copyright Sireesha Basamsetty 2016.</span>	         	
+		         </div>		                  
+	      	</div>
 
+	      	<div id="go-top">
+		         <a class="smoothscroll" title="Back to Top" href="#top"><i class="fa fa-long-arrow-up"></i></a>
+		      </div>
+
+      	</div> <!-- /row -->     	
+   </footer>  
+
+   <!-- Java Script
+	 ================================================== --> 
+	 
   <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
   <script src='http://cdnjs.cloudflare.com/ajax/libs/wow/0.1.12/wow.min.js'></script>
   <script src='js/smooth-scroll.min.js'></script>
   <script src="interactive-resume.js"></script>
-  <script>
-    smoothScroll.init();
-  </script>
+   <script src="js/jquery-2.1.3.min.js"></script>
+   <script src="js/plugins.js"></script>
+   <script src="js/main.js"></script>
+
 </body>
+
 </html>
