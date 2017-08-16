@@ -35,8 +35,6 @@
 	line-height: 1;
 }
 
-
-
 #project1 {
   height: 230px;
   width: 230px;
@@ -192,7 +190,6 @@ a:hover {
   justify-content: center;
 }
  
-
 .hero h1, h2  {
   font-family: 'Roboto Slab', sans-serif;
   font-weight: 700;
@@ -248,23 +245,28 @@ a:hover {
   transition: opacity .25s ease;
   background-color: #000;
 }
+
 .button_container:hover {
   opacity: .7;
 }
+
 .button_container.active .top {
   -webkit-transform: translateY(11px) translateX(0) rotate(45deg);
           transform: translateY(11px) translateX(0) rotate(45deg);
   background: #FFCE00;
 }
+
 .button_container.active .middle {
   opacity: 0;
   background: #FFCE00;
 }
+
 .button_container.active .bottom {
   -webkit-transform: translateY(-11px) translateX(0) rotate(-45deg);
           transform: translateY(-11px) translateX(0) rotate(-45deg);
   background: #FFCE00;
 }
+
 .button_container span {
   background: #FFCE00;
   border: 1px solid black;
@@ -282,6 +284,7 @@ a:hover {
 .button_container span:nth-of-type(2) {
   top: 11px;
 }
+
 .button_container span:nth-of-type(3) {
   top: 22px;
 }
@@ -300,29 +303,35 @@ a:hover {
   overflow: hidden;
   z-index: 1;
 }
+
 .overlay.open {
   opacity: .9;
   visibility: visible;
   height: 100%;
 }
+
 .overlay.open li {
   -webkit-animation: fadeInUp .5s ease forwards;
           animation: fadeInUp .5s ease forwards;
   -webkit-animation-delay: .35s;
           animation-delay: .35s;
 }
+
 .overlay.open li:nth-of-type(2) {
   -webkit-animation-delay: .4s;
           animation-delay: .4s;
 }
+
 .overlay.open li:nth-of-type(3) {
   -webkit-animation-delay: .45s;
           animation-delay: .45s;
 }
+
 .overlay.open li:nth-of-type(4) {
   -webkit-animation-delay: .50s;
           animation-delay: .50s;
 }
+
 .overlay nav {
   position: relative;
   height: 70%;
@@ -444,75 +453,74 @@ span.top,span.middle,span.bottom  {
   text-transform:uppercase;
   }
   
-  .project-showcase .project-content .project-tags:before 
-  {
-  list-style: none;
-  margin-right:4px;
-  color:#FDCD3B;
-  font-size:1.5rem;
-  }
-  
-  .project-showcase .project-content .project-tags li
-  {
-    display:inline;
-    }
-  
-  .project-showcase .project-content .project-tags li:last-child:after
-  {
-    content:"";
-    }
-  
-  .project-showcase .project-content .project-tags li:after{
-    content:",";
-    }
-    
- .project-showcase a.button{
-   margin:10px 0 20px;
-   border: 1px solid black;
-	font-size: 1.2rem;
-   font-family: 'Roboto Slab', sans-serif;
- }
- 
- @media screen and (min-width: 750px){
-.project-showcase{
-  padding:80px 0 20px;
-  }
-  }
-  
-  @media screen and (min-width: 550px){
-  .project-showcase .project-content{
-    text-align:left;
-    }
-    }
-    
-  @media screen and (min-width: 750px){
-  .project-showcase .project-content{
-    margin:0;
-    }
-    }
-  
-  @media screen and (min-width: 750px)
-  {
-    .project-showcase .project-content.text-left{
-      padding-right:7.0rem;
-      }
-  
-  .project-showcase .project-content.text-right{
-    padding-left:7.0rem;
-    }
-  }
-    
-  @media screen and (min-width: 1000px){
-    .project-showcase .project-content .project-title{
-      font-size:2.8rem;
-      }
-      }
+.project-showcase .project-content .project-tags:before {
+list-style: none;
+margin-right:4px;
+color:#FDCD3B;
+font-size:1.5rem;
+}
 
-  @media screen and (min-width: 750px){
-    .project-showcase a.button{
-      margin:10px 0 60px;
-    }
-    }
+.project-showcase .project-content .project-tags li
+{
+display:inline;
+}
+
+.project-showcase .project-content .project-tags li:last-child:after
+{
+content:"";
+}
+
+.project-showcase .project-content .project-tags li:after{
+content:",";
+}
+
+.project-showcase a.button{
+margin:10px 0 20px;
+border: 1px solid black;
+font-size: 1.2rem;
+font-family: 'Roboto Slab', sans-serif;
+}
+
+@media screen and (min-width: 750px){
+.project-showcase{
+padding:80px 0 20px;
+}
+}
+
+@media screen and (min-width: 550px){
+.project-showcase .project-content{
+text-align:left;
+}
+}
+
+@media screen and (min-width: 750px){
+.project-showcase .project-content{
+margin:0;
+}
+}
+
+@media screen and (min-width: 750px)
+{
+.project-showcase .project-content.text-left{
+	padding-right:7.0rem;
+	}
+
+.project-showcase .project-content.text-right{
+padding-left:7.0rem;
+}
+}
+
+@media screen and (min-width: 1000px){
+.project-showcase .project-content .project-title{
+	font-size:2.8rem;
+	}
+	}
+
+@media screen and (min-width: 750px){
+.project-showcase a.button{
+	margin:10px 0 60px;
+}
+}
 
 .six.columns{
   width:48%;
