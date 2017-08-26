@@ -78,7 +78,7 @@
 }
 
 p {
-	font-size: 1.8rem;
+  font-size: 1.8rem;
   font-family: 'Roboto Slab', sans-serif;
   font-weight: 200;
 }
@@ -179,34 +179,6 @@ a:hover {
   cursor: pointer;
 }
 
-.hero  {
-  height: 100vh;
-  background-color: rgba(0, 0, 0, 0.7);
-  color: white;
-  text-align: center;
-  z-index: 9999;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
- 
-.hero h1, h2  {
-  font-family: 'Roboto Slab', sans-serif;
-  font-weight: 700;
-}
-
-.hero-content {
-  -webkit-animation: fadeInUp .75s ease forwards;
-          animation: fadeInUp .75s ease forwards;
-  -webkit-animation-delay: .15s;
-          animation-delay: .15s;
-}
-
-.hero h2  {
-  font-size: 26px;
-  font-family: 'Roboto Slab', sans-serif;
-}
-
 @-webkit-keyframes fadeInRight {
   0% {
     opacity: 0;
@@ -221,15 +193,6 @@ a:hover {
 .intro  {
   padding-top: 100px;
   padding-bottom: 100px;
-  font-family: 'Roboto Slab', sans-serif;
-}
-
-.contact  {
-  padding-top: 40px;
-  padding-bottom: 40px;
-  background-color: #111111;
-  color: white;
-  text-align: center;
   font-family: 'Roboto Slab', sans-serif;
 }
 
@@ -724,7 +687,7 @@ a:hover, a:focus, a:active {
  */
 
 h1, h2 {
-  font-family: "Roboto-semibold", sans-serif;
+  	font-family: "Roboto-semibold", sans-serif;
 	color: #fff;
 	font-style: normal;
 	text-rendering: optimizeLegibility;
@@ -734,7 +697,6 @@ h1, h2 {
 h3, h4, h5, h6, .h01, .h02, .h03, .h04, .h05, .h06 {
 	font-family: "Roboto", sans-serif;
 	color: #313131;
-	font-style: normal;
 	text-rendering: optimizeLegibility;
 	margin-bottom: 2.1rem;
 }
@@ -769,10 +731,9 @@ h4, .h04 {
 	line-height: 1.765;
 }
 h5, .h05 {
-	font-size: 1.4rem;
+	font-size: 2rem;
 	line-height: 1.714;
 	text-transform: uppercase;
-	letter-spacing: .15rem;
 }
 h6, .h06 {
 	font-size: 1.3rem;
@@ -1612,7 +1573,8 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 }
 .section-intro h5 {
 	color: #FDCD3B;
-	font-size: 1.6rem;
+	font-size: 2rem;
+	font-weight: 600;
 	line-height: 1.875;
 	margin-bottom: 0.3rem;
 	letter-spacing: .4rem;
@@ -1694,143 +1656,6 @@ header .logo a {
 }
 
 /**
- * menu toggle - (_layout.css)
- * ------------------------------------------------------------------- 
- */
-.menu-toggle {
-	float: left;
-	width: 40px;
-	height: 40px;
-	margin-left: 20px;
-	margin-top: 13px;
-	display: block;
-	position: relative;
-}
-.menu-toggle span {
-	display: block;
-	background-color: #FDCD3B;
-	width: 24px;
-	height: 3px;
-	margin-top: -1.5px;
-	font: 0/0 a;
-	text-shadow: none;
-	color: transparent;
-	position: absolute;
-	right: 8px;
-	top: 50%;
-	bottom: auto;
-	left: auto;
-	-moz-transition: background 0.2s ease-in-out;
-	-o-transition: background 0.2s ease-in-out;
-	-webkit-transition: background 0.2s ease-in-out;
-	-ms-transition: background 0.2s ease-in-out;
-	transition: background 0.2s ease-in-out;
-}
-.menu-toggle span::before, .menu-toggle span::after {
-	content: '';
-	width: 100%;
-	height: 100%;
-	background-color: inherit;
-	position: absolute;
-	left: 0;
-	-moz-transition-duration: 0.2s, 0.2s;
-	-o-transition-duration: 0.2s, 0.2s;
-	-webkit-transition-duration: 0.2s, 0.2s;
-	-ms-transition-duration: 0.2s, 0.2s;
-	transition-duration: 0.2s, 0.2s;
-	-moz-transition-delay: 0.2s, 0s;
-	-o-transition-delay: 0.2s, 0s;
-	-webkit-transition-delay: 0.2s, 0s;
-	-ms-transition-delay: 0.2s, 0s;
-	transition-delay: 0.2s, 0s;
-}
-.menu-toggle span::before {
-	top: -8px;
-	-moz-transition-property: top, transform;
-	-o-transition-property: top, transform;
-	-webkit-transition-property: top, transform;
-	-ms-transition-property: top, transform;
-	transition-property: top, transform;
-}
-.menu-toggle span::after {
-	bottom: -8px;
-	-moz-transition-property: bottom, transform;
-	-o-transition-property: bottom, transform;
-	-webkit-transition-property: bottom, transform;
-	-ms-transition-property: bottom, transform;
-	transition-property: bottom, transform;
-}
-
-/* is clicked */
-.menu-toggle.is-clicked span {
-	background-color: rgba(255, 0, 119, 0);
-}
-.menu-toggle.is-clicked span::before, .menu-toggle.is-clicked span::after {
-	background-color: #FDCD3B;
-	-moz-transition-delay: 0s, 0.2s;
-	-o-transition-delay: 0s, 0.2s;
-	-webkit-transition-delay: 0s, 0.2s;
-	-ms-transition-delay: 0s, 0.2s;
-	transition-delay: 0s, 0.2s;
-}
-.menu-toggle.is-clicked span::before {
-	top: 0;
-	-webkit-transform: rotate(45deg);
-	-ms-transform: rotate(45deg);
-	transform: rotate(45deg);
-}
-.menu-toggle.is-clicked span::after {
-	bottom: 0;
-	-webkit-transform: rotate(-45deg);
-	-ms-transform: rotate(-45deg);
-	transform: rotate(-45deg);
-}
-
-/* navigation panel */
-#main-nav-wrap {
-	display: block;
-	width: 100%;
-	font-family: 'Roboto Slab', sans-serif;
-	font-size: 1.5rem;
-	position: absolute;
-	top: 100%;
-	left: 0;
-}
-
-/* dropdown nav */
-.main-navigation {
-	background: #000000;
-	padding: 24px 30px 42px;
-	margin: 0;
-	width: 100%;
-	height: auto;
-	clear: both;
-	display: none;
-}
-.main-navigation > li {
-	display: block;
-	height: auto;
-	text-align: left;
-	padding: 0;
-}
-.main-navigation li a {
-	display: block;
-	color: #FFFFFF;
-	width: auto;
-	padding: 15px 0;
-	line-height: 16px;
-	border: none;
-}
-.main-navigation li a:hover {
-	color: #FDCD3B;
-	padding-left: 1rem;
-}
-.main-navigation li.current > a {
-	background: none;
-	color: #FDCD3B;
-}
-
-/**
  * responsive:
  * header styles
  * --------------------------------------------------------------- 
@@ -1908,7 +1733,7 @@ header .logo a {
 }
 .intro-content h5 {
 	color: #FDCD3B;
-	font-family: "poppins-bold", sans-serif;
+	font-family: 'Roboto Slab', sans-serif;
 	font-size: 2.3rem;
 	line-height: 1.565;
 	margin-bottom: 0;
@@ -2068,23 +1893,6 @@ header .logo a {
 	margin-bottom: 3rem;
 }
 
-.intro-info {
-	margin-top: 4.2rem;
-	margin-right: -30px;
-	margin-left: -30px;
-}
-.intro-info img {
-	height: 9rem;
-	width: 9rem;
-	border-radius: 50%;
-	margin: .9rem 0 0 0;
-	float: left;
-}
-.intro-info .lead {
-	text-align: left;
-	padding-left: 13rem;
-}
-
 .about-content {
 	position: relative;
 	text-align: left;
@@ -2124,16 +1932,6 @@ header .logo a {
 	margin-top: 6rem;
 }
 
-.button-section {
-	text-align: center;
-}
-.button-section .button {
-	width: 250px;
-}
-.button-section [class*="col-"] .button:first-child {
-	margin-right: 4rem;
-}
-
 /**
  * responsive:
  * about
@@ -2159,13 +1957,7 @@ header .logo a {
 	.about-content .info-list, .about-content .skill-bars {
 		margin-bottom: 4.2rem;
 	}
-	.button-section .button {
-		width: 100%;
-		margin-bottom: 3rem;
-	}
-	.button-section [class*="col-"] .button:first-child {
-		margin-right: 0;
-	}
+
 }
 @media only screen and (max-width:600px) {
 	.intro-info {
@@ -2352,138 +2144,6 @@ header .logo a {
 	}
 }
 
-
-/** 
- * ===================================================================
- * 13. portfolio - (_layout.scss)
- *
- * ------------------------------------------------------------------- 
- */
-#portfolio {
-	background: #FFFFFF;
-	padding-top: 12rem;
-	padding-bottom: 12rem;
-}
-#portfolio .folio-item {
-	padding: 0;
-	position: relative;
-	overflow: hidden;
-}
-#portfolio .folio-item img {
-	vertical-align: middle;
-	-moz-transition: all 0.5s ease-in-out;
-	-o-transition: all 0.5s ease-in-out;
-	-webkit-transition: all 0.5s ease-in-out;
-	-ms-transition: all 0.5s ease-in-out;
-	transition: all 0.5s ease-in-out;
-}
-
-#portfolio .overlay {
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-	background: transparent;
-	-moz-transition: all 0.5s ease-in-out;
-	-o-transition: all 0.5s ease-in-out;
-	-webkit-transition: all 0.5s ease-in-out;
-	-ms-transition: all 0.5s ease-in-out;
-	transition: all 0.5s ease-in-out;
-}
-
-#portfolio .folio-item-table {
-	display: table;
-	width: 100%;
-	height: 100%;
-}
-#portfolio .folio-item-cell {
-	display: table-cell;
-	vertical-align: middle;
-	text-align: center;
-	-moz-transition: all 0.5s ease-in-out;
-	-o-transition: all 0.5s ease-in-out;
-	-webkit-transition: all 0.5s ease-in-out;
-	-ms-transition: all 0.5s ease-in-out;
-	transition: all 0.5s ease-in-out;
-	position: relative;
-	left: -100%;
-}
-
-#portfolio .folio-title {
-	color: #FFFFFF;
-	font-size: 3.3rem;
-	padding: 0 3rem;
-	margin-bottom: 0;
-}
-#portfolio .folio-types {
-	margin: 0;
-	padding: 0;
-	text-transform: uppercase;
-	font-family: "poppins-regular", sans-serif;
-	font-size: 1.2rem;
-	letter-spacing: .1rem;
-	color: rgba(255, 255, 255, 0.6);
-}
-#portfolio .folio-item:hover .overlay {
-	background: rgba(0, 0, 0, 0.8);
-}
-#portfolio .folio-item:hover .folio-item-cell {
-	left: 0;
-}
-#portfolio .folio-item:hover img {
-	-webkit-transform: scale(1.05);
-	-ms-transform: scale(1.05);
-	transform: scale(1.05);
-}
-
-/**
- * responsive:
- * portfolio
- * ------------------------------------------------------------------- 
- */
-@media only screen and (max-width:1024px) {
-	#portfolio .folio-title {
-		font-size: 3.1rem;
-	}
-}
-@media only screen and (max-width:768px) {
-	#portfolio .folio-title {
-		font-size: 2.5rem;
-	}
-}
-@media only screen and (max-width:400px) {
-	#portfolio .folio-title {
-		font-size: 2.2rem;
-	}
-}
-
-/** 
- * ===================================================================
- * 15. services - (_layout.scss)
- *
- * ------------------------------------------------------------------- 
- */
-#services {
-	background: #313131 url(../images/bg.jpg) no-repeat center;
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	background-size: cover;
-	padding-top: 12rem;
-	padding-bottom: 12rem;
-	color: white;
-	position: relative;
-}
-#services .overlay {
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-	background: #151515;
-	opacity: .9;
-}
-
 #work .section-intro {
   background-color: #fff;
 }
@@ -2491,48 +2151,9 @@ header .logo a {
    background-color: #fff;
 }
 
-#services .section-intro {
-	margin-bottom: 1.8rem;
-}
-
-#services .section-intro h1 {
-	color: white;
-}
-#services .section-intro h5 {
-	color: #FDCD3B;
-}
-#services .section-intro p {
-	color: rgba(255, 255, 255, 0.7);
-}
-.services-content {
-	max-width: 1200px;
-}
-.services-list {
-	margin-top: 1.2rem;
-	text-align: center;
-}
-.services-list .service {
-	margin-bottom: 1.2rem;
-	padding: 0 30px;
-}
-.services-list .icon {
-	display: inline-block;
-	margin-bottom: 2.1rem;
-}
-.services-list .icon i {
-	font-size: 5.4rem;
-	color: #FDCD3B;
-}
-.services-list h3 {
-	color: #FFFFFF;
-}
-.services-list .desc {
-	color: rgba(255, 255, 255, 0.6);
-}
-
 /** 
  * ===================================================================
- * 18. footer - (_layout.scss)
+ * footer - (_layout.scss)
  *
  * ------------------------------------------------------------------- 
  */
