@@ -1,0 +1,130 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Roadmap to Founder Success &raquo; StartUp Port</title>
+        <style>
+            @import url('https://fonts.googleapis.com/css?family=Overlock');
+        </style>
+        <link href="https://fonts.googleapis.com/css?family=Overlock" rel="stylesheet">
+		<link rel = "stylesheet" type="text/css" media = "screen" href = "css/screen.css">
+		<!-- Latest compiled and minified CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	</head>
+
+	<body>
+
+		<div id = "page">
+            
+        <nav class = "navbar navbar-fixed-top">
+                <a class = "logo" title = "" src="logo.png" href = "index.html"></a>
+                <ul>
+                    <li>
+                        <a title = "Home" href = "index.html">Home</a>
+                    </li>
+                    <li>
+                        <a title = "Blog" href = "blog.html">Blog</a>
+                    </li>
+                    <li>
+                        <a title = "About Us" href = "about-us.html">About Us</a>
+                    </li>
+                </ul>
+
+            </nav>
+
+            <h1 style = "color: #000;font-weight: 700; text-align: center;margin-top: 120px;font-family: 'Overlock', cursive;">Collaboration is the Key: From Advisors to Banks…</h1>
+            <hr style = "border-top: 4px solid #BF1E2E;width: 70%;">
+
+            <section class = "startup-links-2">
+                <aside>
+                    <input type='button' class = "button" onclick="location.href = 'collaboration.html'" value='Collaboration is the Key'/>
+                </aside>
+                <aside>
+                    <input type='button' class = "button" onclick="location.href = 'for-partners.html'" value='For Partners & Affiliates'/>
+                </aside> 
+                <aside>
+                    <input type='button' class = "button" onclick="location.href = 'sponsors-copy.html'" value='Sponsors'/>
+                </aside>  
+                <aside>
+                    <input type='button' class = "button" onclick="location.href = 'affiliates-partners.html'" value='Affiliates & Partners'/>
+                </aside>
+            </section> 
+
+            <section class = "collaboration">
+                <div id = "box">
+                        <h3>ADVISORS</h3>
+                        <p>Looking for co-founders to support you? Looking to hire your first key participant/employees? Need for an interim C Level support? Need to build out your sales and marketing strategy? Need to further develop your product? Have specific support needs outside of your skillset? We have a tremendous network of outstanding talent from the trenches (having created, launched, operated and exited their businesses) whom we can introduce and embed in your team to help you succeed.</p>
+                </div>
+               
+
+                <div id = "box">
+                        <h3>FUNDING</h3>
+                        <p>Startup Port can assist founders with fundraising needs by tapping its extensive private network of investors. Since we are intimately involved with our startups our network of investors know that we have a skin in the game! Instead of haphazard pitching to investors you don’t even know who can perform (we have seen Angel investors putting up $5K and claiming to be investors…) our approach is to help founders focus their funding targets for better terms, better deals, and better results.</p>
+                </div>
+               
+
+                <div id = "box">
+                        <h3>LAW FIRMS</h3>
+                        <p>Most startup ecosystems have startup-focused law firms providing targeted support for founders. Chicago is blessed to have some of the best and most practical legal talents in the Nation.  Startup Port works closely with some of the best in town from large corporations with hundreds of partners to individual boutique firms. Contact us today for a local introduction to a law firm that can work with your startup at a fraction of the cost of working with others!</p>
+                </div>
+               
+
+                <div id = "box">
+                        <h3>BANKS</h3>
+                        <p>Fund raising is not limited to Angel and institutional Investors. We have helped startups with revenue traction access several banking options to improve their fast track to success. Regardless of the state and cycle of your enterprise we can introduce you to a bank that has funding options designed with startups in mind.</p>
+                </div>
+               
+            </section>
+
+            <section class = "back-to-fs">
+                <a title = "Back to Startup Ecosystem" href = "resources.html"><- Back to Startup Ecosystem</a>
+            </section>
+
+			<footer>
+					
+				<img src = "images/skyline.jpg">	 
+				<p>Copyright 2008-2017<p>
+				<p>Protected by Copyscape Do not copy content from this site. All rights reserved.</p>
+				<p><a href = "disclaimers.html">Disclaimers</a></p>
+				
+			</footer>    
+            <a href="#0" class="cd-top">Top</a>
+
+            <script>
+                jQuery(document).ready(function($){
+                    // browser window scroll (in pixels) after which the "back to top" link is shown
+                    var offset = 300,
+                        //browser window scroll (in pixels) after which the "back to top" link opacity is reduced
+                        offset_opacity = 1200,
+                        //duration of the top scrolling animation (in ms)
+                        scroll_top_duration = 700,
+                        //grab the "back to top" link
+                        $back_to_top = $('.cd-top');
+        
+                    //hide or show the "back to top" link
+                    $(window).scroll(function(){
+                        ( $(this).scrollTop() > offset ) ? $back_to_top.addClass('cd-is-visible') : $back_to_top.removeClass('cd-is-visible cd-fade-out');
+                        if( $(this).scrollTop() > offset_opacity ) { 
+                            $back_to_top.addClass('cd-fade-out');
+                        }
+                    });
+        
+                    //smooth scroll to top
+                    $back_to_top.on('click', function(event){
+                        event.preventDefault();
+                        $('body,html').animate({
+                            scrollTop: 0 ,
+                            }, scroll_top_duration
+                        );
+                    });
+        
+                });
+            </script>
+
+		</div>
+
+	</body>
+</html>

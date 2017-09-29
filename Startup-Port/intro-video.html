@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en" class="no-js">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Overlock');
+
+        .big {
+            font-size: 3em;
+        }
+    </style>
+    <link rel="stylesheet" href = "https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Overlock" rel="stylesheet">
+	<link rel="stylesheet" href="css/screen.css"> <!-- CSS reset -->
+  	
+	<title>Video - Animated Intro Section | CodyHouse</title>
+</head>
+<body>
+
+    <div class="wrapper">
+        
+        <h1>Coffee</h1>
+        <p>In the past year, did you spend more on coffee than you invested in your retirement?<br></br>As a point of reference, the average American spends about $1,100 a year on coffee.<br></br><span class="big">41.29%</span><br></br>Admit to spending more on coffee in the past year than they invested in their retirement. A silver lining for Acorn users: when they get their caffeine fix, their spare change gets invested, thanks to Round-Ups.</p>
+        <video src="assets/video.mp4" autoplay loop></video>
+    
+    </div>
+
+    <script>
+    
+        $('.count').each(function () {
+        $(this).prop('Counter',0).animate({
+            Counter: $(this).text()
+        }, {
+            duration: 5000,
+            easing: 'swing',
+            step: function (now) {
+                $(this).text(Math.ceil(now));
+            }
+        });
+    });
+
+    </script>
+</body>
+</html>

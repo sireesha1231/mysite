@@ -1,0 +1,370 @@
+<?php
+if($_POST["message"]) {
+    mail("sireesha.uic@gmail.com", "SPRINT 90 Program Application", $_POST["message"], "From: info@startup-port.com");
+}
+?>
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Roadmap to Founder Success &raquo; StartUp Port</title>
+        <style>
+            @import url('https://fonts.googleapis.com/css?family=Overlock');
+        </style>
+        <link href="https://fonts.googleapis.com/css?family=Overlock" rel="stylesheet">
+        <link rel = "stylesheet" type="text/css" media = "screen" href = "css/screen.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+        
+		<!-- Latest compiled and minified CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	</head>
+
+	<body>
+
+		<div id = "page">
+            
+        <nav class = "navbar navbar-fixed-top">
+                <a class = "logo" title = "" src="logo.png" href = "index.html"></a>
+                <ul>
+                    <li>
+                        <a title = "Home" href = "index.html">Home</a>
+                    </li>
+                    <li>
+                        <a title = "Blog" href = "blog.html">Blog</a>
+                    </li>
+                    <li>
+                        <a title = "About Us" href = "about-us.html">About Us</a>
+                    </li>
+                </ul>
+
+            </nav>
+
+            <h1 style = "color: #000;font-weight: 700;margin-top: 120px;text-align: center;font-family: 'Overlock', cursive;">Sprint 90 Program: Apply Here</h1>
+            <hr style = "border-top: 4px solid #BF1E2E;width: 30%;">
+
+            <div class="modal-wrap">
+                    <div class="modal-header"><span class="is-active"></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div>
+                    <div class="modal-bodies">
+                      <div class="modal-body modal-body-step-1 is-showing">
+                        <div class="title">Founder Applicant</div>
+
+                        <form method="post" action="form-sprint90.php">
+                        <div class="description">* 1. Contact Information</div>
+                          <input type="text" placeholder="Name"/>
+                          <input type="text" placeholder="Phone"/>
+                          <input type="email" placeholder="Email"/>
+                          <input type="text" placeholder="City/State"/>
+                          <input type="text" placeholder="Company Name"/>
+                          <input type="text" placeholder="Website"/>
+                        
+                          <div class="description">* 2. Mission: Please provide your 2-4 sentence elevator pitch:</div>
+                          <input type="text"/>
+
+                          <div class="description">* 3. History, including accomplishments to date</div>
+                          <input type="text"/>
+
+                          <div class="description">* 4. Please describe any current or previous involvement with an incubator/accelerator/coworking space,
+                                including benefits, outcomes, challenges, etc:</div>
+                          <input type="text"/>
+
+                          <div class="text-center">
+                            <div class="button">Next</div>
+                          </div>
+                        </form>
+                      </div>
+
+                      <div class="modal-body modal-body-step-2">
+                        <div class="title">Product(s)/Services</div>
+                        <form method="post" action="form-sprint90.php">
+                            <div class="description"><strong>Please share some information about your solution</strong></div>
+                            <div class="description">* 5. Type:</div>
+                            <input type="checkbox" name="type" id = "saas"/>
+                            <label for="saas">Application (SAAS)</label>
+                            <br>
+                            <input type="checkbox" name="type" id="Service"/>  
+                            <label for="Service">Service</label>                          
+                             <br>
+                            <input type="checkbox" name="type" id="Product"/>
+                            <label for="Product">Product</label> 
+                            
+                            
+                          <div class="description">Other (please specify)</div>
+                          <input type="text"/>
+
+                          <div class="description">* 6. Description of Product/Service:</div>
+                          <input type="text"/>
+
+                          <div class="description">* 7. Do you have ownership rights, patents, IP?
+                            </div>
+                          <input type="text"/>
+
+                          <div class="description">* 8. Current Development Stage-including timing of, and process to get to commercialization                                
+                            </div>
+                            <input type="checkbox" name="type" id = "Conceptual"/>
+                            <label for="Conceptual">Conceptual only</label>
+                            <br>
+                            <input type="checkbox" name="type" id="Prototype"/>  
+                            <label for="Prototype">Prototype
+                                </label>                          
+                             <br>
+                            <input type="checkbox" name="type" id="MVP"/>
+                            <label for="MVP">MVP
+                                </label> 
+                            <br>
+                            <input type="checkbox" name="type" id="Commercialized"/>
+                            <label for="Commercialized">Commercialized    
+                                </label> 
+
+                            <div class="description">Describe timing of, and process to get to commercialization/monetization:                            
+                            </div>
+                            <input type="text"/> 
+                            
+                         <div class="text-center fade-in">
+                            <div class="button">Next</div>
+                          </div>
+                        </form>
+                      </div>
+
+                      <div class="modal-body modal-body-step-3">
+                        <div class="title">Market</div>
+                        <form method="post" action="form-sprint90.php">
+                            <div class="description"><strong>Share some information about the market you will be addressing.</strong></div>
+                            <div class="description">* 9. Define your market and its size:</div>
+                            <input type="text"/> 
+
+                            <div class="description">* 10. What is the problem or need that you address?</div>
+                            <input type="text"/> 
+
+                            <div class="description">* 11. How does the customer currently address the need?
+                                </div>
+                            <input type="text"/> 
+
+                            <div class="description">* 12. Quantify why your product/solution is better:                                
+                                </div>
+                            <input type="text"/> 
+                            
+                            <div class="text-center">
+                            <div class="button">Next</div>
+                            </div>
+                        </form>
+                      </div>
+                      <div class="modal-body modal-body-step-4">
+                        <div class="title">Sales/distribution plan
+                            </div>
+                        <form method="post" action="form-sprint90.php">
+                            <div class="description"><strong>Tell us how you will get new customers.</strong></div>
+                            <div class="description">* 13. How will you reach new customers?</div>
+                            <input type="text"/> 
+
+                            <div class="description">* 14. Is there anything unique or special required to convert/attract customers?</div>
+                            <input type="text"/> 
+
+                            <div class="description">* 15. Do you know your customer acquisition cost? If so, what is it?                                
+                                </div>
+                            <input type="text"/> 
+
+                            <div class="text-center">
+                                <div class="button">Next
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-body modal-body-step-5">
+                        <div class="title">Revenue and traction                                
+                            </div>
+                        <form method="post" action="form-sprint90.php">
+                            <div class="description">* 16. What is your current stage of user/revenue traction:</div>
+                        
+                            <label>
+                                <input type="radio" name="radio"/>Pre-revenue
+                            </label>
+                            <br>
+                            <label>
+                                <input type="radio" name="radio" id="radio2"/>Beta testing                            
+                            </label>
+                            <br>
+                            <label>
+                                <input type="radio" name="radio" id="radio3"/>Free with a growing user base                                
+                            </label>
+                            <br>
+                            <label>
+                                <input type="radio" name="radio" id="radio4"/>Early adopter paying customers                                
+                            </label>
+                            <br>
+                            <label>
+                                <input type="radio" name="radio" id="radio5"/>Growing paid customer base                            
+                            </label>
+
+                        <div class="description">Others(please specify)</div>
+                        <input type="text"/> 
+                        <div class="description">* 17. What is your primary revenue model?                                
+                            </div>
+                            <label>
+                                <input type="radio" name="radio6"/>One time sale                                
+                            </label>
+                            <br>
+                            <label>
+                                <input type="radio" name="radio" id="radio7"/>Monthly recurring sale
+                            </label>
+                            <br>
+                            <label>
+                                <input type="radio" name="radio" id="radio8"/>Annual recurring sale                                
+                            </label>
+
+                        <div class="description">Others(please specify)</div>
+                        <input type="text"/> 
+
+                        <div class="description">* 18. What is the estimated lifetime $ value of a single customer?</div>
+                        <input type="text"/> 
+
+                        <div class="text-center">
+                            <div class="button">Next
+                            </div>
+                        </div>
+                    </form>
+                    </div>
+                    <div class="modal-body modal-body-step-6">
+                        <div class="title">Competition
+                            </div>
+                        <form method="post" action="form-sprint90.php">
+                        <div class="description">* 19. Who are your competitors?</div>
+                        <input type="text"/> 
+
+                        <div class="description">* 20. What are your competitive market differentiators and barriers to entry?</div>
+                        <input type="text"/> 
+
+                        <div class="text-center">
+                            <div class="button">Next
+                            </div>
+                        </div>
+                        </form>
+                    </div>
+                    <div class="modal-body modal-body-step-7">
+                        <div class="title">Management                                
+                            </div>
+                        <form method="post" action="form-sprint90.php">
+                        <div class="description"><strong>Share some details about your experience.</strong></div>
+                        <div class="description">* 21. Experience of Founder, advisors and senior management, including previous start-ups, and any
+                                previous experience working together:
+                                </div>
+                        <input type="text"/> 
+
+                        <div class="description">* 22. Domain knowledge within your solution/industry:
+                            </div>
+                        <input type="text"/> 
+
+                        <div class="text-center">
+                            <div class="button">Next
+                            </div>
+                        </div>
+                        </form>
+                    </div>
+                    <div class="modal-body modal-body-step-8">
+                        <div class="title">Funding                                
+                            </div>
+                        <form method="post" action="form-sprint90.php">
+                        <div class="description">* 23. Founder’s investment to date and any other investment(s) taken to date - please provide a fully-diluted
+                                capitalization table (i.e., including options, warrants, and debt)                                
+                                </div>
+                        <input type="text"/> 
+
+                        <div class="description">* 24. Interest in buy-out exits listing possible acquisition companies:                                
+                            </div>
+                        <input type="text"/> 
+
+                        <div class="description">* 25. Have you made an investor’s pitch in the past? (If so, please summarize results.)                                
+                            </div>
+                        <input type="text"/> 
+
+                        <div class="description">* 26. What are the funding needs for this round?                                
+                            </div>
+                        <input type="text"/>
+
+                        <div class="description">* 27. Describe expected use of the funds and burn rate:                                
+                            </div>
+                        <input type="text"/>
+
+                        <div class="description">* 28. What are your expectations for subsequent rounds?                                
+                            </div>
+                        <input type="text"/>
+
+                        <div class="description">* 29. Explain the ROI expectations for investors: How will investors make money investing in you?                                
+                            </div>
+                        <input type="text"/>
+
+                        <div class="text-center">
+                            <div class="button">Next
+                            </div>
+                        </div>
+                        </form>
+                    </div>
+
+                    <div class="modal-body modal-body-step-9">
+                        <div class="title">Conclusion                                
+                            </div>
+                        <form method="post" action="form-sprint90.php">
+                        <div class="description">* 30. Expectations you have in working with the Cultivator team – a group of experienced business
+                                people/entrepreneurs who invest time, expertise and money in promising startups                                
+                                </div>
+                        <input type="text"/> 
+                        <div class="text-center">
+                            <div class="button">Submit</div>
+                        </div> 
+                        </form> 
+                    </div>                    
+                </div>
+            </div>
+            <div class="text-center">
+                <div class="rerun-button">Submit</div>
+            </div> 
+
+			<footer>
+					
+				<img src = "images/skyline.jpg">	 
+				<p>Copyright 2008-2017<p>
+				<p>Protected by Copyscape Do not copy content from this site. All rights reserved.</p>
+				<p><a href = "disclaimers.html">Disclaimers</a></p>
+				
+			</footer>  
+
+            <a href="#0" class="cd-top">Top</a>
+            
+            <script src="js/index.js"></script>
+            <script>
+                jQuery(document).ready(function($){
+                    // browser window scroll (in pixels) after which the "back to top" link is shown
+                    var offset = 300,
+                        //browser window scroll (in pixels) after which the "back to top" link opacity is reduced
+                        offset_opacity = 1200,
+                        //duration of the top scrolling animation (in ms)
+                        scroll_top_duration = 700,
+                        //grab the "back to top" link
+                        $back_to_top = $('.cd-top');
+        
+                    //hide or show the "back to top" link
+                    $(window).scroll(function(){
+                        ( $(this).scrollTop() > offset ) ? $back_to_top.addClass('cd-is-visible') : $back_to_top.removeClass('cd-is-visible cd-fade-out');
+                        if( $(this).scrollTop() > offset_opacity ) { 
+                            $back_to_top.addClass('cd-fade-out');
+                        }
+                    });
+        
+                    //smooth scroll to top
+                    $back_to_top.on('click', function(event){
+                        event.preventDefault();
+                        $('body,html').animate({
+                            scrollTop: 0 ,
+                            }, scroll_top_duration
+                        );
+                    });
+        
+                });
+            </script>
+
+		</div>
+
+	</body>
+</html>
