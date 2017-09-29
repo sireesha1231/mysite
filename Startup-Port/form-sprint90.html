@@ -43,29 +43,30 @@
             <div class="modal-wrap">
                     <div class="modal-header"><span class="is-active"></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div>
                     <div class="modal-bodies">
-                    <form action="MAILTO:sireesha.uic@gmail.com" method="post" enctype="text/plain">
+                    <form id = "contact-form" action="https://formspree.io/sireesha.uic@gmail.com"
+                    method="POST">
                       
                         <div class="modal-body modal-body-step-1 is-showing">
                         <div class="title">Founder Applicant</div>
 
 
                         <div class="description">* 1. Contact Information</div>
-                          <input type="text" placeholder="Name"/>
-                          <input type="text" placeholder="Phone"/>
-                          <input type="email" placeholder="Email"/>
-                          <input type="text" placeholder="City/State"/>
-                          <input type="text" placeholder="Company Name"/>
-                          <input type="text" placeholder="Website"/>
+                          <input id = "name" name = "name" type="text" placeholder="Name"/>
+                          <input id = "phone" name = "phone"  type="text" placeholder="Phone"/>
+                          <input id = "email" name = "email"  type="email" placeholder="Email"/>
+                          <input id = "city" name = "city"  type="text" placeholder="City/State"/>
+                          <input id = "company" name = "company"  type="text" placeholder="Company Name"/>
+                          <input id = "website" name = "website"  type="text" placeholder="Website"/>
                         
                           <div class="description">* 2. Mission: Please provide your 2-4 sentence elevator pitch:</div>
-                          <input type="text"/>
+                          <input id = "mission" name = "mission"  type="text"/>
 
                           <div class="description">* 3. History, including accomplishments to date</div>
-                          <input type="text"/>
+                          <input id = "history" name = "history"  type="text"/>
 
                           <div class="description">* 4. Please describe any current or previous involvement with an incubator/accelerator/coworking space,
                                 including benefits, outcomes, challenges, etc:</div>
-                          <input type="text"/>
+                          <input id = "involvement" name = "involvement"  type="text"/>
 
                           <div class="text-center">
                             <div class="button">Next</div>
@@ -77,46 +78,46 @@
                         <div class="title">Product(s)/Services</div>
                             <div class="description"><strong>Please share some information about your solution</strong></div>
                             <div class="description">* 5. Type:</div>
-                            <input type="checkbox" name="type" id = "saas"/>
+                            <input type="checkbox" name="type1" id = "saas"/>
                             <label for="saas">Application (SAAS)</label>
                             <br>
-                            <input type="checkbox" name="type" id="Service"/>  
+                            <input type="checkbox" name="type2" id="Service"/>  
                             <label for="Service">Service</label>                          
                              <br>
-                            <input type="checkbox" name="type" id="Product"/>
+                            <input type="checkbox" name="type3" id="Product"/>
                             <label for="Product">Product</label> 
                             
                             
                           <div class="description">Other (please specify)</div>
-                          <input type="text"/>
+                          <input id = "type-other"  name = "type-other" type="text"/>
 
                           <div class="description">* 6. Description of Product/Service:</div>
-                          <input type="text"/>
+                          <input id = "desc"  name = "desc" type="text"/>
 
                           <div class="description">* 7. Do you have ownership rights, patents, IP?
                             </div>
-                          <input type="text"/>
+                          <input id = "patent" name = "patent"  type="text"/>
 
                           <div class="description">* 8. Current Development Stage-including timing of, and process to get to commercialization                                
                             </div>
-                            <input type="checkbox" name="type" id = "Conceptual"/>
+                            <input type="checkbox" name="type4" id = "Conceptual"/>
                             <label for="Conceptual">Conceptual only</label>
                             <br>
-                            <input type="checkbox" name="type" id="Prototype"/>  
+                            <input type="checkbox" name="type5" id="Prototype"/>  
                             <label for="Prototype">Prototype
                                 </label>                          
                              <br>
-                            <input type="checkbox" name="type" id="MVP"/>
+                            <input type="checkbox" name="type6" id="MVP"/>
                             <label for="MVP">MVP
                                 </label> 
                             <br>
-                            <input type="checkbox" name="type" id="Commercialized"/>
+                            <input type="checkbox" name="type7" id="Commercialized"/>
                             <label for="Commercialized">Commercialized    
                                 </label> 
 
                             <div class="description">Describe timing of, and process to get to commercialization/monetization:                            
                             </div>
-                            <input type="text"/> 
+                            <input id = "timing"  name = "timing" type="text"/> 
                             
                          <div class="text-center fade-in">
                             <div class="button">Next</div>
@@ -129,18 +130,18 @@
                         
                             <div class="description"><strong>Share some information about the market you will be addressing.</strong></div>
                             <div class="description">* 9. Define your market and its size:</div>
-                            <input type="text"/> 
+                            <input id = "market" name = "market"  type="text"/> 
 
                             <div class="description">* 10. What is the problem or need that you address?</div>
-                            <input type="text"/> 
+                            <input id = "problem" name = "problem"  type="text"/> 
 
                             <div class="description">* 11. How does the customer currently address the need?
                                 </div>
-                            <input type="text"/> 
+                            <input id = "need" name = "need"  type="text"/> 
 
                             <div class="description">* 12. Quantify why your product/solution is better:                                
                                 </div>
-                            <input type="text"/> 
+                            <input id = "quantify" name = "quantify"  type="text"/> 
                             
                             <div class="text-center">
                             <div class="button">Next</div>
@@ -153,14 +154,14 @@
                       
                             <div class="description"><strong>Tell us how you will get new customers.</strong></div>
                             <div class="description">* 13. How will you reach new customers?</div>
-                            <input type="text"/> 
+                            <input id = "reach" name = "reach"  type="text"/> 
 
                             <div class="description">* 14. Is there anything unique or special required to convert/attract customers?</div>
-                            <input type="text"/> 
+                            <input id = "attract" name = "attract"  type="text"/> 
 
                             <div class="description">* 15. Do you know your customer acquisition cost? If so, what is it?                                
                                 </div>
-                            <input type="text"/> 
+                            <input id = "acq" name = "acq"  type="text"/> 
 
                             <div class="text-center">
                                 <div class="button">Next
@@ -175,7 +176,7 @@
                             <div class="description">* 16. What is your current stage of user/revenue traction:</div>
                         
                             <label>
-                                <input type="radio" name="radio"/>Pre-revenue
+                                <input type="radio" name="radio" id="radio1"/>Pre-revenue
                             </label>
                             <br>
                             <label>
@@ -195,11 +196,11 @@
                             </label>
 
                         <div class="description">Others(please specify)</div>
-                        <input type="text"/> 
+                        <input  name = "revenue-other"  id = "revenue-other" type="text"/> 
                         <div class="description">* 17. What is your primary revenue model?                                
                             </div>
                             <label>
-                                <input type="radio" name="radio6"/>One time sale                                
+                                <input type="radio" name="radio6" id="radio6"/>One time sale                                
                             </label>
                             <br>
                             <label>
@@ -211,10 +212,10 @@
                             </label>
 
                         <div class="description">Others(please specify)</div>
-                        <input type="text"/> 
+                        <input  name = "rev-mod-other"  id = "rev-mod-other" type="text"/> 
 
                         <div class="description">* 18. What is the estimated lifetime $ value of a single customer?</div>
-                        <input type="text"/> 
+                        <input id="lifetime"  name = "lifetime" type="text"/> 
 
                         <div class="text-center">
                             <div class="button">Next
@@ -227,10 +228,10 @@
                             </div>
                    
                         <div class="description">* 19. Who are your competitors?</div>
-                        <input type="text"/> 
+                        <input id="competitors" name = "competitors" type="text"/> 
 
                         <div class="description">* 20. What are your competitive market differentiators and barriers to entry?</div>
-                        <input type="text"/> 
+                        <input id="entry"  name = "entry" type="text"/> 
 
                         <div class="text-center">
                             <div class="button">Next
@@ -246,11 +247,11 @@
                         <div class="description">* 21. Experience of Founder, advisors and senior management, including previous start-ups, and any
                                 previous experience working together:
                                 </div>
-                        <input type="text"/> 
+                        <input id="exp"  name = "exp" type="text"/> 
 
                         <div class="description">* 22. Domain knowledge within your solution/industry:
                             </div>
-                        <input type="text"/> 
+                        <input id="domain"  name = "domain" type="text"/> 
 
                         <div class="text-center">
                             <div class="button">Next
@@ -265,31 +266,31 @@
                         <div class="description">* 23. Founder’s investment to date and any other investment(s) taken to date - please provide a fully-diluted
                                 capitalization table (i.e., including options, warrants, and debt)                                
                                 </div>
-                        <input type="text"/> 
+                        <input id="debt" name = "debt" type="text"/> 
 
                         <div class="description">* 24. Interest in buy-out exits listing possible acquisition companies:                                
                             </div>
-                        <input type="text"/> 
+                        <input id="buy-out" name = "buy-out"  type="text"/> 
 
                         <div class="description">* 25. Have you made an investor’s pitch in the past? (If so, please summarize results.)                                
                             </div>
-                        <input type="text"/> 
+                        <input id="pitch" name = "pitch"  type="text"/> 
 
                         <div class="description">* 26. What are the funding needs for this round?                                
                             </div>
-                        <input type="text"/>
+                        <input id="fundings" name = "fundings"  type="text"/>
 
                         <div class="description">* 27. Describe expected use of the funds and burn rate:                                
                             </div>
-                        <input type="text"/>
+                        <input id="burn" name = "burn"  type="text"/>
 
                         <div class="description">* 28. What are your expectations for subsequent rounds?                                
                             </div>
-                        <input type="text"/>
+                        <input id="subsequent" name = "subsequent"  type="text"/>
 
                         <div class="description">* 29. Explain the ROI expectations for investors: How will investors make money investing in you?                                
                             </div>
-                        <input type="text"/>
+                        <input id="roi" name = "roi"  type="text"/>
 
                         <div class="text-center">
                             <div class="button">Next
@@ -304,9 +305,9 @@
                         <div class="description">* 30. Expectations you have in working with the Cultivator team – a group of experienced business
                                 people/entrepreneurs who invest time, expertise and money in promising startups                                
                                 </div>
-                        <input type="text"/> 
+                        <input id="expectations"  name = "expectations" type="text"/> 
                         <div class="text-center">
-                            <div class="button">Submit</div>
+                            <input type="submit" value="Send">
                         </div> 
  
                     </div> 
@@ -329,6 +330,33 @@
             <a href="#0" class="cd-top">Top</a>
             
             <script src="js/index.js"></script>
+            <script>
+            
+            $('#contact-form').submit(function(e) {
+                    var email, phone, name, city, company, website;
+                    name = document.getElementById('name');
+                    email = document.getElementById('email');
+                    phone = document.getElementById('phone');
+                    city = document.getElementById('city');
+                    company = document.getElementById('company');
+                    website = document.getElementById('website');
+
+                    if (!name.value || !email.value || !phone.value || !city.value || !website.value || !company.value) {
+                      alertify.error('Please check your entries');
+                    } else {
+                      $.ajax({
+                        method: 'POST',
+                        url: '//formspree.io/sireesha.uic@gmail.com',
+                        data: $(this).serialize(),
+                        datatype: 'json'
+                      });
+                      e.preventDefault();
+                      $(this).get(0).reset();
+                      return alertify.success('Message sent');
+                    }
+                  });
+            
+            </script>
             <script>
                 jQuery(document).ready(function($){
                     // browser window scroll (in pixels) after which the "back to top" link is shown
