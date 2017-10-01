@@ -1018,7 +1018,7 @@ section.where-to-find aside div#connect p a i {
 
 nav {
     background-color: #FFF;
-    position: absolute;
+    position: relative;
     top: 0px;
     left: 0px;
     padding: 20px 0 10px 80px;
