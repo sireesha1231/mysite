@@ -8,6 +8,7 @@
             @import url('https://fonts.googleapis.com/css?family=Overlock');
         </style>
         <link href="https://fonts.googleapis.com/css?family=Overlock" rel="stylesheet">
+        <link rel="stylesheet" href="bower_components/aos/dist/aos.css">
 		<link rel = "stylesheet" type="text/css" media = "screen" href = "css/screen.css">
 		<!-- Latest compiled and minified CSS -->
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
@@ -26,6 +27,10 @@
                 document.getElementById('about-us').style.fontFamily = "Overlock, cursive";
                 document.getElementById('about-us').innerHTML = '<h1 style = "color: #0F75BC;"><strong>Our Vision and Our Mission</strong></h1> <h3><strong>Our Vision</strong></h3> <p>We see a startup world evolving at an exponential pace, filled with technological wonders that improve and enhance everyone’s lives. We want to help entrepreneurs and founders adapt and keep pace with this incredible change.</p> <h3><strong>Our Mission</strong></h3> <p>Our mission is to help our clients manage the accelerating pace of change by identifying emerging technologies, proposing implications and offering solutions that create value and growth.</p> <h3><strong>Strategic and Tactical Advisory</strong></h3> <p>We offer deep knowledge subject matter expertise and strategic council. The majority of businesses that reach out are early stage and either need help with overall business strategy or creating a sales and marketing plan to scale revenue.  Startup Port and its team can come on as advisors to help set the proper winning strategy.</p> <h3><strong>Design & Solutions</strong></h3> <p>We provide insights in Designing, Developing and Deploying end-to-end technology solutions. Our fast track “Sprint 90” program de-risk and speed-up many facets of the design reaction lag time which is a detriment for quick sales traction. Our proprietary program creates a road map that accelerates design and implementation time.</p> <h3><strong>Execution</strong></h3> <p>The strategy is in place but you don’t have the resources to hire an executive or executive to hire the right team, create budgets and processes to execute the “plan”. In line with the growing national trend of outsourcing executives, Startup Port matter experts can step in as interim executive or sales leader to set up processes, budgets and build a winning team. Startup Port can help with everything that an early stage company hasn’t figured out yet.</p> <h3><strong>Capital</strong></h3> <p>Some Startup Port clients do need to raise capital. They’re figuring out how to grow their companies, and need connections to possible sources of capital or investment. Startup Port makes few direct investments, sometimes passing along a viable startup to other funds, in which they may be an investor. Most of the time, we connect viable startups to the best suited investors from a network of hundreds in Chicago and across the United States.</p>';
             }
+        </script>
+        <script src="bower_components/aos/dist/aos.js"></script>
+        <script>
+            AOS.init();
         </script>
 	</head>
 
@@ -62,7 +67,7 @@
         </section> 
 
 
-        <section id = "about-us">
+        <section id = "about-us" data-aos="fadeIn" data-aos-duration="3000" data-aos-delay="200">
             <h1>About US</h1>
             <p>Since 2008, the partners of Startup Port have been helping entrepreneurs and founders build great businesses. The firm’s partners have deep operating and startup experience, collectively having founded multiple companies and provided executive leadership to many.</p>
             <p>The founding team brings together deep expertise in investment finance and decades of experience in new product research & development to solve for the central business challenge to every business, risk. Their risk mitigation and management efforts have helped a number of companies to tactically address strategic risks of critical importance with executive actions that preserve ALL invested forms of capital (time, trust, intellectual and financial).</p>
@@ -89,6 +94,7 @@
 
         <a href="#0" class="cd-top">Top</a>
 
+        <script src = "js/script.js"></script>
         <script>
 			jQuery(document).ready(function($){
 				// browser window scroll (in pixels) after which the "back to top" link is shown

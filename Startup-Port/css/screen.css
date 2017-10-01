@@ -305,7 +305,7 @@ section.parts-1 {
     margin: 0;
     padding: 60px;
     text-align: center;
-    background-color: #EAEAEA;
+    background-color: #FFF;
 }
 
 section.parts-1 h2 {
@@ -652,7 +652,7 @@ section.container2 .photo-grid h3 {
 /* Section - For-Startups */
 
 section.for-startups {
-    background-color: #EAEAEA;
+    background-color: #FFF;
     background-size: cover; 
     margin: 0;
     padding: 60px;
@@ -962,7 +962,7 @@ section.join-us a:hover {
 section.where-to-find {
     margin: 0;
     padding: 30px;
-    background-color: #EAEAEA;
+    background-color: #FFF;
     position: relative;
 }
 
@@ -1237,7 +1237,7 @@ section#about-us {
     margin: 80px 150px 80px 150px;
     padding: 80px;
     box-shadow: 0 0 20px #999;
-    background-color: #EAEAEA;
+    background-color: #FFF;
 }
 
 section#about-us h1 {
@@ -1686,17 +1686,16 @@ section.programs aside img {
 }
 
 section.programs aside#programs-left {
-    padding: 80px;
+    padding: 0 80px 80px 80px;
     height: 1000px;
 }
 
 section.programs aside#programs-right {
-    padding: 80px;
+    padding: 0 80px 80px 80px;
     height: 1000px;
 }
 
 section.programs aside#programs-left h1 {
-    margin-top: 90px;
     color: #000;
     font-weight: 700;
     font-family: 'Overlock', cursive;
@@ -1906,7 +1905,6 @@ section.startup-links-2 aside .button:hover {
 section.startup-links-2-p {
     padding: 20px;
     text-align: center;
-    border-bottom: 2px solid #000;
 }
 
 section.startup-links-2-p aside {
@@ -1930,7 +1928,7 @@ section.startup-links-2-p aside .button {
 }
 
 section.startup-links-2-p aside .button:hover {
-    color: #BF1E2E;
+    color: #0F75BC;
 }
 
 section.startup-top {
@@ -2166,7 +2164,7 @@ section.a-f a:hover {
 
 section.sprint {
     margin: 0 150px 0 150px;
-    padding: 80px;
+    padding: 0 80px 80px 80px;
     text-align: justify;
 }
 

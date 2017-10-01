@@ -1,0 +1,21 @@
+{
+  "name": "Startup-Port",
+  "homepage": "https://github.com/sireesha1231/mysite",
+  "authors": [
+    "Sireesha Basamsetty <sireesha1994@gmail.com>"
+  ],
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "aos": "^2.2.0"
+  }
+}
