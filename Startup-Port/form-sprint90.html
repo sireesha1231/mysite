@@ -149,8 +149,8 @@
 
 <body>
 
-    <form id="msform" action="//formspree.io/sireesha.uic@gmail.com"
-    method="POST">
+    <form action="https://formspree.io/sireesha.uic@gmail.com"
+    method="POST" id="msform">
         <!-- progressbar -->
         <ul id="progressbar">
           <li class="active">Founder Applicant</li>
@@ -168,22 +168,22 @@
           <h2 class="fs-title">Founder Applicant</h2>
 
           <h3 class="fs-subtitle">* 1. Contact Information</h3>
-          <input id = "name" name = "name" type="text" placeholder="Name"/>
-          <input id = "phone" name = "phone"  type="text" placeholder="Phone"/>
-          <input id = "email" name = "email"  type="email" placeholder="Email"/>
-          <input id = "city" name = "city"  type="text" placeholder="City/State"/>
-          <input id = "company" name = "company"  type="text" placeholder="Company Name"/>
-          <input id = "website" name = "website"  type="text" placeholder="Website"/>
+          <input name = "name" type="text" placeholder="Name"/>
+          <input name = "phone"  type="text" placeholder="Phone"/>
+          <input name = "email"  type="email" placeholder="Email"/>
+          <input name = "city"  type="text" placeholder="City/State"/>
+          <input name = "company"  type="text" placeholder="Company Name"/>
+          <input name = "website"  type="text" placeholder="Website"/>
 
           <h3 class="fs-subtitle">* 2. Mission: Please provide your 2-4 sentence elevator pitch:</h3>
-          <input id = "mission" name = "mission"  type="text"/>
+          <input name = "mission"  type="text"/>
 
           <h3 class="fs-subtitle">* 3. History, including accomplishments to date</h3>
-          <input id = "history" name = "history"  type="text"/>
+          <input name = "history"  type="text"/>
 
           <h3 class="fs-subtitle">* 4. Please describe any current or previous involvement with an incubator/accelerator/coworking space,
             including benefits, outcomes, challenges, etc:</h3>
-          <input id = "involvement" name = "involvement"  type="text"/>
+          <input name = "involvement"  type="text"/>
 
           <input type="button" name="next" class="next action-button" value="Next" />
 
@@ -195,23 +195,23 @@
         
           <h3 class="fs-subtitle">* 5. Type:</h3>
 
-          <input type="checkbox" name="type1" id = "saas"/>
+          <input type="checkbox" name="type1=saas"/>
           <label for="saas">Application (SAAS)</label>
           <br>
-          <input type="checkbox" name="type2" id="Service"/>  
+          <input type="checkbox" name="type2=Service"/>  
           <label for="Service">Service</label>                          
            <br>
-          <input type="checkbox" name="type3" id="Product"/>
+          <input type="checkbox" name="type3=Product"/>
           <label for="Product">Product</label> 
 
           <h3 class="fs-subtitle">Other (please specify)</h3>
-          <input id = "type-other"  name = "type-other" type="text"/>
+          <input name = "type-other" type="text"/>
 
           <h3 class="fs-subtitle">* 6. Description of Product/Service:</h3>
-          <input id = "desc"  name = "desc" type="text"/>
+          <input name = "desc" type="text"/>
 
           <h3 class="fs-subtitle">* 7. Do you have ownership rights, patents, IP?</h3>
-          <input id = "patent" name = "patent"  type="text"/>
+          <input name = "patent" type="text"/>
 
           <h3 class="fs-subtitle">* 8. Current Development Stage-including timing of, and process to get to commercialization</h3>
           <input type="checkbox" name="type4" id = "Conceptual"/>
@@ -383,7 +383,7 @@
         <input id = "expectations" name = "expectations"  type="text"/>
 
         <input type="button" name="previous" class="previous action-button" value="Previous" />
-        <input type="submit" name="submit" class="submit action-button" value="Submit" />
+        <input type="submit" value="Submit" />
         </fieldset>
 
       </form>
