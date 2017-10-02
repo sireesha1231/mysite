@@ -139,7 +139,7 @@
             content: none; 
         }
         /*marking active/completed steps green*/
-        /*The number of the step and the connector before it = green*/
+        /*The number of the step and the connector before it = blue*/
         #progressbar li.active:before,  #progressbar li.active:after{
             background: #0F75BC;
             color: white;
@@ -213,15 +213,14 @@
           <h3 class="fs-subtitle"><strong>Please share some information about your solution</strong></h3>
         
           <h3 class="fs-subtitle">* 5. Type:</h3>
-
-          <input type="checkbox" name="5. Product(s)/Services(type): Application (SAAS)" id = "saas"/>
-          <label for="saas">Application (SAAS)</label>
-          <br>
-          <input type="checkbox" name="5. Product(s)/Services(type): Service" id = "Service"/>  
-          <label for="Service">Service</label>                          
+           <input type="checkbox" name="5. Product(s)/Services(type): Application (SAAS)" id = "saas" value="Application (SAAS)"/>
+           <label for="saas">Subscribe to newsletter?</label>
            <br>
-          <input type="checkbox" name="5. Product(s)/Services(type): Product" id = "Product"/>
-          <label for="Product">Product</label> 
+          <input type="checkbox" name="5. Product(s)/Services(type): Service" id = "Service" value="Service"/>                        
+          <label for="Service">Subscribe to newsletter?</label> 
+          <br>
+           <input type="checkbox" name="5. Product(s)/Services(type): Product" id = "Product" value="Product"/>
+           <label for="Product">Subscribe to newsletter?</label>
 
           <h3 class="fs-subtitle">Other (please specify)</h3>
           <input name = "5. Product(s)/Services(type)- Other:" type="text"/>
@@ -233,18 +232,18 @@
           <input name = "7. Do you have ownership rights, patents, IP?" type="text"/>
 
           <h3 class="fs-subtitle">* 8. Current Development Stage-including timing of, and process to get to commercialization</h3>
-          <input type="checkbox" name="8. Current Development Stage-Conceptual Only" id = "Conceptual"/>
+          <input type="checkbox" name="8. Current Development Stage-Conceptual Only" id = "Conceptual" value="Conceptual Only"/>
           <label for="Conceptual">Conceptual only</label>
           <br>
-          <input type="checkbox" name="8. Current Development Stage-Prototype" id="Prototype"/>  
+          <input type="checkbox" name="8. Current Development Stage-Prototype" id="Prototype" value="Prototype"/>  
           <label for="Prototype">Prototype
           </label>                          
            <br>
-          <input type="checkbox" name="8. Current Development Stage-MVP" id="MVP"/>
+          <input type="checkbox" name="8. Current Development Stage-MVP" id="MVP" value="MVP"/>
           <label for="MVP">MVP
           </label> 
           <br>
-          <input type="checkbox" name="Current Development Stage-Commercialized" id="Commercialized"/>
+          <input type="checkbox" name="Current Development Stage-Commercialized" id="Commercialized" value="Commercialized"/>
           <label for="Commercialized">Commercialized    
           </label> 
           
@@ -295,23 +294,23 @@
         <h2 class="fs-title">Revenue and traction</h2>
         <h3 class="fs-subtitle">* 16. What is your current stage of user/revenue traction:</h3>
         <label for = "Pre-revenue">
-            <input type="radio" name="Current stage of user/revenue traction: Pre-revenue" id="Pre-revenue"/>Pre-revenue
+            <input type="radio" name="Current stage of user/revenue traction: Pre-revenue" id="Pre-revenue" value="Pre-revenue"/>Pre-revenue
         </label>
         <br>
         <label for = "Beta testing">
-            <input type="radio" name="Current stage of user/revenue traction: Beta testing" id="Beta testing"/>Beta testing                            
+            <input type="radio" name="Current stage of user/revenue traction: Beta testing" id="Beta testing" value="Beta testing"/>Beta testing                            
         </label>
         <br>
         <label for = "Free with a growing user base">
-            <input type="radio" name="Current stage of user/revenue traction: Free with a growing user base" id="Free with a growing user base"/>Free with a growing user base                                
+            <input type="radio" name="Current stage of user/revenue traction: Free with a growing user base" id="Free with a growing user base" value="Free with a growing user base"/>Free with a growing user base                                
         </label>
         <br>
         <label for = "Early adopter paying customers">
-            <input type="radio" name="Current stage of user/revenue traction: Early adopter paying customers" id="Early adopter paying customers"/>Early adopter paying customers                                
+            <input type="radio" name="Current stage of user/revenue traction: Early adopter paying customers" id="Early adopter paying customers" value="Early adopter paying customers"/>Early adopter paying customers                                
         </label>
         <br>
         <label for = "Growing paid customer base">
-            <input type="radio" name="Current stage of user/revenue traction: Growing paid customer base" id="Growing paid customer base"/>Growing paid customer base                            
+            <input type="radio" name="Current stage of user/revenue traction: Growing paid customer base" id="Growing paid customer base" value="Growing paid customer base"/>Growing paid customer base                            
         </label>
         
         <h3 class="fs-subtitle">Others(please specify)</h3>
@@ -319,15 +318,15 @@
 
         <h3 class="fs-subtitle">* 17. What is your primary revenue model?</h3>
         <label for = "One time sale">
-            <input type="radio" name="Primary revenue model?: One time sale" id="One time sale"/>One time sale                                
+            <input type="radio" name="Primary revenue model?: One time sale" id="One time sale" value=""/>One time sale                                
         </label>
         <br>
         <label for = "Monthly recurring sale">
-            <input type="radio" name="Primary revenue model?: Monthly recurring sale" id="Monthly recurring sale"/>Monthly recurring sale
+            <input type="radio" name="Primary revenue model?: Monthly recurring sale" id="Monthly recurring sale" value="Monthly recurring sale"/>Monthly recurring sale
         </label>
         <br>
         <label for = "Annual recurring sale">
-            <input type="radio" name="Primary revenue model?: Annual recurring sale" id="Annual recurring sale"/>Annual recurring sale                                
+            <input type="radio" name="Primary revenue model?: Annual recurring sale" id="Annual recurring sale" value="Annual recurring sale"/>Annual recurring sale                                
         </label>
 
         <h3 class="fs-subtitle">Others(please specify)</h3>

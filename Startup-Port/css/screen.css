@@ -2621,10 +2621,9 @@ section.founder-doc p {
   }
   
   input[type="checkbox"] {
-    padding: 10px 20px;
-    margin: 20px 120px 20px 120px !important;
     font-size: 1.4em;
     font-family: 'Overlock', cursive;
+    color: #000;
   }
 
   input[type="radio"] {
@@ -2632,12 +2631,12 @@ section.founder-doc p {
     margin: 20px 120px 20px 120px !important;
     font-size: 1.4em;
     font-family: 'Overlock', cursive;
+    color: #000;
   }
   
   label {
-    margin: 0 auto;
     font-size: 18px;
-    color: #FFF;
+    color: #000;
     cursor: pointer;
     font-family: 'Overlock', cursive;
   }
