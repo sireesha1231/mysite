@@ -351,7 +351,6 @@ section.parts-2.grid {
         rgba(15, 117, 188, 0.65)
       );
 	text-align: center;
-    cursor: pointer;
     width: 50%;
 }
 
@@ -1285,19 +1284,6 @@ section.about-links aside .button {
     font-family: 'Overlock', cursive;
 }
 
-section.about-links aside .button:visited {
-    color: #0F75BC;
-}
-
-section.about-links aside .button:hover {
-    color: #0F75BC;
-}
-
-section.about-links aside .button:active {
-    color: #0F75BC;
-}
-
-
 section#about-us aside {
     width: 50%;
     float: left;
@@ -1816,6 +1802,7 @@ section.kbase a:hover {
 
 section.kbase p {
     padding: 20px;
+    text-align: center;
 }
 
 /* Section - Collaboration */
@@ -2047,7 +2034,7 @@ section.partners-apply div#box{
 section.partners-apply h2 {
     font-family: 'Overlock', cursive;
     font-weight: 700;
-    color: #BF1E2E;
+    color: #0F75BC;
 }
 
 section.partners-apply p {
@@ -2092,7 +2079,7 @@ section.sponsors div#box {
 section.sponsors h2 {
     font-family: 'Overlock', cursive;
     font-weight: 700;
-    color: #BF1E2E;
+    color: #0F75BC;
 }
 
 section.sponsors a {
@@ -2130,7 +2117,7 @@ section.a-f div#box {
 section.a-f h2 {
     font-family: 'Overlock', cursive;
     font-weight: 700;
-    color: #BF1E2E;
+    color: #0F75BC;
 }
 
 section.a-f p {
