@@ -6,6 +6,17 @@
         <title>Roadmap to Founder Success &raquo; StartUp Port</title>
         <style>
             @import url('https://fonts.googleapis.com/css?family=Overlock');
+            .bk-btn {
+                height: 50px;
+                width: 100px;
+                background-color: #0F75BC;
+                margin-top: 90px;
+                color: #FFF;
+                font-size: 1.4em;
+                font-family: 'Overlock', cursive;
+              }
+            
+              
         </style>
         <link href="https://fonts.googleapis.com/css?family=Overlock" rel="stylesheet">
 		<link rel = "stylesheet" type="text/css" media = "screen" href = "css/screen.css">
@@ -14,7 +25,12 @@
         <link rel="stylesheet" href="bower_components/aos/dist/aos.css">
 		<script src="bower_components/aos/dist/aos.js"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <script>
+            function goBack() {
+                location.href = "index.html";
+            }
+        </script>
 	</head>
 
 	<body>
@@ -37,7 +53,11 @@
 
             </nav>
 
-            <h1 data-aos="fadeIn" data-aos-duration="2000" data-aos-delay="200"style = "color: #000;font-weight: 700;margin-top: 120px;text-align: center;font-family: 'Overlock', cursive;">How We Help</h1>
+            <button onclick="goBack()" class="bk-btn">
+                Back
+            </button>
+
+            <h1 data-aos="fadeIn" data-aos-duration="2000" data-aos-delay="200"style = "color: #000;font-weight: 700;text-align: center;font-family: 'Overlock', cursive;">How We Help</h1>
             <hr data-aos="fadeIn" data-aos-duration="2000" data-aos-delay="500" style = "border-top: 4px solid #BF1E2E;width: 30%;">
 
             <section class = "about-middle">

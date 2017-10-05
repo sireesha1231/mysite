@@ -1673,12 +1673,12 @@ section.programs aside img {
 
 section.programs aside#programs-left {
     padding: 0 80px 80px 80px;
-    height: 1000px;
+    height: 100%;
 }
 
 section.programs aside#programs-right {
     padding: 0 80px 80px 80px;
-    height: 1000px;
+    height: 100%;
 }
 
 section.programs aside#programs-left h1 {
@@ -1794,6 +1794,20 @@ section.kbase a {
     text-align: center;
 }
 
+section.kbase p a {
+    color: #BF1E2E; 
+    font-weight: 700;
+    background-color: transparent;
+    font-family: 'Overlock', cursive;
+    text-decoration: none;
+    padding: 0;
+    margin: 0;
+}
+
+section.kbase p a:hover {
+    border: none;
+}
+
 section.kbase a:hover {
     color: #0F75BC;
     background-color: #FFF;
@@ -1803,6 +1817,34 @@ section.kbase a:hover {
 section.kbase p {
     padding: 20px;
     text-align: center;
+}
+
+/* Section - con-a */
+
+div.con-a {
+    margin: 0;
+    padding: 0;
+}
+
+.con-a a {
+    text-decoration: none;
+    color: #FFF;
+    margin: 10px 50px 10px 50px;
+    padding: 10px 50px 10px 50px;
+    background-color: #0F75BC;
+    transition: background-color 0.5s;
+    border-radius: 30px;
+    font-weight: 700;
+    font-family: 'Overlock', cursive;
+    display: inline-block !important;
+    text-align: center;
+}
+
+.con-a a:hover {
+    color: #0F75BC;
+    background-color: #FFF;
+    border: 1px solid #0F75BC;
+    text-decoration: none;
 }
 
 /* Section - Collaboration */
