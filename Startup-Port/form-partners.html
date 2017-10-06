@@ -1,0 +1,404 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>PHP form to email sample form</title>
+    <style>
+    
+            /*custom font*/
+        @import url('https://fonts.googleapis.com/css?family=Overlock');
+
+        /*basic reset*/
+        * {margin: 0; padding: 0;}
+
+        html {
+            /*Image only BG fallback*/
+            
+            /*background = gradient + image pattern combo*/
+            background: 
+                linear-gradient(rgb(169, 169, 169), rgb(15, 117, 188)) no-repeat;
+        }
+
+        body {
+            font-family: 'Overlock', cursive;
+        }
+        /*form styles*/
+        #msform {
+            width: 1000px;
+            margin: 50px auto;
+            text-align: center;
+            position: relative;
+        }
+        #msform fieldset {
+            background: white;
+            border: 0 none;
+            border-radius: 3px;
+            box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.4);
+            padding: 20px 30px;
+            box-sizing: border-box;
+            width: 80%;
+            margin: 0 10%;
+            
+            /*stacking fieldsets above each other*/
+            position: relative;
+        }
+        /*Hide all except first fieldset*/
+        #msform fieldset:not(:first-of-type) {
+            display: none;
+        }
+        /*inputs*/
+        #msform input, #msform textarea {
+            padding: 15px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+            margin-bottom: 10px;
+            box-sizing: border-box;
+            font-family: montserrat;
+            color: #2C3E50;
+            font-size: 1.2em;
+            font-family: 'Overlock', cursive;
+        }
+        /*buttons*/
+        #msform .action-button {
+            width: 100px;
+            background: #0F75BC;
+            font-weight: bold;
+            color: white;
+            border: 0 none;
+            border-radius: 1px;
+            cursor: pointer;
+            padding: 10px 5px;
+            margin: 10px 5px;
+            font-family: 'Overlock', cursive;
+        }
+        #msform .action-button:hover, #msform .action-button:focus {
+            box-shadow: 0 0 0 2px white, 0 0 0 3px #0F75BC;
+        }
+        /*headings*/
+        .fs-title {
+            font-size: 1.6em;
+            text-transform: uppercase;
+            color: #2C3E50;
+            margin-bottom: 10px;
+            font-weight: 700;
+            font-family: 'Overlock', cursive;
+        }
+        .fs-subtitle {
+            font-weight: 700;
+            font-size: 1.4em;
+            color: #000;
+            margin-bottom: 20px;
+            font-family: 'Overlock', cursive;
+        }
+        /*progressbar*/
+        #progressbar {
+            margin-top: 70px;
+            margin-bottom: 30px;
+            overflow: hidden;
+            /*CSS counters to number the steps*/
+            counter-reset: step;
+        }
+        #progressbar li {
+            list-style-type: none;
+            color: #000;
+            font-size: 1em;
+            width: 11%;
+            float: left;
+            position: relative;
+        }
+        #progressbar li:before {
+            content: counter(step);
+            counter-increment: step;
+            width: 20px;
+            line-height: 20px;
+            display: block;
+            font-size: 1.2em;
+            color: #333;
+            background: white;
+            border-radius: 3px;
+            margin: 0 auto 5px auto;
+            border: 1px solid #000;
+        }
+        /*progressbar connectors*/
+        #progressbar li:after {
+            content: '';
+            width: 100%;
+            height: 2px;
+            background: white;
+            position: absolute;
+            left: -50%;
+            top: 9px;
+            border: 1px solid #000;
+            z-index: -1; /*put it behind the numbers*/
+        }
+        #progressbar li:first-child:after {
+            /*connector not needed before the first step*/
+            content: none; 
+        }
+        /*marking active/completed steps green*/
+        /*The number of the step and the connector before it = blue*/
+        #progressbar li.active:before,  #progressbar li.active:after{
+            background: #0F75BC;
+            color: white;
+        }
+   
+    </style>
+
+    <link rel="stylesheet" href = "https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Overlock" rel="stylesheet">
+    <link rel = "stylesheet" type="text/css" media = "screen" href = "css/screen.css">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="bower_components/aos/dist/aos.css">
+    <script src="bower_components/aos/dist/aos.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="js/modernizr.js"></script> <!-- Modernizr -->
+</head>
+
+<body>
+
+    <div id = "page">
+    <nav class = "navbar navbar-fixed-top">
+        <a class = "logo" title = "" src="logo.png" href = "index.html"></a>
+        <ul>
+            <li>
+                <a title = "Home" href = "index.html">Home</a>
+            </li>
+            <li>
+                <a title = "Blog" href = "blog.html">Blog</a>
+            </li>
+            <li>
+                <a title = "About Us" href = "about-us.html">About Us</a>
+            </li>
+        </ul>
+
+    </nav>
+
+    <div class = "form-p">
+        <h2 data-aos="fadeIn" data-aos-duration="2000" data-aos-delay="400" style = "color: #000;font-weight: 700; text-align: center;margin-top: 120px;font-family: 'Overlock', cursive;">Collaborate on a Startup Port Development</h2>
+        <hr data-aos="fadeIn" data-aos-duration="2000" data-aos-delay="500" style = "border-top: 4px solid #BF1E2E;width: 60%;margin-left: 20%;">
+        <p data-aos="fadeIn" data-aos-duration="2000" data-aos-delay="600">We are always looking for Operating Advisors and subject matter experts who share our passion for developing technology ventures.</p>
+        <p data-aos="fadeIn" data-aos-duration="2000" data-aos-delay="700">Complete this form and we will contact you to schedule either a phone chat, Skype conversation or in-person meeting to discuss how we would collaborate to work alongside startup founders on lean execution for their operations.</p>
+    </div>
+
+    <form  data-aos="fadeIn" data-aos-duration="2000" data-aos-delay="800" action="https://formspree.io/sireesha.uic@gmail.com"
+    method="POST" id="msform">
+
+        <!-- fieldsets -->
+        <fieldset>
+          <h2 class="fs-title">Partners – Collaborate on Lean Execution</h2>
+
+          <input name = "Name" type="text" placeholder="Name"/>
+
+          <h3 class="fs-subtitle">Business</h3>
+          <input type="checkbox" name="EOS" id = "EOS" value="EOS"/>
+          <label for="EOS">EOS</label>
+          <br>
+         <input type="checkbox" name="Service Provider" id = "Service Provider" value="Service Provider"/>                        
+         <label for="Service Provider">Service Provider</label> 
+         <br>
+          <input type="checkbox" name="Individual" id = "Individual" value="Individual"/>
+          <label for="Individual">Individual</label>
+          <br>
+          <input type="checkbox" name="Professional" id = "Professional" value="Professional"/>                        
+          <label for="Professional">Professional</label> 
+          <br>
+           <input type="checkbox" name="Academics" id = "Academics" value="Academics"/>
+           <label for="Academics">Academics</label>
+
+
+           <h3 class="fs-subtitle">Looking For:</h3>
+           <input type="checkbox" name="Providing Discounted Services" id = "Providing Discounted Services" value="Providing Discounted Services"/>
+           <label for="Providing Discounted Services">Providing Discounted Services</label>
+           <br>
+          <input type="checkbox" name="Pro-Bond" id = "Pro-Bond" value="Pro-Bond"/>                        
+          <label for="Pro-Bond">Pro-Bond</label> 
+          <br>
+           <input type="checkbox" name="For Equity" id = "For Equity" value="For Equity"/>
+           <label for="For Equity">For Equity</label>
+           <br>
+           <input type="checkbox" name="Deferred Payment" id = "Deferred Payment" value="Deferred Payment"/>                        
+           <label for="Deferred Payment">Deferred Payment</label> 
+           <br>
+            <input type="checkbox" name="Affiliate Program" id = "Affiliate Program" value="Affiliate Program"/>
+            <label for="Affiliate Program">Affiliate Program</label>
+            <br>
+            <input type="checkbox" name="Partnership" id = "Partnership" value="Partnership"/>
+            <label for="Partnership">Partnership</label>
+
+
+            <h3 class="fs-subtitle">Your Sector Expertise</h3>
+            <input type="checkbox" name="Branding" id = "Branding" value="Branding"/>
+            <label for="Branding">Branding</label>
+            <br>
+           <input type="checkbox" name="Sales" id = "Sales" value="Sales"/>                        
+           <label for="Sales">Sales</label> 
+           <br>
+            <input type="checkbox" name="Marketing" id = "Marketing" value="Marketing"/>
+            <label for="Marketing">Marketing</label>
+            <br>
+            <input type="checkbox" name="Tech Dev" id = "Tech Dev" value="Tech Dev"/>                        
+            <label for="Tech Dev">Tech Dev</label> 
+            <br>
+             <input type="checkbox" name="Legal" id = "Legal" value="Legal"/>
+             <label for="Legal">Legal</label>
+             <br>
+             <input type="checkbox" name="Other" id = "Other" value="Other"/>
+             <label for="Other">Other</label>
+
+          <input name = "Email"  type="email" placeholder="Email"/>
+          <input name = "Phone"  type="text" placeholder="Phone"/>
+          <input name = "Message"  type="text" placeholder="Message"/>
+
+          <input style = "text-decoration: none;
+          color: #FFF;
+          margin-top: 20px;
+          padding: 10px 50px 10px 50px;
+          background-color: #0F75BC;
+          transition: background-color 0.5s;
+          width: 50% !important;
+          border-radius: 30px;
+          font-weight: 700;
+          font-family: 'Overlock', cursive;
+          display: inline-block !important;
+          text-align: center;" type="submit" value="Submit" />
+
+        </fieldset>
+
+      </form>
+
+      <footer>
+            
+        <img src = "images/skyline.jpg">	 
+        <p>Copyright 2008-2017<p>
+        <p>Protected by Copyscape. Do not copy content from this site. All rights reserved.</p>
+        <p><a href = "disclaimers.html">Disclaimers</a></p>
+        
+      </footer> 
+
+      <a href="#0" class="cd-top">Top</a>
+
+
+    <script src = "js/script.js"></script>
+    
+    <script>
+            jQuery(document).ready(function($){
+                // browser window scroll (in pixels) after which the "back to top" link is shown
+                var offset = 300,
+                    //browser window scroll (in pixels) after which the "back to top" link opacity is reduced
+                    offset_opacity = 1200,
+                    //duration of the top scrolling animation (in ms)
+                    scroll_top_duration = 700,
+                    //grab the "back to top" link
+                    $back_to_top = $('.cd-top');
+    
+                //hide or show the "back to top" link
+                $(window).scroll(function(){
+                    ( $(this).scrollTop() > offset ) ? $back_to_top.addClass('cd-is-visible') : $back_to_top.removeClass('cd-is-visible cd-fade-out');
+                    if( $(this).scrollTop() > offset_opacity ) { 
+                        $back_to_top.addClass('cd-fade-out');
+                    }
+                });
+    
+                //smooth scroll to top
+                $back_to_top.on('click', function(event){
+                    event.preventDefault();
+                    $('body,html').animate({
+                        scrollTop: 0 ,
+                        }, scroll_top_duration
+                    );
+                });
+    
+            });
+        </script>
+
+    <script>
+
+        //jQuery time
+        var current_fs, next_fs, previous_fs; //fieldsets
+        var left, opacity, scale; //fieldset properties which we will animate
+        var animating; //flag to prevent quick multi-click glitches
+
+        $(".next").click(function(){
+            if(animating) return false;
+            animating = true;
+            
+            current_fs = $(this).parent();
+            next_fs = $(this).parent().next();
+            
+            //activate next step on progressbar using the index of next_fs
+            $("#progressbar li").eq($("fieldset").index(next_fs)).addClass("active");
+            
+            //show the next fieldset
+            next_fs.show(); 
+            //hide the current fieldset with style
+            current_fs.animate({opacity: 0}, {
+                step: function(now, mx) {
+                    //as the opacity of current_fs reduces to 0 - stored in "now"
+                    //1. scale current_fs down to 80%
+                    scale = 1 - (1 - now) * 0.2;
+                    //2. bring next_fs from the right(50%)
+                    left = (now * 50)+"%";
+                    //3. increase opacity of next_fs to 1 as it moves in
+                    opacity = 1 - now;
+                    current_fs.css({
+                'transform': 'scale('+scale+')',
+                'position': 'absolute'
+            });
+                    next_fs.css({'left': left, 'opacity': opacity});
+                }, 
+                duration: 800, 
+                complete: function(){
+                    current_fs.hide();
+                    animating = false;
+                }, 
+                //this comes from the custom easing plugin
+                easing: 'easeInOutBack'
+            });
+        });
+
+        $(".previous").click(function(){
+            if(animating) return false;
+            animating = true;
+            
+            current_fs = $(this).parent();
+            previous_fs = $(this).parent().prev();
+            
+            //de-activate current step on progressbar
+            $("#progressbar li").eq($("fieldset").index(current_fs)).removeClass("active");
+            
+            //show the previous fieldset
+            previous_fs.show(); 
+            //hide the current fieldset with style
+            current_fs.animate({opacity: 0}, {
+                step: function(now, mx) {
+                    //as the opacity of current_fs reduces to 0 - stored in "now"
+                    //1. scale previous_fs from 80% to 100%
+                    scale = 0.8 + (1 - now) * 0.2;
+                    //2. take current_fs to the right(50%) - from 0%
+                    left = ((1-now) * 50)+"%";
+                    //3. increase opacity of previous_fs to 1 as it moves in
+                    opacity = 1 - now;
+                    current_fs.css({'left': left});
+                    previous_fs.css({'transform': 'scale('+scale+')', 'opacity': opacity});
+                }, 
+                duration: 800, 
+                complete: function(){
+                    current_fs.hide();
+                    animating = false;
+                }, 
+                //this comes from the custom easing plugin
+                easing: 'easeInOutBack'
+            });
+        });
+
+        $(".submit").click(function(){
+            return false;
+        })
+    
+    </script>
+    </div>
+</body>
+</html>

@@ -2601,13 +2601,22 @@ section.founder-doc {
 section.founder-doc h3 {
     font-family: 'Overlock', cursive;
     font-weight: 700;
-    color: #BF1E2E;
+    color: #0F75BC;
 }
 
 section.founder-doc p {
     font-family: 'Overlock', cursive;
     text-align: justify;
     padding-bottom: 10px;
+}
+
+section.founder-doc #box h4 {
+    font-family: 'Overlock', cursive;
+    font-weight: 700;
+}
+
+section.founder-doc #box p {
+    font-family: 'Overlock', cursive;
 }
 
 /* Forms */
@@ -2653,6 +2662,7 @@ section.founder-doc p {
     font-size: 1.4em;
     font-family: 'Overlock', cursive;
     color: #000;
+
   }
 
   input[type="radio"] {
@@ -2664,10 +2674,11 @@ section.founder-doc p {
   }
   
   label {
-    font-size: 18px;
+    font-size: 1.2em;
     color: #000;
     cursor: pointer;
     font-family: 'Overlock', cursive;
+    font-weight: normal !important;
   }
   
   .button,
@@ -2830,6 +2841,23 @@ section.founder-doc p {
     }
   }
   
+/* Form - p */
+
+.form-p {
+    margin: 0 60px 0 60px;
+    padding: 0 60px 0 60px;
+    text-align: center;
+}
+
+.form-p p {
+    font-family: 'Overlock', cursive;
+    padding-bottom: 10px;
+}
+
+.form-p h2 {
+    font-family: 'Overlock', cursive;
+    font-weight: 700;
+}
 
 /*  Media Queries */
 
