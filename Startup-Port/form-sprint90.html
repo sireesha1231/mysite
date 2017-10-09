@@ -12,13 +12,6 @@
         /*basic reset*/
         * {margin: 0; padding: 0;}
 
-        html {
-            /*Image only BG fallback*/
-            
-            /*background = gradient + image pattern combo*/
-            background: 
-                linear-gradient(rgb(169, 169, 169), rgb(15, 117, 188)) no-repeat;
-        }
 
         body {
             font-family: 'Overlock', cursive;
@@ -66,7 +59,7 @@
             font-weight: bold;
             color: white;
             border: 0 none;
-            border-radius: 1px;
+            border-radius: 50px;
             cursor: pointer;
             padding: 10px 5px;
             margin: 10px 5px;
@@ -184,23 +177,23 @@
           <h2 class="fs-title">Founder Applicant</h2>
 
           <h3 class="fs-subtitle">* 1. Contact Information</h3>
-          <input name = "Name" type="text" placeholder="Name"/>
-          <input name = "Phone"  type="text" placeholder="Phone"/>
-          <input name = "Email"  type="email" placeholder="Email"/>
-          <input name = "City"  type="text" placeholder="City/State"/>
-          <input name = "Company"  type="text" placeholder="Company Name"/>
-          <input name = "Website"  type="text" placeholder="Website"/>
+          <input name = "Name" type="text" placeholder="Name" required="required"/>
+          <input name = "Phone"  type="text" placeholder="Phone" required/>
+          <input name = "Email"  type="email" placeholder="Email" required/>
+          <input name = "City"  type="text" placeholder="City/State" required/>
+          <input name = "Company"  type="text" placeholder="Company Name" required/>
+          <input name = "Website"  type="text" placeholder="Website" required/>
 
           <h3 class="fs-subtitle">* 2. Mission: Please provide your 2-4 sentence elevator pitch:</h3>
-          <input name = "2. Mission: Please provide your 2-4 sentence elevator pitch:"  type="text"/>
+          <input name = "2. Mission: Please provide your 2-4 sentence elevator pitch:" type="text" required/>
 
           <h3 class="fs-subtitle">* 3. History, including accomplishments to date</h3>
-          <input name = "3. History, including accomplishments to date"  type="text"/>
+          <input name = "3. History, including accomplishments to date" type="text" required/>
 
           <h3 class="fs-subtitle">* 4. Please describe any current or previous involvement with an incubator/accelerator/coworking space,
             including benefits, outcomes, challenges, etc:</h3>
           <input name = "4. Please describe any current or previous involvement with an incubator/accelerator/coworking space,
-          including benefits, outcomes, challenges, etc:"  type="text"/>
+          including benefits, outcomes, challenges, etc:" type="text" required/>
 
           <input type="button" name="next" class="next action-button" value="Next" />
 
@@ -211,42 +204,42 @@
           <h3 class="fs-subtitle"><strong>Please share some information about your solution</strong></h3>
         
           <h3 class="fs-subtitle">* 5. Type:</h3>
-           <input type="checkbox" name="5. Product(s)/Services(type): Application (SAAS)" id = "saas" value="Application (SAAS)"/>
-           <label for="saas">Subscribe to newsletter?</label>
+           <input type="checkbox" name="5. Type:" id = "Application (SAAS)" value="Application (SAAS)"/>
+           <label for="Application (SAAS)">Application (SAAS)</label>
            <br>
-          <input type="checkbox" name="5. Product(s)/Services(type): Service" id = "Service" value="Service"/>                        
-          <label for="Service">Subscribe to newsletter?</label> 
+          <input type="checkbox" name="5. Type:" id = "Service" value="Service"/>                        
+          <label for="Service">Service</label> 
           <br>
-           <input type="checkbox" name="5. Product(s)/Services(type): Product" id = "Product" value="Product"/>
-           <label for="Product">Subscribe to newsletter?</label>
+           <input type="checkbox" name="5. Type:" id = "Product" value="Product"/>
+           <label for="Product">Product</label>
 
           <h3 class="fs-subtitle">Other (please specify)</h3>
-          <input name = "5. Product(s)/Services(type)- Other:" type="text"/>
+          <input name = "5. Type- Other:" type="text"/>
 
           <h3 class="fs-subtitle">* 6. Description of Product/Service:</h3>
-          <input name = "6. Description of Product/Service:" type="text"/>
+          <input name = "6. Description of Product/Service:" type="text" required/>
 
           <h3 class="fs-subtitle">* 7. Do you have ownership rights, patents, IP?</h3>
-          <input name = "7. Do you have ownership rights, patents, IP?" type="text"/>
+          <input name = "7. Do you have ownership rights, patents, IP?" type="text" required/>
 
           <h3 class="fs-subtitle">* 8. Current Development Stage-including timing of, and process to get to commercialization</h3>
-          <input type="checkbox" name="8. Current Development Stage-Conceptual Only" id = "Conceptual" value="Conceptual Only"/>
+          <input type="checkbox" name="8. Current Development Stage" id = "Conceptual" value="Conceptual Only"/>
           <label for="Conceptual">Conceptual only</label>
           <br>
-          <input type="checkbox" name="8. Current Development Stage-Prototype" id="Prototype" value="Prototype"/>  
+          <input type="checkbox" name="8. Current Development Stage" id="Prototype" value="Prototype"/>  
           <label for="Prototype">Prototype
           </label>                          
            <br>
-          <input type="checkbox" name="8. Current Development Stage-MVP" id="MVP" value="MVP"/>
+          <input type="checkbox" name="8. Current Development Stage" id="MVP" value="MVP"/>
           <label for="MVP">MVP
           </label> 
           <br>
-          <input type="checkbox" name="Current Development Stage-Commercialized" id="Commercialized" value="Commercialized"/>
+          <input type="checkbox" name="Current Development Stage" id="Commercialized" value="Commercialized"/>
           <label for="Commercialized">Commercialized    
           </label> 
           
           <h3 class="fs-subtitle">Describe timing of, and process to get to commercialization/monetization:</h3>
-          <input id = "timing"  name = "Describe timing of, and process to get to commercialization/monetization:" type="text"/> 
+          <input id = "timing"  name = "Describe timing of, and process to get to commercialization/monetization:" type="text" required/> 
 
           <input type="button" name="previous" class="previous action-button" value="Previous" />
           <input type="button" name="next" class="next action-button" value="Next" />
@@ -257,16 +250,16 @@
           <h3 class="fs-subtitle"><strong>Share some information about the market you will be addressing.</strong></h3>
 
           <h3 class="fs-subtitle">* 9. Define your market and its size:</h3>
-          <input id = "market" name = "9. Define your market and its size:"  type="text"/>
+          <input id = "market" name = "9. Define your market and its size:"  type="text" required/>
 
           <h3 class="fs-subtitle">* 10. What is the problem or need that you address?</h3>
-          <input id = "problem" name = "10. What is the problem or need that you address?"  type="text"/> 
+          <input id = "problem" name = "10. What is the problem or need that you address?" type="text" required/> 
 
           <h3 class="fs-subtitle">* 11. How does the customer currently address the need?</h3>
-          <input id = "need" name = "11. How does the customer currently address the need?"  type="text"/>
+          <input id = "need" name = "11. How does the customer currently address the need?"  type="text" required/>
 
           <h3 class="fs-subtitle">* 12. Quantify why your product/solution is better:</h3>
-          <input id = "quantify" name = "12. Quantify why your product/solution is better:"  type="text"/>
+          <input id = "quantify" name = "12. Quantify why your product/solution is better:"  type="text" required/>
 
           <input type="button" name="previous" class="previous action-button" value="Previous" />
           <input type="button" name="next" class="next action-button" value="Next" />
@@ -276,13 +269,13 @@
         <h2 class="fs-title">Sales/distribution plan</h2>
         <h3 class="fs-subtitle"><strong>Tell us how you will get new customers.</strong></h3>
         <h3 class="fs-subtitle">* 13. How will you reach new customers?</h3>
-        <input id = "reach" name = "13. How will you reach new customers?"  type="text"/>
+        <input id = "reach" name = "13. How will you reach new customers?"  type="text" required/>
 
         <h3 class="fs-subtitle">* 14. Is there anything unique or special required to convert/attract customers?</h3>
-        <input id = "attract" name = "14. Is there anything unique or special required to convert/attract customers?"  type="text"/>
+        <input id = "attract" name = "14. Is there anything unique or special required to convert/attract customers?"  type="text" required/>
 
         <h3 class="fs-subtitle">* 15. Do you know your customer acquisition cost? If so, what is it?</h3>
-        <input id = "acq" name = "15. Do you know your customer acquisition cost? If so, what is it?"  type="text"/> 
+        <input id = "acq" name = "15. Do you know your customer acquisition cost? If so, what is it?"  type="text" required/> 
 
         <input type="button" name="previous" class="previous action-button" value="Previous" />
         <input type="button" name="next" class="next action-button" value="Next" />
@@ -291,47 +284,43 @@
         <fieldset>
         <h2 class="fs-title">Revenue and traction</h2>
         <h3 class="fs-subtitle">* 16. What is your current stage of user/revenue traction:</h3>
-        <label for = "Pre-revenue">
-            <input type="radio" name="Current stage of user/revenue traction: Pre-revenue" id="Pre-revenue" value="Pre-revenue"/>Pre-revenue
-        </label>
+        
+        <input type="radio" name="Current stage of user/revenue traction" id="Pre-revenue" value="Pre-revenue"/>
+        <label for = "Pre-revenue">Pre-revenue</label>
         <br>
-        <label for = "Beta testing">
-            <input type="radio" name="Current stage of user/revenue traction: Beta testing" id="Beta testing" value="Beta testing"/>Beta testing                            
-        </label>
+        <input type="radio" name="Current stage of user/revenue traction" id="Beta testing" value="Beta testing"/>                           
+        <label for = "Beta testing">Beta testing</label>
         <br>
-        <label for = "Free with a growing user base">
-            <input type="radio" name="Current stage of user/revenue traction: Free with a growing user base" id="Free with a growing user base" value="Free with a growing user base"/>Free with a growing user base                                
-        </label>
+        <input type="radio" name="Current stage of user/revenue traction" id="Free with a growing user base" value="Free with a growing user base"/>                              
+        <label for = "Free with a growing user base">Free with a growing user base</label>
         <br>
-        <label for = "Early adopter paying customers">
-            <input type="radio" name="Current stage of user/revenue traction: Early adopter paying customers" id="Early adopter paying customers" value="Early adopter paying customers"/>Early adopter paying customers                                
-        </label>
+        <input type="radio" name="Current stage of user/revenue traction" id="Early adopter paying customers" value="Early adopter paying customers"/>                               
+        <label for = "Early adopter paying customers">Early adopter paying customers</label>
         <br>
-        <label for = "Growing paid customer base">
-            <input type="radio" name="Current stage of user/revenue traction: Growing paid customer base" id="Growing paid customer base" value="Growing paid customer base"/>Growing paid customer base                            
-        </label>
+        <input type="radio" name="Current stage of user/revenue traction" id="Growing paid customer base" value="Growing paid customer base"/>                           
+        <label for = "Growing paid customer base">Growing paid customer base</label>
         
         <h3 class="fs-subtitle">Others(please specify)</h3>
         <input name = "Current stage of user/revenue traction- Other:"  id = "revenue-other" type="text"/>
 
         <h3 class="fs-subtitle">* 17. What is your primary revenue model?</h3>
-        <label for = "One time sale">
-            <input type="radio" name="Primary revenue model?: One time sale" id="One time sale" value=""/>One time sale                                
-        </label>
+
+        <input type="radio" name="Primary revenue model?" id="One time sale" value=""/>                              
+        <label for = "One time sale">One time sale</label>
         <br>
-        <label for = "Monthly recurring sale">
-            <input type="radio" name="Primary revenue model?: Monthly recurring sale" id="Monthly recurring sale" value="Monthly recurring sale"/>Monthly recurring sale
-        </label>
+        
+        <input type="radio" name="Primary revenue model?" id="Monthly recurring sale" value="Monthly recurring sale"/>
+        <label for = "Monthly recurring sale">Monthly recurring sale</label>
         <br>
-        <label for = "Annual recurring sale">
-            <input type="radio" name="Primary revenue model?: Annual recurring sale" id="Annual recurring sale" value="Annual recurring sale"/>Annual recurring sale                                
-        </label>
+        
+        <input type="radio" name="Primary revenue model?" id="Annual recurring sale" value="Annual recurring sale"/>                               
+        <label for = "Annual recurring sale">Annual recurring sale</label>
 
         <h3 class="fs-subtitle">Others(please specify)</h3>
         <input  name = "Primary revenue model?- Other: "  id = "rev-mod-other" type="text"/>
 
         <h3 class="fs-subtitle">* 18. What is the estimated lifetime $ value of a single customer?</h3>
-        <input id="lifetime"  name = "18. What is the estimated lifetime $ value of a single customer?" type="text"/> 
+        <input id="lifetime"  name = "18. What is the estimated lifetime $ value of a single customer?" type="text" required/> 
 
         <input type="button" name="previous" class="previous action-button" value="Previous" />
         <input type="button" name="next" class="next action-button" value="Next" />
@@ -340,10 +329,10 @@
         <fieldset>
         <h2 class="fs-title">Competition</h2>
         <h3 class="fs-subtitle">* 19. Who are your competitors?</h3>
-        <input id="competitors" name = "19. Who are your competitors?" type="text"/> 
+        <input id="competitors" name = "19. Who are your competitors?" type="text" required/> 
 
         <h3 class="fs-subtitle">* 20. What are your competitive market differentiators and barriers to entry?</h3>
-        <input id="entry"  name = "20. What are your competitive market differentiators and barriers to entry?" type="text"/> 
+        <input id="entry"  name = "20. What are your competitive market differentiators and barriers to entry?" type="text" required/> 
 
         <input type="button" name="previous" class="previous action-button" value="Previous" />
         <input type="button" name="next" class="next action-button" value="Next" />
@@ -355,10 +344,10 @@
         <h3 class="fs-subtitle">* 21. Experience of Founder, advisors and senior management, including previous start-ups, and any
             previous experience working together:</h3>
         <input id="exp"  name = "21. Experience of Founder, advisors and senior management, including previous start-ups, and any
-        previous experience working together:" type="text"/> 
+        previous experience working together:" type="text" required/> 
 
         <h3 class="fs-subtitle">* 22. Domain knowledge within your solution/industry:</h3>
-        <input id="domain"  name = "22. Domain knowledge within your solution/industry:" type="text"/>
+        <input id="domain"  name = "22. Domain knowledge within your solution/industry:" type="text" required/>
 
         <input type="button" name="previous" class="previous action-button" value="Previous" />
         <input type="button" name="next" class="next action-button" value="Next" />
@@ -369,25 +358,25 @@
         <h3 class="fs-subtitle">* 23. Founder’s investment to date and any other investment(s) taken to date - please provide a fully-diluted
             capitalization table (i.e., including options, warrants, and debt)</h3>
         <input id="debt" name = "23. Founder’s investment to date and any other investment(s) taken to date - please provide a fully-diluted
-        capitalization table (i.e., including options, warrants, and debt)" type="text"/> 
+        capitalization table (i.e., including options, warrants, and debt)" type="text" required/> 
 
         <h3 class="fs-subtitle">* 24. Interest in buy-out exits listing possible acquisition companies:</h3>
-        <input id="buy-out" name = "24. Interest in buy-out exits listing possible acquisition companies:"  type="text"/>
+        <input id="buy-out" name = "24. Interest in buy-out exits listing possible acquisition companies:"  type="text" required/>
 
         <h3 class="fs-subtitle">* 25. Have you made an investor’s pitch in the past? (If so, please summarize results.)</h3>
-        <input id="pitch" name = "25. Have you made an investor’s pitch in the past? (If so, please summarize results.)"  type="text"/>
+        <input id="pitch" name = "25. Have you made an investor’s pitch in the past? (If so, please summarize results.)"  type="text" required/>
         
         <h3 class="fs-subtitle">* 26. What are the funding needs for this round?</h3>
-        <input id="fundings" name = "26. What are the funding needs for this round?" type="text"/>
+        <input id="fundings" name = "26. What are the funding needs for this round?" type="text" required/>
 
         <h3 class="fs-subtitle">* 27. Describe expected use of the funds and burn rate:</h3>
-        <input id="burn" name = "27. Describe expected use of the funds and burn rate:" type="text"/>
+        <input id="burn" name = "27. Describe expected use of the funds and burn rate:" type="text" required/>
 
         <h3 class="fs-subtitle">* 28. What are your expectations for subsequent rounds?</h3>
-        <input id="subsequent" name = "28. What are your expectations for subsequent rounds?" type="text"/>
+        <input id="subsequent" name = "28. What are your expectations for subsequent rounds?" type="text" required/>
 
         <h3 class="fs-subtitle">* 29. Explain the ROI expectations for investors: How will investors make money investing in you?</h3>
-        <input id="roi" name = "29. Explain the ROI expectations for investors: How will investors make money investing in you?" type="text"/>
+        <input id="roi" name = "29. Explain the ROI expectations for investors: How will investors make money investing in you?" type="text" required/>
 
         <input type="button" name="previous" class="previous action-button" value="Previous" />
         <input type="button" name="next" class="next action-button" value="Next" />
@@ -399,10 +388,21 @@
             people/entrepreneurs who invest time, expertise and money in promising startups</h3>
         
         <input id = "expectations" name = "30. Expectations you have in working with the Cultivator team – a group of experienced business
-        people/entrepreneurs who invest time, expertise and money in promising startups" type="text"/>
+        people/entrepreneurs who invest time, expertise and money in promising startups" type="text" required/>
 
         <input type="button" name="previous" class="previous action-button" value="Previous" />
-        <input type="submit" value="Submit" />
+        <input style = "text-decoration: none;
+        color: #FFF;
+        margin-top: 20px;
+        padding: 10px 50px 10px 50px;
+        background-color: #0F75BC;
+        transition: background-color 0.5s;
+        width: 50% !important;
+        border-radius: 30px;
+        font-weight: 700;
+        font-family: 'Overlock', cursive;
+        display: inline-block !important;
+        text-align: center;" type="submit" value="Submit" />
         </fieldset>
 
       </form>
