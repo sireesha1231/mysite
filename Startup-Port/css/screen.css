@@ -522,7 +522,6 @@ figure.effect-julia:hover p {
 
 .photo-grid {
     margin: 0;
-    padding: 30px;
     text-align: center;
     width: 50%;
     float: left;
@@ -530,35 +529,39 @@ figure.effect-julia:hover p {
 
 .photo-grid .grid-item {
     display: block;
-    width: 500px;
-    margin: 30px;
-    height: 100%;
+    width: 100%;
+    height: 450px;
 }
 
-.photo-grid img {
+.photo-grid .grid-item figure img {
 	display: block;
-	height: 350px;
-	max-width: 100%;
+    width: 100%;
+    padding: 0;
+    margin: 0;
 }
 
-.photo-grid figure {
-    height: 350px;
-	overflow: hidden;
+.photo-grid .grid-item figure {
+    height: 450px;
 	position: relative;
-	width: 100%;
 }
 
 .photo-grid figcaption {
 	background: rgba(0,0,0,0.8);
 	color: white;
 	display: table;
-    height: 100%;
     width: 100%;
+    height: 450px;
 	left: 0;
 	opacity: 0;
 	position: absolute;
 	right: 0;
-	top: 0;
+    top: 0;
+    -webkit-transition: all 500ms;
+	-moz-transition: all 500ms;
+	transition: all 500ms;
+	-webkit-transition-delay: 100ms;
+	-moz-transition-delay: 100ms;
+	transition-delay: 100ms;
 	z-index: 100;
 }
 
@@ -569,24 +572,13 @@ figure.effect-julia:hover p {
 	vertical-align: middle;
 }
 
-
 .photo-grid .grid-item:hover figcaption {
 	opacity: 1;
 }
 
 .photo-grid img {
 	display: block;
-	height: 350px;
-	-webkit-transition: all 500ms;
-	-moz-transition: all 500ms;
-	transition: all 500ms;
-	max-width: 100%;
-}
-
-.photo-grid .grid-item:hover img {
-	-webkit-transform: scale(1.1);
-	-moz-transform: scale(1.1);
-	transform: scale(1.1);
+	height: 450px;
 }
 
 .photo-grid figcaption a {
@@ -594,31 +586,8 @@ figure.effect-julia:hover p {
 	font-size: 3em;
     position: relative;
     text-decoration: none;
-    width: 200px;
     color: #FFF;
-	-webkit-transition: all 500ms ease-out;
-	-moz-transition: all 500ms ease-out;
-	transition: all 500ms ease-out;
 	vertical-align: middle;
-}
-
-.photo-grid figcaption {
-	background: rgba(0,0,0,0.8);
-	color: white;
-	display: table;
-	height: 100%;
-	left: 0;
-	opacity: 0;
-	position: absolute;
-	right: 0;
-	top: 0;
-	-webkit-transition: all 500ms;
-	-moz-transition: all 500ms;
-	transition: all 500ms;
-	-webkit-transition-delay: 100ms;
-	-moz-transition-delay: 100ms;
-	transition-delay: 100ms;
-	z-index: 100;
 }
 
 section.container1 .photo-grid h2 {
@@ -645,6 +614,14 @@ section.container2 .photo-grid h3 {
     margin-bottom: 20px;
     font-family: 'Overlock', cursive;
     font-weight: 700;
+}
+section.container1 {
+    margin: 0;
+    padding: 0;
+}
+section.container2 {
+    margin: 0;
+    padding: 0;
 }
 
 /* Section - For-Startups */
@@ -2862,7 +2839,30 @@ section.founder-doc #box p {
     figure.effect-julia p {
         font-size: 0.9em;
     }
-
+    section.container1 {
+        padding: 0;
+        margin: 0;
+    }
+    section.container2 {
+        padding: 0;
+        margin: 0;
+    }
+    section.container1 .photo-grid {
+        padding: 0;
+        margin: 0;
+    }
+    section.container1 .photo-grid .grid-item {
+        margin: 0;
+        padding: 0;
+    }
+    section.container2 .photo-grid {
+        padding: 0;
+        margin: 0;
+    }
+    section.container2 .photo-grid .grid-item {
+        margin: 0;
+        padding: 0;
+    }
 }
 
 @media screen and (max-width: 1120px) {
@@ -2875,21 +2875,111 @@ section.founder-doc #box p {
     figure.effect-julia img {
         height: 350px;
     }
+    section.container1 {
+        margin: 0;
+        padding: 0;
+    }
+    section.container2 {
+        margin: 0;
+        padding: 0;
+    }
+    section.container1 .photo-grid {
+        padding: 0;
+        margin: 0;
+    }
+    section.container1 .photo-grid .grid-item {
+        height: 400px;
+    }
+    section.container1 .photo-grid .grid-item figure {
+        height: 400px;
+    }
+    section.container1 .photo-grid figcaption {
+        height: 400px;
+    }
+    section.container1 .photo-grid img {
+        height: 400px;
+    }
+    section.container2 .photo-grid .grid-item {
+        height: 400px;
+    }
+    section.container2 .photo-grid .grid-item figure {
+        height: 400px;
+    }
+    section.container2 .photo-grid figcaption {
+        height: 400px;
+    }
+    section.container2 .photo-grid img {
+        height: 400px;
+    }
+    section.container1 .photo-grid .grid-item {
+        margin: 0;
+        padding: 0;
+    }
+    section.container2 .photo-grid {
+        padding: 0;
+        margin: 0;
+    }
+    section.container2 .photo-grid .grid-item {
+        margin: 0;
+        padding: 0;
+    }
 }
 
 @media screen and (max-width: 950px) {
     header div.hero h1 {
         font-size: 4em;
     }
-    header div.hero h3 {
-        font-size: 1.5em;
-    }
     figure.effect-julia p {
-        font-size: 0.7em;
+        font-size: 0.75em;
         padding: 0px;
     }
     .grid figure h2  {
         font-size: 1.4em;
+    }
+    section.parts-2 {
+        padding: 20px 20px 10px 20px;
+    }
+    section.container1 .photo-grid h2 {
+        font-size: 1.8em;
+    }
+    section.container2 .photo-grid h2 {
+        font-size: 1.8em;
+    }
+    section.container1 .photo-grid h3 {
+        font-size: 1.4em;
+    }
+    section.container2 .photo-grid h3 {
+        font-size: 1.4em;
+    }
+    section.container1 .photo-grid figcaption a {
+        font-size: 2.5em;
+    }
+    section.container2 .photo-grid figcaption a {
+        font-size: 2.5em;
+    }
+    section.container1 .photo-grid .grid-item {
+        height: 350px;
+    }
+    section.container1 .photo-grid .grid-item figure {
+        height: 350px;
+    }
+    section.container1 .photo-grid figcaption {
+        height: 350px;
+    }
+    section.container1 .photo-grid img {
+        height: 350px;
+    }
+    section.container2 .photo-grid .grid-item {
+        height: 350px;
+    }
+    section.container2 .photo-grid .grid-item figure {
+        height: 350px;
+    }
+    section.container2 .photo-grid figcaption {
+        height: 350px;
+    }
+    section.container2 .photo-grid img {
+        height: 350px;
     }
 }
 
@@ -2902,6 +2992,39 @@ section.founder-doc #box p {
     figure.effect-julia p {
         padding: 0;
         margin: 0;
+    }
+    section.parts-2 {
+        padding: 10px 20px 5px 20px;
+    }
+    section.container1 .photo-grid figcaption a {
+        font-size: 2.5em;
+    }
+    section.container2 .photo-grid figcaption a {
+        font-size: 2.5em;
+    }
+    section.container1 .photo-grid .grid-item {
+        height: 300px;
+    }
+    section.container1 .photo-grid .grid-item figure {
+        height: 300px;
+    }
+    section.container1 .photo-grid figcaption {
+        height: 300px;
+    }
+    section.container1 .photo-grid img {
+        height: 300px;
+    }
+    section.container2 .photo-grid .grid-item {
+        height: 300px;
+    }
+    section.container2 .photo-grid .grid-item figure {
+        height: 300px;
+    }
+    section.container2 .photo-grid figcaption {
+        height: 300px;
+    }
+    section.container2 .photo-grid img {
+        height: 300px;
     }
 }
 
