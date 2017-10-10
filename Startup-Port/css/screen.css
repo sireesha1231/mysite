@@ -2981,6 +2981,22 @@ section.founder-doc #box p {
     section.container2 .photo-grid img {
         height: 350px;
     }
+    section.where-to-find {
+        padding: 0;
+        margin: 0;
+    }
+    section.where-to-find aside #map-section {
+        width: 100%;
+        padding: 0;
+        margin: 0;
+    }
+    section.where-to-find aside #connect {
+        width: 100%;
+    }
+    section.join-us a {
+        width: 100%;
+        margin-bottom: 10px;
+    }
 }
 
 

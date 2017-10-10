@@ -240,34 +240,11 @@
 			<section class = "where-to-find">
 				<h2 data-aos="fade-up" data-aos-duration="2000" data-aos-delay="200">Where To Find Us</h2>
 				<hr data-aos="fade-up" data-aos-duration="2000" data-aos-delay="500" style = "border-top: 4px solid #BF1E2E;width: 30%;">
-				<aside>
-					<div id = "map-section" data-aos="flip-up" data-aos-duration="2000" data-aos-delay="700">
-
-						<div id = "map">
-						</div>
-						<script>
-							function initMap() {
-								var startupport = {lat: 41.877314, lng: -87.624826};
-								var map = new google.maps.Map(document.getElementById('map'), {
-								zoom: 4,
-								center: startupport
-								});
-								var marker = new google.maps.Marker({
-								position: startupport,
-								map: map
-								});
-							}
-						</script>
-						<script async defer
-							src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDYF-Q1NYzkdzjiOYfjw_vuBQxC3cY4QWw&callback=initMap">
-						</script>
-					</div>
-				</aside>
 
 				<aside>
 					<div id = "connect" data-aos="flip-up" data-aos-duration="2000" data-aos-delay="700">
 						<h3>Connect with us</h3>
-						<hr style = "border-top: 4px solid #BF1E2E;width: 30%;">
+						<hr style = "border-top: 4px solid #BF1E2E;width: 20%;">
 						<p><strong>Email:</strong> info@startup-port.com</p>
 						<p><strong>Mailing Address:</strong></p>
 						<p><strong>StartUp Port</strong></p>
@@ -290,6 +267,30 @@
 							</a>
 						</p>
 				
+					</div>
+				</aside>
+
+				<aside>
+					<div id = "map-section" data-aos="flip-up" data-aos-duration="2000" data-aos-delay="700">
+
+						<div id = "map">
+						</div>
+						<script>
+							function initMap() {
+								var startupport = {lat: 41.877314, lng: -87.624826};
+								var map = new google.maps.Map(document.getElementById('map'), {
+								zoom: 4,
+								center: startupport
+								});
+								var marker = new google.maps.Marker({
+								position: startupport,
+								map: map
+								});
+							}
+						</script>
+						<script async defer
+							src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDYF-Q1NYzkdzjiOYfjw_vuBQxC3cY4QWw&callback=initMap">
+						</script>
 					</div>
 				</aside>
 			</section>
@@ -368,5 +369,6 @@
 
 			});
 		</script>
+
 	</body>
 </html>
