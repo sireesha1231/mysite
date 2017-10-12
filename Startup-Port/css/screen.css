@@ -2923,6 +2923,10 @@ section.founder-doc #box p {
         margin: 0;
         padding: 0;
     }
+    section#about-us {
+        margin: 80px 100px 80px 100px;
+        padding: 60px;
+    }
 }
 
 @media screen and (max-width: 950px) {
@@ -2997,10 +3001,23 @@ section.founder-doc #box p {
         width: 100%;
         margin-bottom: 10px;
     }
+    section.about-links aside .button {
+        font-size: 1.4em;
+    }
+    section#about-us {
+        margin: 60px 70px 60px 70px;
+        padding: 60px;
+    }
 }
 
 
 @media screen and (max-width: 825px) {
+    section.about-links aside .button {
+        font-size: 1.2em;
+    }
+    section.parts-1 {
+        padding: 30px;
+    }
     figure.effect-julia img {
         height: 300px;
     }
@@ -3042,16 +3059,99 @@ section.founder-doc #box p {
     section.container2 .photo-grid img {
         height: 300px;
     }
+    section#about-us {
+        margin: 50px 50px 50px 50px;
+        padding: 50px;
+    }
+    section#about-us h1 {
+        font-size: 2.2em;
+    }
+    section#about-us p {
+        font-size: 1.2em;
+    }
+    section#about-us h2 {
+        font-size: 2em;
+    }
+    footer p {
+        font-size: 1.2em;   
+    }
+}
+
+@media screen and (max-width: 720px) {
+    section.about-links aside {
+        width: 28%;
+    }
+    section.about-links aside .button {
+        font-size: 1.2em;
+    }
 }
 
 @media screen and (max-width: 645px) {
+    header div.hero h3 {
+        padding: 0 20px 0 20px;
+    }
+    nav{
+        padding: 10px 0 0 80px;
+    }
+    nav a.logo {
+        text-align: center;
+        width: 150px;
+    }
+    nav ul {
+        width: 100%;
+    }
+    nav ul li {
+        width: 33.33%;
+        font-size: 1em;
+    }
+    nav > ul {
+        padding-left: 100px;
+    }
     figure.effect-julia p {
         font-size: 0.6em;
         padding: 0px;
     }
+    section.container1 .photo-grid .grid-item {
+        height: 300px;
+    }
+    section.container1 .photo-grid .grid-item figure {
+        height: 300px;
+    }
+    section.container1 .photo-grid figcaption {
+        height: 300px;
+    }
+    section.container1 .photo-grid img {
+        height: 300px;
+    }
+    section.container2 .photo-grid .grid-item {
+        height: 300px;
+    }
+    section.container2 .photo-grid .grid-item figure {
+        height: 300px;
+    }
+    section.container2 .photo-grid figcaption {
+        height: 300px;
+    }
+    section.container2 .photo-grid img {
+        height: 300px;
+    }
+    section.container1 .photo-grid figcaption a {
+        font-size: 2em;
+    }
+    section.container2 .photo-grid figcaption a {
+        font-size: 2em;
+    }
+    section#about-us {
+        margin: 40px;
+        padding: 40px;
+    }
 }
 
 @media screen and (max-width: 603px) {
+
+    section.parts-1 {
+        padding: 20px;
+    }
     figure.effect-julia {
         width: 100%;
     }
@@ -3072,16 +3172,186 @@ section.founder-doc #box p {
         font-size: 1em;
         font-family: 'Overlock', cursive;
     }
+    section.container1 .photo-grid .grid-item {
+        height: 250px;
+    }
+    section.container1 .photo-grid .grid-item figure {
+        height: 250px;
+    }
+    section.container1 .photo-grid figcaption {
+        height: 250px;
+    }
+    section.container1 .photo-grid img {
+        height: 250px;
+    }
+    section.container2 .photo-grid .grid-item {
+        height: 250px;
+    }
+    section.container2 .photo-grid .grid-item figure {
+        height: 250px;
+    }
+    section.container2 .photo-grid figcaption {
+        height: 250px;
+    }
+    section.container2 .photo-grid img {
+        height: 250px;
+    }
+    section.container1 .photo-grid figcaption a {
+        font-size: 1.8em;
+    }
+    section.container2 .photo-grid figcaption a {
+        font-size: 1.8em;
+    }
+}
+
+@media screen and (max-width: 545px) {
+    footer img {
+        width: 90%;
+    }
+    footer p {
+        font-size: 1.1em;   
+    }
+    nav{
+        padding: 15px 0 0 80px;
+    }
+    nav a.logo {
+        text-align: center;
+       
+    }
+    nav ul li {
+        font-size: 0.8em;
+    }
+    nav ul li a {
+        padding: 5px 20px;
+    }
+    nav > ul {
+        padding-left: 70px;
+    }
+    section.about-links aside {
+        width: 25%;
+    }
+    section.about-links aside .button {
+        font-size: 1.1em;
+    }
+    section.about-links aside#border-lr {
+        border: none;
+    }
+    section#about-us aside a {
+        padding: 5px 30px 5px 30px;
+    }
 }
 
 @media screen and (max-width: 470px) {
+    header div.hero h1 {
+        font-size: 3em;
+    }
+    header div.hero h3 {
+        font-size: 1.4em;
+    }
+    section.parts-1 {
+        padding: 10px;
+    }
     figure.effect-julia p {
         font-size: 0.9em;
+    }
+    section.about-links aside .button {
+        font-size: 1em;
+        padding-right: 30px;
+    }
+    section#about-us {
+        margin: 20px;
+        padding: 20px;
+    }
+    section#about-us h1 {
+        font-size: 2em;
+    }
+    section#about-us p {
+        font-size: 1em;
+    }
+    section#about-us h2 {
+        font-size: 1.8em;
+    }
+    section#about-us aside a {
+        padding: 5px 30px 5px 30px;
+    }
+    section.container1 .photo-grid .grid-item {
+        height: 200px;
+    }
+    section.container1 .photo-grid .grid-item figure {
+        height: 200px;
+    }
+    section.container1 .photo-grid figcaption {
+        height: 200px;
+    }
+    section.container1 .photo-grid img {
+        height: 200px;
+    }
+    section.container2 .photo-grid .grid-item {
+        height: 200px;
+    }
+    section.container2 .photo-grid .grid-item figure {
+        height: 200px;
+    }
+    section.container2 .photo-grid figcaption {
+        height: 200px;
+    }
+    section.container2 .photo-grid img {
+        height: 200px;
     }
 }
 
 @media screen and (max-width: 420px) {
+
     figure.effect-julia p {
         font-size: 0.8em;
+    }
+    section.about-links {
+        padding: 10px;
+    }
+    section.about-links aside {
+        width: 20%;
+    }
+    section.about-links aside .button {
+        font-size: 0.9em;
+        padding-right: 30px;
+    }
+    section.about-links aside#border-lr {
+        color: #FFF;
+    }
+    section#about-us aside a {
+        padding: 5px 15px 5px 15px;
+    }
+    section.container1 .photo-grid figcaption a {
+        font-size: 1.6em;
+    }
+    section.container2 .photo-grid figcaption a {
+        font-size: 1.6em;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    section.container1 .photo-grid .grid-item {
+        height: 150px;
+    }
+    section.container1 .photo-grid .grid-item figure {
+        height: 150px;
+    }
+    section.container1 .photo-grid figcaption {
+        height: 150px;
+    }
+    section.container1 .photo-grid img {
+        height: 150px;
+    }
+    section.container2 .photo-grid .grid-item {
+        height: 150px;
+    }
+    section.container2 .photo-grid .grid-item figure {
+        height: 150px;
+    }
+    section.container2 .photo-grid figcaption {
+        height: 150px;
+    }
+    section.container2 .photo-grid img {
+        height: 150px;
     }
 }
