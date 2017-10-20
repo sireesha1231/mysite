@@ -1037,7 +1037,6 @@ nav ul li a {
     color: #939598;
     padding: 10px 20px;
     text-decoration: none;
-    width: 200px;
     position: relative;
     font-weight: 700; 
     text-transform: uppercase;
@@ -1768,6 +1767,7 @@ section.kbase a {
     font-family: 'Overlock', cursive;
     display: inline-block !important;
     text-align: center;
+    margin-bottom: 20px;
 }
 
 section.kbase p a {
@@ -2836,6 +2836,18 @@ section.founder-doc #box p {
 /*  Media Queries */
 
 @media screen and (max-width: 1260px) {
+    section.startup-top aside#startup-top-left {
+        margin: 60px 15px 0 30px;
+    }
+    section.startup-top aside#startup-top-right {
+        margin: 60px 30px 0 15px;
+    }
+    section.kbase {
+        padding: 20px;
+    }
+    section.kbase a {
+        padding: 20px;
+    }
     figure.effect-julia p {
         font-size: 0.9em;
     }
@@ -2863,9 +2875,54 @@ section.founder-doc #box p {
         margin: 0;
         padding: 0;
     }
+    section.btn a {
+        margin-left: 70%;
+    }
 }
 
 @media screen and (max-width: 1120px) {
+    section.sprint {
+        margin: 0;
+        padding: 0 80px 80px 80px;
+    }
+    section.programs aside#programs-left {
+        padding: 0 60px 60px 60px;
+    }
+    section.programs aside#programs-right {
+        padding: 0 60px 60px 60px;
+    }
+    section.collaboration {
+        margin: 0 60px 0 60px;
+    }
+    section.for-startups {
+        padding: 40px;
+    }
+    section.kbase {
+        padding: 10px;
+    }
+    section.kbase a {
+        padding: 10px;
+        font-size: 1.2em;
+    }
+    section.sos-top {
+        margin: 0;
+    }
+    section.solutions-0 a {
+        font-size: 1.2em;
+        padding: 10px 30px 10px 30px;
+    }
+    section.mvc a {
+        text-align: center;
+        width: 100%;
+        padding: 5px 30px 5px 30px;
+        margin: 0;
+    }
+    section.startup-links-2 {
+        padding: 0;
+    }
+    section.startup-links-2-p {
+        padding: 0;
+    }
     .grid figure h2  {
         font-size: 1.7em;
     }
@@ -2927,9 +2984,207 @@ section.founder-doc #box p {
         margin: 80px 100px 80px 100px;
         padding: 60px;
     }
+    section.ecosystem aside#ecosystem-left {
+        padding: 60px;
+    }
+    section.ecosystem aside#ecosystem-right {
+        padding: 60px;
+    }
+    section.about-middle aside#about-middle-left {
+        padding: 60px;
+    }
+    section.about-middle aside#about-middle-right {
+        padding: 60px;
+    }
+    section.solutions aside#solutions-left {
+        padding: 60px;
+    }
+    section.solutions aside#solutions-right {
+        padding: 60px;
+    }
+    section.sos-bottom-1 {
+        padding: 0 60px 60px 60px;
+    }
+}
+
+@media screen and (max-width: 980px) {
+    section.a-f {
+        margin: 0;
+    }
+    section.solutions-1 {
+        padding: 0;
+    }
+    section.solutions-2 {
+        padding: 0;
+    }
+    section.solutions-3 {
+        padding: 0;
+    }
+    section.portfolio h2 {
+        font-size: 2em;
+    }
+    section.partners-apply h2 {
+        font-size: 2em;
+    }
+    section.sponsors h2 {
+        font-size: 2em;
+    }
+    table tr td a {
+        font-size: 1.2em;
+    }
+    table tr td p {
+        font-size: 1.2em;
+    }
 }
 
 @media screen and (max-width: 950px) {
+    section.sprint h2 {
+        font-size: 2em;
+    }
+    section.sprint h3 {
+        font-size: 1.8em;
+    }
+    section.sprint ul li {
+        font-size: 1.2em;
+    }
+    section.programs aside#programs-left ul li {
+        font-size: 1.2em;
+    }
+    section.programs aside#programs-right ul li {
+        font-size: 1.2em;
+    }
+    section.programs aside#programs-left {
+        padding: 0 40px 40px 40px;
+    }
+    section.programs aside#programs-right {
+        padding: 0 40px 40px 40px;
+    }
+    section.collaboration p {
+        font-size: 1.2em;
+    }    
+    section.collaboration h3 {
+        font-size: 1.8em;
+    }     
+    section.portfolio {
+        padding: 20px;
+    }
+    section.ecosystem aside#ecosystem-left h2 {
+        font-size: 2em;
+    }
+    section.ecosystem aside#ecosystem-right h2 {
+        font-size: 2em;
+    }
+    section.ecosystem aside#ecosystem-left h3 {
+        font-size: 1.8em;
+    }
+    section.ecosystem aside#ecosystem-right h3 {
+        font-size: 1.8em;
+    }
+    section.ecosystem aside#ecosystem-left p {
+        font-size: 1.2em;
+    }
+    section.ecosystem aside#ecosystem-right p {
+        font-size: 1.2em;
+    }
+    section.startup-top aside#startup-top-left h3 {
+        font-size: 1.8em;
+    }
+    section.startup-top aside#startup-top-right h3 {
+        font-size: 1.8em;
+    }
+    section.startup-top aside#startup-top-left p {
+        font-size: 1.2em;
+    }
+    section.startup-top aside#startup-top-right p {
+        font-size: 1.2em;
+    }
+    section.for-startups {
+        padding: 20px;
+    }
+    section.for-startups aside h2 {
+        font-size: 2em;
+    }
+    section.for-startups aside h3 {
+        font-size: 1.8em;
+    }
+    section.for-startups aside p {
+        font-size: 1.2em;
+    }
+    section.kbase a {
+        width: 100%;
+        margin-bottom: 10px;
+        padding: 15px;
+    }
+    p {
+        font-size: 1.2em;
+    }
+    section.solutions-1 aside {
+        width: 90%;
+    }
+    section.solutions-2 aside {
+        width: 90%;
+    }
+    section.solutions-3 aside {
+        width: 90%;
+    }
+    section.solutions-1 aside p {
+        font-size: 1.2em;
+    }
+    section.solutions-1 aside h2 {
+        font-size: 2em;
+    }
+    section.solutions-1 aside h3 {
+        font-size: 1.8em;
+    }
+    section.sos-bottom-1 aside div#box h1 {
+        font-size: 2.2em;
+    }
+    section.sos-bottom-1 aside div#box h2 {
+        font-size: 2em;
+    }
+    section.sos-bottom-1 aside div#box h3 {
+        font-size: 1.8em;
+    }
+    section.sos-bottom-1 aside div#box p {
+        font-size: 1.2em;
+    }
+    section.sos-bottom-1 aside div#box ul li {
+        font-size: 1.2em;
+    }
+    section.sos-bottom-2 {
+        padding: 0 40px 40px 40px;
+    }
+    section.sos-bottom-2 aside div#box h1 {
+        font-size: 2.2em;
+    }
+    section.sos-bottom-2 aside div#box h2 {
+        font-size: 2em;
+    }
+    section.sos-bottom-2 aside div#box h3 {
+        font-size: 1.8em;
+    }
+    section.sos-bottom-2 aside div#box p {
+        font-size: 1.2em;
+    }
+    section.sos-bottom-2 aside div#box ul li {
+        font-size: 1.2em;
+    }
+    section.sos-bottom-1 {
+        padding: 0 40px 40px 40px;
+    }
+    section.mvc {
+        margin: 0;
+        padding: 40px;
+    }
+    section.mvc p {
+        font-size: 1.2em;
+    }
+    section.sos-top p {
+        font-size: 1.2em;
+    }
+    section.startup-links-2 aside {
+        width: 50%;
+    }
     header div.hero h1 {
         font-size: 4em;
     }
@@ -3008,10 +3263,118 @@ section.founder-doc #box p {
         margin: 60px 70px 60px 70px;
         padding: 60px;
     }
+    section.ecosystem aside#ecosystem-right{
+        padding: 40px;
+    }
+    section.ecosystem aside#ecosystem-left {
+        padding: 40px;
+    }
+    section.about-middle aside#about-middle-left {
+        padding: 40px;
+    }
+    section.about-middle aside#about-middle-right {
+        padding: 40px;
+    }
+    section.ecosystem aside#ecosystem-right ul li {
+        font-size: 1.2em;
+    }
+    section.ecosystem aside#ecosystem-right ul li {
+        font-size: 1.2em;
+    }
+    section.about-middle aside#about-middle-left h3 {
+        font-size: 1.4em;
+    }
+    section.about-middle aside#about-middle-right h3 {
+        font-size: 1.4em;
+    }
+    section.about-middle aside#about-middle-left p {
+        font-size: 1.2em;
+    }
+    section.about-middle aside#about-middle-right p {
+        font-size: 1.2em;
+    }
+    section.solutions aside#solutions-left {
+        padding: 40px;
+    }
+    section.solutions aside#solutions-right {
+        padding: 40px;
+    }
+    section.solutions aside#solutions-right h2 {
+        font-size: 1.6em;
+    }
+    section.solutions aside#solutions-left h2 {
+        font-size: 1.6em;
+    }
+    section.solutions aside#solutions-left h3 {
+        font-size: 1.4em;
+    }
+    section.solutions aside#solutions-right h3 {
+        font-size: 1.4em;
+    }
+    section.solutions aside#solutions-left p {
+        font-size: 1.2em;
+    }
+    section.solutions aside#solutions-right p {
+        font-size: 1.2em;
+    }
+    section.solutions-0 a {
+        padding: 10px 15px 10px 15px;
+    }
+    table tr td {
+        padding: 0;
+    }
+    section.programs aside#programs-right a {
+        font-size: 1.2em;
+    }
 }
 
 
 @media screen and (max-width: 825px) {
+    section.sprint h2 {
+        font-size: 1.8em;
+    }
+    section.sprint h3 {
+        font-size: 1.6em;
+    }
+    section.programs aside#programs-left {
+        padding: 0 20px 20px 20px;
+    }
+    section.programs aside#programs-right {
+        padding: 0 20px 20px 20px;
+    }
+    section.sponsors h2 {
+        font-size: 1.8em;
+    }
+    section.programs aside#programs-left h2 {
+        font-size: 1.8em;
+    }
+    section.programs aside#programs-right h2 {
+        font-size: 1.8em;
+    }
+    section.sponsors a {
+        font-size: 1.2em;
+    }
+    section.partners-apply {
+        padding: 40px;
+    }
+    section.collaboration {
+        margin: 0 30px 0 30px;
+    }
+    section.portfolio {
+        padding: 10px;
+    }
+    section.portfolio h2 {
+        font-size: 2em;
+    }
+    section.btn a {
+        margin-left: 50%;
+    }
+    section.sos-bottom-1 {
+        padding: 0 20px 20px 20px;
+    }
+    #page h1 {
+        font-size: 2.2em;
+    }
     section.about-links aside .button {
         font-size: 1.2em;
     }
@@ -3081,18 +3444,218 @@ section.founder-doc #box p {
     footer p {
         font-size: 1.2em;   
     }
+    section.solutions-0 a {
+        font-size: 1.1em;
+        padding: 5px;
+    }
 }
 
 @media screen and (max-width: 720px) {
+    section.sprint ul li {
+        font-size: 1.2em;
+    }
+    section.programs aside#programs-right a {
+        padding: 10px;
+        font-size: 1em;
+    }
+    section.programs aside#programs-left ul li {
+        font-size: 1em;
+    }
+    section.programs aside#programs-right ul li {
+        font-size: 1em;
+    }
+    section.sponsors {
+        margin: 0;
+    }
+    section.partners-apply {
+        padding: 20px;
+        margin: 0 30px 0 30px;
+    }
+    section.partners-apply a {
+        margin-left: 0;
+        font-size: 1.2em;
+    }
+    section.portfolio {
+        padding: 10px;
+    }
+    section.btn a {
+        margin-left: 50%;
+    }
+    section.startup-top aside#startup-top-left {
+        padding: 20px;
+    }
+    section.startup-top aside#startup-top-right {
+        padding: 20px;
+    }
+    section.ecosystem aside#ecosystem-right{
+        padding: 20px;
+    }
+    section.ecosystem aside#ecosystem-left {
+        padding: 20px;
+    }
+    section.collaboration h3 {
+        font-size: 1.7em;
+    }
+    section.collaboration {
+        margin: 0 20px 0 20px;
+    }
+    section.partners-apply h2 {
+        font-size: 1.8em;
+    }
+    section.ecosystem aside#ecosystem-right h2 {
+        font-size: 1.7em;
+    }
+    section.ecosystem aside#ecosystem-left h2 {
+        font-size: 1.7em;
+    }
+    section.ecosystem aside#ecosystem-right h3 {
+        font-size: 1.6em;
+    }
+    section.ecosystem aside#ecosystem-left h3 {
+        font-size: 1.6em;
+    }
+    section.ecosystem aside#ecosystem-right p {
+        font-size: 1em;
+    }
+    section.ecosystem aside#ecosystem-left p {
+        font-size: 1em;
+    }
+    section.for-startups {
+        padding: 10px;
+    }
+    section.for-startups aside h2 {
+        font-size: 1.8em;
+    }
+    section.for-startups aside h3 {
+        font-size: 1.6em;
+    }
+    section.solutions-0 h2 {
+        font-size: 1.8em;
+    }
+    section.sos-bottom-1 aside div#box h1 {
+        font-size: 2em;
+    }
+    section.sos-bottom-1 aside div#box h2 {
+        font-size: 1.8em;
+    }
+    section.sos-bottom-1 aside div#box h3 {
+        font-size: 1.6em;
+    }
+    section.sos-bottom-1 aside div#box p {
+        font-size: 1em;
+    }
+    p {
+        font-size: 1.2em;
+    }
+    section.sos-bottom-1 aside div#box ul li {
+        font-size: 1em;
+    }
+    section.sos-bottom-2 {
+        padding: 0 10px 10px 10px;
+    }
+    section.sos-bottom-2 aside div#box h1 {
+        font-size: 2em;
+    }
+    section.sos-bottom-2 aside div#box h2 {
+        font-size: 1.8em;
+    }
+    section.sos-bottom-2 aside div#box h3 {
+        font-size: 1.6em;
+    }
+    section.sos-bottom-2 aside div#box p {
+        font-size: 1em;
+    }
+    section.sos-bottom-2 aside div#box ul li {
+        font-size: 1em;
+    }
+    section.sos-bottom-1 {
+        padding: 0 10px 10px 10px;
+    }
     section.about-links aside {
         width: 28%;
     }
     section.about-links aside .button {
         font-size: 1.2em;
     }
+    section.about-middle aside#about-middle-left {
+        padding: 30px;
+    }
+    section.about-middle aside#about-middle-right {
+        padding: 30px;
+    }
+    section.solutions aside#solutions-left {
+        padding: 30px;
+    }
+    section.solutions aside#solutions-right {
+        padding: 30px;
+    }
+    table tr td a {
+        font-size: 1em;
+    }
+    table tr td p {
+        font-size: 1em;
+    }
+    section.portfolio h2 {
+        font-size: 1.8em;
+    }
 }
 
 @media screen and (max-width: 645px) {
+    section.sponsors {
+        margin: 0;
+    }
+    section.sprint h2 {
+        font-size: 1.6em;
+    }
+    section.sprint h3 {
+        font-size: 1.4em;
+    }
+    section.sprint ul li {
+        font-size: 1.2em;
+    }
+    section.portfolio h2 {
+        font-size: 1.6em;
+    }
+    section.programs aside#programs-left h2 {
+        font-size: 1.6em;
+    }
+    section.programs aside#programs-right h2 {
+        font-size: 1.6em;
+    }
+    section.btn a {
+        margin-left: 30%;
+    }
+    section.for-startups aside p {
+        font-size: 1em;
+    }
+    section.startup-top aside#startup-top-left {
+        width: 90%;
+    }
+    section.startup-top aside#startup-top-right {
+        float: right;
+        width: 90%;
+    }
+    section.startup-top aside#startup-top-left h3 {
+        font-size: 1.4em;
+    }
+    section.startup-top aside#startup-top-right h3 {
+        font-size: 1.4em;
+    }
+    section.startup-top aside#startup-top-left p {
+        font-size: 1em;
+    }
+    section.startup-top aside#startup-top-right p {
+        font-size: 1em;
+    }
+    section.solutions-0 {
+        width: 70%;
+    }
+    section.solutions-0 a {
+        padding: 10px 50px 10px 50px;
+    }
+    section.sos-top {
+        padding: 40px;
+    }
     header div.hero h3 {
         padding: 0 20px 0 20px;
     }
@@ -3160,7 +3723,53 @@ section.founder-doc #box p {
 }
 
 @media screen and (max-width: 603px) {
-
+    section.sprint a {
+        font-size: 1.2em;
+    }
+    section.collaboration {
+        padding: 30px;
+    }
+    section.sos-bottom-1 {
+        padding: 0 5px 5px 5px;
+    }
+    section.sos-bottom-2 {
+        padding: 0 5px 5px 5px;
+    }
+    section.partners-apply h2 {
+        font-size: 1.6em;
+    }
+    section.sos-bottom-1 aside div#box {
+        padding: 20px;
+    }
+    section.sos-bottom-2 aside div#box {
+        padding: 20px;
+    }
+    section.sos-bottom-1 aside div#box h1 {
+        font-size: 1.8em;
+    }
+    section.sos-bottom-1 aside div#box h2 {
+        font-size: 1.6em;
+    }
+    section.sos-bottom-1 aside div#box h3 {
+        font-size: 1.4em;
+    }
+    section.sos-bottom-2 aside div#box h1 {
+        font-size: 1.8em;
+    }
+    section.sos-bottom-2 aside div#box h2 {
+        font-size: 1.6em;
+    }
+    section.sos-bottom-2 aside div#box h3 {
+        font-size: 1.4em;
+    }
+    section.mvc a {
+        padding: 5px 10px 5px 10px;
+        margin: 0;
+    }
+    #page h1 {
+        font-size: 2em;
+        margin-top: 80px;
+    }
     section.parts-1 {
         padding: 20px;
     }
@@ -3224,9 +3833,65 @@ section.founder-doc #box p {
         font-size: 1.2em;
         padding: 0 30px 0 30px;
     }
+    section.sos-top {
+        padding: 20px;
+    }
+    section.about-middle aside#about-middle-left {
+        padding: 20px;
+    }
+    section.about-middle aside#about-middle-right {
+        padding: 20px;
+    }
+    section.solutions aside#solutions-left {
+        padding: 20px;
+    }
+    section.solutions aside#solutions-right {
+        padding: 20px;
+    }
 }
 
 @media screen and (max-width: 545px) {
+    section.sprint a {
+        padding: 10px;
+    }
+    section.sprint {
+        padding: 40px;
+    }
+    section.a-f {
+        padding: 60px;
+    }
+    section.partners-apply {
+        padding: 10px;
+        margin: 0 15px 0 15px;
+    }
+    section.btn a {
+        margin-left: 10%;
+        font-size: 1.2em;
+    }
+    section.startup-top aside#startup-top-right {
+        margin: 20px;
+    }
+    section.sos-bottom-1 aside {
+        width: 100%;
+    }
+    section.sos-bottom-1 aside div#box {
+        padding: 40px;
+    }
+    section.sos-bottom-2 aside {
+        width: 100%;
+    }
+    section.sos-bottom-2 aside div#box {
+        padding: 40px;
+    }
+    section.mvc a {
+        font-size: 1em;
+    }
+    section.startup-links-2 aside .button {
+        font-size: 1.2em;
+    }
+    section.startup-links-2-p aside .button {
+        font-size: 1.2em;
+    }
     footer img {
         width: 90%;
     }
@@ -3234,7 +3899,7 @@ section.founder-doc #box p {
         font-size: 1.1em;   
     }
     nav{
-        padding: 15px 0 0 80px;
+        padding: 15px 0 0 90px;
     }
     nav a.logo {
         text-align: center;
@@ -3244,7 +3909,7 @@ section.founder-doc #box p {
         font-size: 0.8em;
     }
     nav ul li a {
-        padding: 5px 20px;
+        padding: 5px 10px;
     }
     nav > ul {
         padding-left: 70px;
@@ -3267,6 +3932,9 @@ section.founder-doc #box p {
     section.parts-1 h2 {
         font-size: 1.6em;
     }
+    section.partners-apply h2 {
+        font-size: 1.6em;
+    }
     figure.effect-julia h2  {
         font-size: 1.6em;
     }
@@ -3279,6 +3947,59 @@ section.founder-doc #box p {
 }
 
 @media screen and (max-width: 470px) {
+    section.sprint {
+        padding: 20px;
+    }
+    section.programs aside#programs-right a {
+        font-size: 0.9em;
+        padding: 5px;
+    }
+    section.a-f {
+        padding: 40px;
+    }
+    section.a-f h2 {
+        font-size: 1.6em;
+    }
+    section.a-f a {
+        padding: 20px;
+    }
+    section.collaboration {
+        padding: 20px;
+    }
+    section.collaboration h3 {
+        font-size: 1.6em;
+    }
+    section.sponsors {
+        margin: 0;
+        padding: 20px;
+    }
+    section.sponsors h2 {
+        font-size: 1.6em;
+    }
+    section.btn a {
+        margin-left: 0;
+    }
+    section.for-startups {
+        padding: 5px;
+    }
+    section.for-startups aside h2 {
+        font-size: 1.6em;
+    }
+    section.for-startups aside h3 {
+        font-size: 1.4em;
+    }
+    p {
+        font-size: 1.2em;
+    }
+    section.startup-links-2 aside {
+        width: 100%;
+    }
+    section.startup-links-2-p aside {
+        width: 100%;
+    }
+    #page h1 {
+        font-size: 1.9em;
+    }
     header div.hero h1 {
         font-size: 3em;
     }
@@ -3311,6 +4032,9 @@ section.founder-doc #box p {
     }
     section.where-to-find aside#connect h3 {
         font-size: 1.4em;
+    }
+    section.about-links aside {
+        width: 100%;
     }
     section.about-links aside .button {
         font-size: 1em;
@@ -3356,25 +4080,75 @@ section.founder-doc #box p {
     section.container2 .photo-grid img {
         height: 200px;
     }
+    section.about-middle aside#about-middle-left h3 {
+        font-size: 1.2em;
+    }
+    section.about-middle aside#about-middle-right h3 {
+        font-size: 1.2em;
+    }
+    section.about-middle aside#about-middle-left p {
+        font-size: 1em;
+    }
+    section.about-middle aside#about-middle-right p {
+        font-size: 1em;
+    }
+    section.solutions aside#solutions-left h2 {
+        font-size: 1.4em;
+    }
+    section.solutions aside#solutions-right h2 {
+        font-size: 1.4em;
+    }
+    section.solutions aside#solutions-left h3 {
+        font-size: 1.2em;
+    }
+    section.solutions aside#solutions-right h3 {
+        font-size: 1.2em;
+    }
+    section.solutions aside#solutions-left p {
+        font-size: 1em;
+    }
+    section.solutions aside#solutions-right p {
+        font-size: 1em;
+    }
 }
 
 @media screen and (max-width: 420px) {
-
-    figure.effect-julia p {
-        font-size: 0.8em;
+    section.a-f {
+        padding: 20px;
     }
-    section.about-links {
+    section.a-f h2 {
+        font-size: 1.4em;
+    }
+    section.a-f a {
+        font-size: 1.2em;
         padding: 10px;
     }
-    section.about-links aside {
-        width: 20%;
+    section.btn a {
+        padding: 10px;
     }
-    section.about-links aside .button {
+    section.solutions-0 {
+        width: 80%;
+    }
+    section.solutions-0 a {
+        padding: 10px;
+    }
+    section.mvc a {
         font-size: 0.9em;
-        padding-right: 30px;
     }
-    section.about-links aside#border-lr {
-        color: #FFF;
+    #page h1 {
+        margin-top: 50px;
+    }
+    section.about-middle aside#about-middle-left {
+        padding: 10px;
+    }
+    section.about-middle aside#about-middle-right {
+        padding: 10px;
+    }
+    section.solutions aside#solutions-left {
+        padding: 10px;
+    }
+    section.solutions aside#solutions-right {
+        padding: 10px;
     }
     section#about-us aside a {
         padding: 5px 15px 5px 15px;
@@ -3385,9 +4159,42 @@ section.founder-doc #box p {
     section.container2 .photo-grid figcaption a {
         font-size: 1.6em;
     }
+    nav{
+        padding: 15px 0 0 100px;
+    }
+    nav a.logo {
+        width: 100px;
+    }
+    nav ul li {
+        font-size: 0.7em;
+    }
+    nav ul li a {
+        padding: 0;
+    }
+    nav > ul {
+        padding-left: 50px;
+    }
 }
 
 @media screen and (max-width: 350px) {
+    section.sprint a {
+        font-size: 1em;
+    }
+    nav{
+        padding: 15px 0 0 100px;
+    }
+    nav > ul {
+        padding-left: 30px;
+    }
+    #page h1 {
+        font-size: 1.7em;
+    }
+    header div.hero h1 {
+        font-size: 2.2em;
+    }
+    header div.hero h3 {
+        font-size: 1.2em;
+    }
     section.container1 .photo-grid .grid-item {
         height: 150px;
     }
@@ -3411,5 +4218,27 @@ section.founder-doc #box p {
     }
     section.container2 .photo-grid img {
         height: 150px;
+    }
+}
+
+
+@media screen and (max-width: 270px) {
+    section.sprint a {
+        padding: 5px;
+    }
+    nav a.logo {
+        width: 80px;
+    }
+    nav > ul {
+        padding: 0;
+    }
+    header div.hero h1 {
+        font-size: 2em;
+    }
+    header div.hero h3 {
+        font-size: 1em;
+    }
+    section.solutions-0 a {
+        font-size: 1em;
     }
 }
