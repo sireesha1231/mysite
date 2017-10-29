@@ -90,6 +90,7 @@ p {
     font-size: 1.4em;
     margin: 0 0 1em 0;
     font-family: 'Overlock', cursive;
+    text-align: justify;
 }
 
 a {
@@ -3008,6 +3009,13 @@ section.founder-doc #box p {
 }
 
 @media screen and (max-width: 980px) {
+    #progressbar li {
+        width: 10% !important;
+        font-size: 0.9em !important;
+    }
+    #msform fieldset {
+        margin: 0 60px !important;
+    }
     section.a-f {
         margin: 0;
     }
@@ -3034,6 +3042,9 @@ section.founder-doc #box p {
     }
     table tr td p {
         font-size: 1.2em;
+    }
+    section.mvc {
+        margin: 0;
     }
 }
 
@@ -3326,10 +3337,34 @@ section.founder-doc #box p {
     section.programs aside#programs-right a {
         font-size: 1.2em;
     }
+    #progressbar li {
+        width: 17% !important;
+    }
+    #msform fieldset {
+        margin: 0 20px !important;
+        padding: 20px !important;
+    }
 }
 
 
 @media screen and (max-width: 825px) {
+    #msform {
+        height: 700px !important;
+    }
+    #msform input, #msform textarea {
+        padding: 0 !important;
+        margin: 10px 80px !important;
+    }
+    #progressbar li {
+        width: 33% !important;
+    }
+    #msform fieldset {
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+    header div.hero h1 {
+        font-size: 3.5em;
+    }
     section.sprint h2 {
         font-size: 1.8em;
     }
@@ -3372,8 +3407,9 @@ section.founder-doc #box p {
     section.sos-bottom-1 {
         padding: 0 20px 20px 20px;
     }
-    #page h1 {
-        font-size: 2.2em;
+
+    #page h2 {
+        font-size: 2em;
     }
     section.about-links aside .button {
         font-size: 1.2em;
@@ -3448,9 +3484,18 @@ section.founder-doc #box p {
         font-size: 1.1em;
         padding: 5px;
     }
+    .fs-title {
+        font-size: 1.5em !important;
+    }
 }
 
 @media screen and (max-width: 720px) {
+    #msform input, #msform textarea {
+        margin: 10px 40px !important;
+    }
+    #page h1 {
+        font-size: 2.2em;
+    }
     section.sprint ul li {
         font-size: 1.2em;
     }
@@ -3601,6 +3646,9 @@ section.founder-doc #box p {
 }
 
 @media screen and (max-width: 645px) {
+    #msform input, #msform textarea {
+        margin: 10px 20px !important;
+    }
     section.sponsors {
         margin: 0;
     }
@@ -3723,6 +3771,20 @@ section.founder-doc #box p {
 }
 
 @media screen and (max-width: 603px) {
+    .fs-title {
+        text-align: left !important;
+        margin-left: 10px !important;
+    }
+    .fs-subtitle {
+        text-align: left;
+        margin-left: 10px;
+    }
+    #msform input, #msform textarea {
+        margin: 10px !important;
+    }
+    input[type="text"], input[type="email"] {
+        width: 60%;
+    }
     section.sprint a {
         font-size: 1.2em;
     }
@@ -3769,6 +3831,9 @@ section.founder-doc #box p {
     #page h1 {
         font-size: 2em;
         margin-top: 80px;
+    }
+    #page h2 {
+        font-size: 1.8em;
     }
     section.parts-1 {
         padding: 20px;
@@ -3851,6 +3916,9 @@ section.founder-doc #box p {
 }
 
 @media screen and (max-width: 545px) {
+    input[type="text"], input[type="email"] {
+        width: 50%;
+    }
     section.sprint a {
         padding: 10px;
     }
@@ -3924,6 +3992,7 @@ section.founder-doc #box p {
         border: none;
     }
     section#about-us aside a {
+        font-size: 1.2em;
         padding: 5px 30px 5px 30px;
     }
     section.parts-1 {
@@ -3947,6 +4016,27 @@ section.founder-doc #box p {
 }
 
 @media screen and (max-width: 470px) {
+    .fs-title {
+        font-size: 1.3em !important;
+    }
+    #msform {
+        height: 650px !important;
+    }
+    #msform input[type="button"] {
+        padding: 0 !important;
+        margin-left: 0 !important;
+    }
+    .button{width:100%;}
+    .fs-subtitle {
+        font-size: 1em !important;
+    }
+    #msform input, #msform textarea {
+        margin: 0 0 10px 0 !important;
+        font-size: 1em !important;
+    }
+    input[type="text"], input[type="email"] {
+        width: 40%;
+    }
     section.sprint {
         padding: 20px;
     }
@@ -3999,6 +4089,9 @@ section.founder-doc #box p {
     }
     #page h1 {
         font-size: 1.9em;
+    }
+    #page h2 {
+        font-size: 1.7em;
     }
     header div.hero h1 {
         font-size: 3em;
@@ -4054,6 +4147,7 @@ section.founder-doc #box p {
         font-size: 1.8em;
     }
     section#about-us aside a {
+        font-size: 1em;
         padding: 5px 30px 5px 30px;
     }
     section.container1 .photo-grid .grid-item {
@@ -4110,9 +4204,15 @@ section.founder-doc #box p {
     section.solutions aside#solutions-right p {
         font-size: 1em;
     }
+    #msform .action-button {
+        margin-left: 0 !important;
+    }
 }
 
 @media screen and (max-width: 420px) {
+    .fs-subtitle {
+        font-size: 0.85em !important;
+    }
     section.a-f {
         padding: 20px;
     }
@@ -4188,6 +4288,9 @@ section.founder-doc #box p {
     }
     #page h1 {
         font-size: 1.7em;
+    }
+    #page h2 {
+        font-size: 1.5em;
     }
     header div.hero h1 {
         font-size: 2.2em;
