@@ -2882,6 +2882,9 @@ section.founder-doc #box p {
 }
 
 @media screen and (max-width: 1120px) {
+    section.disc {
+        margin: 0 60px 0 60px;
+    }
     section.sprint {
         margin: 0;
         padding: 0 80px 80px 80px;
@@ -3049,6 +3052,9 @@ section.founder-doc #box p {
 }
 
 @media screen and (max-width: 950px) {
+    section.disc {
+        margin: 0;
+    }
     section.sprint h2 {
         font-size: 2em;
     }
@@ -3346,7 +3352,6 @@ section.founder-doc #box p {
     }
 }
 
-
 @media screen and (max-width: 825px) {
     #msform {
         height: 700px !important;
@@ -3370,6 +3375,9 @@ section.founder-doc #box p {
     }
     section.sprint h3 {
         font-size: 1.6em;
+    }
+    section.disc {
+        padding: 40px;
     }
     section.programs aside#programs-left {
         padding: 0 20px 20px 20px;
@@ -3646,6 +3654,9 @@ section.founder-doc #box p {
 }
 
 @media screen and (max-width: 645px) {
+    section.disc {
+        padding: 30px;
+    }
     #msform input, #msform textarea {
         margin: 10px 20px !important;
     }
@@ -3916,6 +3927,9 @@ section.founder-doc #box p {
 }
 
 @media screen and (max-width: 545px) {
+    section.disc {
+        padding: 20px;
+    }
     input[type="text"], input[type="email"] {
         width: 50%;
     }
