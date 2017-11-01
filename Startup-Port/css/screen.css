@@ -90,7 +90,7 @@ p {
     font-size: 1.4em;
     margin: 0 0 1em 0;
     font-family: 'Overlock', cursive;
-    text-align: justify;
+    text-align: center;
 }
 
 a {
@@ -3985,7 +3985,6 @@ section.founder-doc #box p {
     }
     nav a.logo {
         text-align: center;
-       
     }
     nav ul li {
         font-size: 0.8em;
