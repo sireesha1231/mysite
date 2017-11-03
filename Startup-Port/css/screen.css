@@ -101,6 +101,10 @@ a {
     text-decoration: none;
 } 
 
+a:hover {
+    text-decoration: none !important;
+}
+
 /* -------------------------------- 
 
 Modules - reusable parts of our design
@@ -184,7 +188,7 @@ header div.hero h1 {
     margin: 0 0 30px 0;
     color: #FFF;
     text-align: center;
-    font-size: 4.5em;
+    font-size: 5.5em;
     font-weight: 700;
     font-family: 'Overlock', cursive;
 }
@@ -440,14 +444,13 @@ figure.effect-julia figcaption {
 
 figure.effect-julia h2 {
     position: relative;
-    background-color: #EAEAEA;
     font-family: 'Overlock', cursive;
     text-align: center;
 }
 
 figure.effect-julia p {
 	display: inline-block;
-	margin: 10px 0 0.25em;
+	margin: 15px 0 0.25em;
 	padding: 0.4em 1em;
 	background: rgba(255,255,255,0.9);
 	color: #2f3238;
@@ -833,7 +836,7 @@ section.portfolio {
     margin: 0;
     padding: 40px;
     text-align: center;
-    background-color: #EAEAEA;
+    background-color: #FFF;
     position: relative;
 }
 
@@ -923,8 +926,6 @@ section.join-us a {
     border: 2px solid #0F75BC;
     border-radius: 30px;
     font-weight: 700;
-    float: left;
-    width: 33.33%;
 }
 
 section.join-us a:hover {
@@ -1251,7 +1252,7 @@ section.about-links aside#border-lr {
 }
 
 section.about-links aside .button {
-    color: #000;
+    color: #FFF;
     text-decoration: none;
     font-weight: 700;
     border: none;
@@ -3203,7 +3204,7 @@ section.founder-doc #box p {
         width: 50%;
     }
     header div.hero h1 {
-        font-size: 4em;
+        font-size: 5em;
     }
     figure.effect-julia p {
         font-size: 0.75em;
@@ -3368,7 +3369,7 @@ section.founder-doc #box p {
         padding: 0 !important;
     }
     header div.hero h1 {
-        font-size: 3.5em;
+        font-size: 4.5em;
     }
     section.sprint h2 {
         font-size: 1.8em;
@@ -3415,7 +3416,9 @@ section.founder-doc #box p {
     section.sos-bottom-1 {
         padding: 0 20px 20px 20px;
     }
-
+    .grid figure h2 {
+        font-size: 1.4em !important;
+    }
     #page h2 {
         font-size: 2em;
     }
@@ -3498,8 +3501,14 @@ section.founder-doc #box p {
 }
 
 @media screen and (max-width: 720px) {
+    .grid figure h2 {
+        font-size: 1.2em !important;
+    }
     #msform input, #msform textarea {
         margin: 10px 40px !important;
+    }
+    header div.hero h1 {
+        font-size: 4em !important;
     }
     #page h1 {
         font-size: 2.2em;
@@ -3782,6 +3791,13 @@ section.founder-doc #box p {
 }
 
 @media screen and (max-width: 603px) {
+    header div.hero h1 {
+        font-size: 3.5em !important;
+        margin-top: 0px !important;
+    }
+    .grid figure h2 {
+        font-size: 2em !important;
+    }
     .fs-title {
         text-align: left !important;
         margin-left: 10px !important;
@@ -4290,6 +4306,9 @@ section.founder-doc #box p {
 }
 
 @media screen and (max-width: 350px) {
+    header div.hero h1 {
+        font-size: 2.5em !important;
+    }
     section.sprint a {
         font-size: 1em;
     }
